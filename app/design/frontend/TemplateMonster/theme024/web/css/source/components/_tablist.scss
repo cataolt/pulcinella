@@ -1,0 +1,40 @@
+[role="tablist"]{
+    //Tablist title
+    [role="tab"]{
+        position: relative;
+        cursor: pointer;
+        outline: none;
+        margin-bottom: $indent-small;
+        display: inline-block;
+        padding-right: 1rem;
+        width: 100%;
+        @include font-icon('\e5cf');
+        &[aria-expanded="true"]{
+            @include font-icon('\e5ce');
+            line-height: 1.2;
+        }
+        line-height: 1.2;
+        &:before{
+            position: absolute;
+            right: 0;
+            top: 2px;
+        }
+    }
+
+    [role="presentation"]{
+        &:first-child [role="tab"]{
+            margin-top: 0;
+        }
+    }
+
+    //Tablist content
+    [role="tabpanel"]{
+        margin-bottom: $indent-base;
+    }
+}
+
+.block[role="tablist"]{
+    .title[role="tab"]{
+        display: block;
+    }
+}

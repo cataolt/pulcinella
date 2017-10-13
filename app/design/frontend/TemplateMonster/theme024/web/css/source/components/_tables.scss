@@ -1,0 +1,72 @@
+//
+//  Table
+//  ---------------------------------------------
+
+table{
+    &.table{
+        width: 100%;
+        border-collapse: inherit;
+
+        tr.row{
+            display: table-row;
+            margin: 0;
+
+            .col{
+                padding-right: 0;
+            }
+        }
+
+        thead th{
+            text-align: left;
+            font-weight: 700;
+            border-bottom: solid 1px $border-color;
+        }
+        th, td{
+            padding: 10px;
+            &:first-child{
+                padding-left: 0;
+            }
+        }
+
+        @media (max-width: $screen-sm-min - 1) {
+            th{
+                display: none;
+            }
+
+            td{
+                width: 100%;
+                padding: 10px 0;
+                display: block;
+                &:before{
+                    font-weight: bold;
+                    display: block;
+                    border-bottom: solid 1px $border-color;
+                    content: attr(data-th);
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+    &.table-bordered {
+        border-top: 2px solid $primary;
+        border-left: 1px solid $border-color;
+        th,
+        td {
+            border-right: 1px solid $border-color;
+            border-bottom: 1px solid $border-color;
+        }
+    }
+    &.data-table {
+        width: 100%;
+        th,
+        td {
+            padding: 20px;
+            vertical-align: middle;
+        }
+        th {
+            background: $bg-light;
+            text-transform: uppercase;
+            color: $black;
+        }
+    }
+}

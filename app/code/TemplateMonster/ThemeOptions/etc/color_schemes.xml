@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:TemplateMonster_ThemeOptions:etc/color_schemes.xsd">
+    <website code="bikes">
+        <scheme id="yellow" label="Yellow" color="yellow">
+            <param name="primary_color" value="#e1e1e1" />
+            <param name="secondary_color" value="#c1c1c1" />
+            <param name="body_background_color" value="#e8e8e8" />
+            <param name="header_background_color" value="#104E8B" />
+            <param name="footer_background_color" value="#36648B" />
+            <param name="primary_font_color" value="#000080" />
+            <param name="primary_link_color" value="#104E8B" />
+        </scheme>
+        <scheme id="light_blue" label="Light Blue" color="#94759a">
+            <param name="primary_color" value="#e1e1e1" />
+            <param name="secondary_color" value="#c1c1c1" />
+            <param name="body_background_color" value="#e8e8e8" />
+            <param name="header_background_color" value="#94759a" />
+            <param name="footer_background_color" value="#94759a" />
+            <param name="primary_font_color" value="#94759a" />
+            <param name="primary_link_color" value="#94759a" />
+        </scheme>
+        <scheme id="flamingo" label="Flamingo" color="#fb5970">
+            <param name="primary_color" value="#e1e1e1" />
+            <param name="secondary_color" value="#c1c1c1" />
+            <param name="body_background_color" value="#e8e8e8" />
+            <param name="header_background_color" value="#fb5970" />
+            <param name="footer_background_color" value="#fb5970" />
+            <param name="primary_font_color" value="#fb5970" />
+            <param name="primary_link_color" value="#fb5970" />
+        </scheme>
+    </website>
+    <website code="base">
+        <scheme id="ultramarine" label="Ultramarine" color="#000080">
+            <param name="primary_color" value="#3485ff" />
+            <param name="secondary_color" value="#3c5c8c" />
+            <param name="body_background_color" value="#e8e8e8" />
+            <param name="header_background_color" value="#104E8B" />
+            <param name="footer_background_color" value="#36648B" />
+            <param name="primary_font_color" value="#000080" />
+            <param name="primary_link_color" value="#104E8B" />
+        </scheme>
+        <scheme id="soft_purple" label="Soft Purple" color="#94759a">
+            <param name="primary_color" value="#53759a" />
+            <param name="secondary_color" value="#53759a" />
+            <param name="body_background_color" value="#e8e8e8" />
+            <param name="header_background_color" value="#94759a" />
+            <param name="footer_background_color" value="#94759a" />
+            <param name="primary_font_color" value="#94759a" />
+            <param name="primary_link_color" value="#94759a" />
+        </scheme>
+        <scheme id="flamingo" label="Flamingo" color="#fb5970">
+            <param name="primary_color" value="#fb1270" />
+            <param name="secondary_color" value="#fb1270" />
+            <param name="body_background_color" value="#e8e8e8" />
+            <param name="header_background_color" value="#fb5970" />
+            <param name="footer_background_color" value="#fb5970" />
+            <param name="primary_font_color" value="#fb5970" />
+            <param name="primary_link_color" value="#fb5970" />
+        </scheme>
+    </website>
+    <website code="testwebsite">
+        <scheme id="wwww" label="wwwww" color="#000080">
+            <param name="primary_color" value="#3485ff" />
+            <param name="secondary_color" value="#3c5c8c" />
+            <param name="body_background_color" value="#e8e8e8" />
+            <param name="header_background_color" value="#104E8B" />
+            <param name="footer_background_color" value="#36648B" />
+            <param name="primary_font_color" value="#000080" />
+            <param name="primary_link_color" value="#104E8B" />
+        </scheme>
+        <scheme id="rrrrrr" label="rrrrrr" color="#94759a">
+            <param name="primary_color" value="#53759a" />
+            <param name="secondary_color" value="#53759a" />
+            <param name="body_background_color" value="#e8e8e8" />
+            <param name="header_background_color" value="#94759a" />
+            <param name="footer_background_color" value="#94759a" />
+            <param name="primary_font_color" value="#94759a" />
+            <param name="primary_link_color" value="#94759a" />
+        </scheme>
+        <scheme id="ttttt" label="ttttt" color="#fb5970">
+            <param name="primary_color" value="#fb1270" />
+            <param name="secondary_color" value="#fb1270" />
+            <param name="body_background_color" value="#e8e8e8" />
+            <param name="header_background_color" value="#fb5970" />
+            <param name="footer_background_color" value="#fb5970" />
+            <param name="primary_font_color" value="#fb5970" />
+            <param name="primary_link_color" value="#fb5970" />
+        </scheme>
+    </website>
+</config>

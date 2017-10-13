@@ -1,0 +1,177 @@
+@font-face {
+    font-family: 'Restaurant Regular';
+    src: url('../fonts/restaurant/Restaurant-Regular.eot?87209526');
+    src: url('../fonts/restaurant/Restaurant-Regular.eot?87209526#iefix') format('embedded-opentype'),
+    url('../fonts/restaurant/Restaurant-Regular.woff?87209526') format('woff'),
+    url('../fonts/restaurant/Restaurant-Regular.ttf?87209526') format('truetype'),
+    url('../fonts/restaurant/Restaurant-Regular.svg?87209526#mercury') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'mercury';
+    src: url('../font/mercury.svg?87209526#mercury') format('svg');
+  }
+}
+*/
+
+[class^="restaurant-icon-"]:before,
+[class*="restaurant-icon-"]:before,
+.restaurant-ico{
+    font-family: "Restaurant Regular";
+    font-weight: 400;
+    font-style: normal;
+    font-size: inherit;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.restaurant-icon-01:before {
+    content: '\e800';
+}
+
+.restaurant-icon-02:before {
+    content: '\e801';
+}
+
+.restaurant-icon-03:before {
+    content: '\e802';
+}
+
+.restaurant-icon-04:before {
+    content: '\e803';
+}
+
+.restaurant-icon-05:before {
+    content: '\e804';
+}
+
+.restaurant-icon-06:before {
+    content: '\e805';
+}
+
+.restaurant-icon-08:before {
+    content: '\e806';
+}
+
+.restaurant-icon-07:before {
+    content: '\e807';
+}
+
+.restaurant-icon-09:before {
+    content: '\e808';
+}
+
+.restaurant-icon-10:before {
+    content: '\e809';
+}
+
+.restaurant-icon-11:before {
+    content: '\e80a';
+}
+
+.restaurant-icon-12:before {
+    content: '\e80b';
+}
+
+.restaurant-icon-13:before {
+    content: '\e80c';
+}
+
+.restaurant-icon-14:before {
+    content: '\e80d';
+}
+
+.restaurant-icon-15:before {
+    content: '\e80e';
+}
+
+.restaurant-icon-16:before {
+    content: '\e80f';
+}
+
+.restaurant-icon-17:before {
+    content: '\e810';
+}
+
+.restaurant-icon-18:before {
+    content: '\e811';
+}
+
+.restaurant-icon-19:before {
+    content: '\e812';
+}
+
+.restaurant-icon-20:before {
+    content: '\e813';
+}
+
+.restaurant-icon-36:before {
+    content: '\e814';
+}
+
+.restaurant-icon-35:before {
+    content: '\e815';
+}
+
+.restaurant-icon-34:before {
+    content: '\e816';
+}
+
+.restaurant-icon-33:before {
+    content: '\e817';
+}
+
+.restaurant-icon-32:before {
+    content: '\e818';
+}
+
+.restaurant-icon-31:before {
+    content: '\e819';
+}
+
+.restaurant-icon-30:before {
+    content: '\e81a';
+}
+
+.restaurant-icon-29:before {
+    content: '\e81b';
+}
+
+.restaurant-icon-28:before {
+    content: '\e81c';
+}
+
+.restaurant-icon-27:before {
+    content: '\e81d';
+}
+
+.restaurant-icon-26:before {
+    content: '\e81e';
+}
+
+.restaurant-icon-25:before {
+    content: '\e81f';
+}
+
+.restaurant-icon-24:before {
+    content: '\e820';
+}
+
+.restaurant-icon-23:before {
+    content: '\e821';
+}
+
+.restaurant-icon-22:before {
+    content: '\e822';
+}
+
+.restaurant-icon-21:before {
+    content: '\e823';
+}

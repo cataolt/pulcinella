@@ -1,0 +1,129 @@
+//
+// Grid system
+// --------------------------------------------------
+
+$column-count: 12;
+$column-width: 70px;
+$gutter-width: 30px;
+
+$row-ws: 0;
+
+$container-xs: 300px;
+$container-sm: 720px + $gutter-width;
+$container-md: 940px + $gutter-width;
+$container-lg: $column-count*$column-width + $gutter-width*($column-count);
+
+// Layouts
+$layout-boxed-width: 1920px;
+
+// Resolutions
+$screen-xs-min: 480px;
+$screen-sm-min: 768px;
+$screen-md-min: 992px;
+$screen-lg-min: 1200px;
+
+// Fonts
+$default-font-family: 'Open sans', sans-serif;
+$secondary-font-family: 'Roboto Slab', serif;
+$third-font-family: 'Lora', serif;
+$default-font-weight: 500;
+$default-font-size: 14px;
+$default-line-height: 1.5em;
+
+// Icons
+$default-icon-family: 'Material Icons';
+$out-icon-family: 'fl-outicons';
+$fa: 'FontAwesome';
+
+// Colors
+$white: #FFF;
+$black: #000;
+$red: #d73105;
+$default: #4e4e4e;
+
+$bg-light: #f0f0f0;
+$bg-dark: #f2f2f2;
+
+$accent: #fc5047;
+$primary: $accent;
+$secondary: #2b2f3e;
+
+$secondary-1: #2b2f3e;
+$secondary-2: #959595;
+$contrast: $white;
+$unactive: #888;
+
+$border-color: #ebebeb;
+
+$header-color: $contrast;
+$header-bg: #f0f0f0;
+
+$content-color: $default;
+$content-bg: #ffffff;
+
+$footer-color: $content-color;
+$footer-bg: $secondary-1;
+
+$modal-popup__box-shadow: (transparentize($black, .8));
+
+// rd-navbar variables
+
+$rd-navbar-default-color: $default;
+$rd-navbar-contrast-color: $white;
+$rd-navbar-accent-color: #434343;
+$rd-navbar-accent-color-2: rgb(46, 204, 113);
+$rd-navbar-hover-color: $primary;
+
+$rd-navbar-submenu-bg: darken($white, 10%);
+
+$rd-navbar-shadow-ambient: 0 0 2px 0 rgba(0, 0, 0, .25);
+$rd-navbar-shadow-medium: 0 3px 5px 0 rgba(0, 0, 0, .25);
+$rd-navbar-shadow-large: 0 5px 8px 0 rgba(0, 0, 0, .25);
+
+%rd-navbar-transition {
+    transition: .3s all cubic-bezier(0.785, 0.135, 0.150, 0.860);
+}
+
+%rd-navbar-hidden {
+    display: none;
+}
+
+%rd-navbar-visible {
+    display: block;
+}
+
+
+//Indents
+$indent-base: 2rem;
+$indent-large:  $indent-base * 2;
+$indent-small:  $indent-base / 2;
+
+//Links
+$link-regular:  $primary;
+$link-hover:    $secondary-1;
+$link-active:   $secondary-2;
+$link-alt:      $default;
+
+//Transition
+$default-transition: .3s ease;
+
+//
+//  Form Variables
+//  ---------------------------------------------
+
+//Inputs
+$input-padding-hor:     20px;
+$input-padding-vert:    6px;
+
+$input-font-size:       $default-font-size;
+$input-line-height:     40px;
+
+
+$input-bg-color:        darken($white, 10%);
+
+//Buttons
+$button-padding-vert:   7px;
+$button-padding-hor:    50px;
+
+$button-bg-color:       $accent;
+$button-bg-color-h: darken(desaturate(adjust_hue($accent, -0.19272773994603476), 18.609625668449198%), 6.470588235294116%);

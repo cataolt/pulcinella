@@ -1,0 +1,81 @@
+/*
+* TM_Newsletter-popup
+*/
+
+.newsletter-popup.modal-popup{
+    .modal-content .block.newsletter {
+        margin-bottom: 0;
+        .field .control {
+            position: relative;
+            #newsletter {
+                border: none;
+                @media (max-width: $screen-xs-min - 1) {
+                    margin-bottom: 30px;
+                }
+            }
+            #newsletter-error {
+                position: absolute;
+                top: 100%;
+                padding-left: 0;
+            }
+        }
+    }
+    &._show .modal-inner-wrap {
+
+        margin: 0 auto;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .modal-inner-wrap {
+        background: url("../images/media/brown-bg.jpg");
+        max-width: 90%;
+        font-size: 25px;
+        .modal-title {
+            color: $white;
+            font-weight: 400;
+            font-size: 27px;
+
+            @media (min-width: $screen-md-min) {
+                font-size: 43px;
+            }
+        }
+        .block.newsletter input {
+            background: $white;
+            line-height: 32px;
+        }
+        .content-text {
+            color: $white;
+            font-size: 12px;
+            margin-bottom: 10px;
+            @media (min-width: $screen-md-min) {
+                font-size: 16px;
+            }
+        }
+    }
+    .modal-header {
+        .action-close {
+            padding: 0;
+            span {
+                display: none;
+            }
+            &:before {
+                font-size: 26px;
+                line-height: 1;
+                color: $accent;
+            }
+        }
+    }
+    .buttons-container {
+        button {
+            margin-bottom: 5px;
+        }
+    }
+}
+
+.modal-popup .modal-inner-wrap {
+    pointer-events: auto;
+}
+.modal-popup.newsletter-popup._show {
+    pointer-events: none;
+}

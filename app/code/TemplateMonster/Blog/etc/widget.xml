@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Widget:etc/widget.xsd">
+    <widget id="tm_blog_post_list" class="TemplateMonster\Blog\Block\Widget\PostList"
+            placeholder_image="TemplateMonster_Blog::images/widget_post_list.png">
+        <label translate="true">Blog: Latest posts</label>
+        <description translate="true">List of latest posts</description>
+        <parameters>
+            <parameter name="post_amount" xsi:type="text" visible="true">
+                <label translate="true">Post amount</label>
+            </parameter>
+            <parameter name="template" xsi:type="select" visible="true" required="true">
+                <label translate="true">Template</label>
+                <options>
+                    <option name="default_template" value="widget/post_list.phtml">
+                        <label translate="true">Default Template</label>
+                    </option>
+                    <option name="column_template" value="widget/post_column.phtml">
+                        <label translate="true">Column Template</label>
+                    </option>
+                </options>
+            </parameter>
+        </parameters>
+    </widget>
+</widgets>

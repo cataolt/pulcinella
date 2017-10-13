@@ -1,0 +1,9 @@
+vendor/*
+test/*
+update/*
+setup/*
+phpserver/*
+lib/*
+dev/*
+var/*
+pub/*

@@ -1,0 +1,133 @@
+
+.posts-list-wrapper .toolbar-top .toolbar-posts{
+    @include make-flex;
+    @include justify-content(space-between);
+
+    .limiter{
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        margin-bottom: 0;
+        @include justify-content(space-between);
+
+        @media (min-width: $screen-sm-min){
+            @include order(2);
+        }
+    }
+
+
+    .sorter{
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        margin-bottom: 0;
+        @include justify-content(space-between);
+
+        @media (min-width: $screen-sm-min){
+            @include order(1);
+        }
+
+        .sorter-label{
+            padding-right: $indent-small;
+        }
+    }
+
+    .control{
+        text-align: center;
+    }
+}
+
+.block-posts-list{
+    .post-items{
+        margin: 0;
+        .post-item{
+            @include flex-basis(100%);
+            padding: 0;
+        }
+        .post-title{
+            text-transform: uppercase;
+
+            a{
+                color: $default;
+                &:hover{
+                    color: $primary;
+                }
+            }
+        }
+        a.post-link{
+            color: $default;
+            text-transform: capitalize;
+            &:hover{
+                color: $primary;
+            }
+        }
+        .post-data{
+            @include make-flex;
+            @include justify-content(space-between);
+            time{
+                display: inline-block;
+            }
+
+            .post-comments a{
+                color: $default;
+                &:hover{
+                    color: $primary;
+                }
+            }
+        }
+    }
+}
+
+.post-page{
+    .post-text{
+        img{
+            margin-bottom: 1rem;
+        }
+    }
+    .post-data{
+        @include make-flex;
+        @include justify-content(space-between);
+        time{
+            display: inline-block;
+        }
+
+        .post-comments a{
+            color: $default;
+            &:hover{
+                color: $primary;
+            }
+        }
+    }
+
+    .post-comments-block{
+        .post-comment{
+            background-color: transparent;
+            padding: 30px 0;
+            border-top: 1px solid $border-color;
+            border-bottom: 1px solid $border-color;
+        }
+        .comment-info{
+            @include make-flex;
+            @include justify-content(flex-start);
+            border-bottom: none;
+
+            div{
+                float: none;
+            }
+            h3{
+                margin: 0 2em 0 0;
+                @include order(1);
+            }
+            span{
+                line-height: 2rem;
+            }
+            .post-data{
+                @include order(2);
+            }
+        }
+        .action{
+            @include button-block;
+            @include button-block__primary;
+        }
+    }
+}

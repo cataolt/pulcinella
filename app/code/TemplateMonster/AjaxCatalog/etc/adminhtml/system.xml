@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="templatemonster" translate="label" sortOrder="1000">
+            <label>TemplateMonster</label>
+        </tab>
+        <section id="ajaxcatalog" translate="label" type="text" sortOrder="40"
+                 showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>Catalog Ajax</label>
+            <tab>templatemonster</tab>
+            <resource>TemplateMonster_AjaxCatalog::config_ajaxcatalog</resource>
+            <group id="config" translate="label" type="text" sortOrder="90"
+                   showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Ajax Filters config</label>
+                <field id="ajaxcatalog_layer_active" translate="label comment" type="select" sortOrder="10"
+                       showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Layer Filter</label>
+                    <comment>Enable/Disable Ajax</comment>
+                    <source_model>Magento\Config\Model\Config\Source\Enabledisable</source_model>
+                </field>
+                <field id="ajaxcatalog_viewmode_active" translate="label comment" type="select" sortOrder="20"
+                       showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>View Mode(Grid/List)</label>
+                    <comment>Enable/Disable Ajax</comment>
+                    <source_model>Magento\Config\Model\Config\Source\Enabledisable</source_model>
+                </field>
+                <field id="ajaxcatalog_listorder_active" translate="label comment" type="select" sortOrder="30"
+                       showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>List Order (Price, Position, Name)</label>
+                    <comment>Enable/Disable Ajax</comment>
+                    <source_model>Magento\Config\Model\Config\Source\Enabledisable</source_model>
+                </field>
+                <field id="ajaxcatalog_sortby_active" translate="label comment" type="select" sortOrder="40"
+                       showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Sort By(DESC/ASC)</label>
+                    <comment>Enable/Disable Ajax</comment>
+                    <source_model>Magento\Config\Model\Config\Source\Enabledisable</source_model>
+                </field>
+                <field id="ajaxcatalog_pagination_active" translate="label comment" type="select" sortOrder="50"
+                       showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Pagination</label>
+                    <comment>Enable/Disable Ajax</comment>
+                    <source_model>Magento\Config\Model\Config\Source\Enabledisable</source_model>
+                </field>
+                <field id="ajaxcatalog_shownumber_active" translate="label comment" type="select" sortOrder="60"
+                       showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Show number items</label>
+                    <comment>Enable/Disable Ajax</comment>
+                    <source_model>Magento\Config\Model\Config\Source\Enabledisable</source_model>
+                </field>
+                <field id="ajaxcatalog_attribute_multy" translate="label comment" type="multiselect" sortOrder="70"
+                       showInDefault="1" showInWebsite="1" showInStore="1">
+                        <label>Product Attributes</label>
+                        <comment>Selected attributes is multiselected in layer navigation</comment>
+                        <source_model>TemplateMonster\AjaxCatalog\Model\Source\Filterable\AttributeList</source_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

@@ -1,0 +1,326 @@
+//
+//  Form styles
+//  _____________________________________________
+
+
+fieldset,
+.fieldset{
+    outline: none;
+}
+
+//Form layout
+.field{
+    margin-bottom: $indent-small;
+    position: relative;
+
+    &.additional,
+    &.choice{
+        margin-bottom: 0;
+    }
+
+    .label,
+    label{
+        margin-right: $gutter-width;
+        line-height: $input-line-height/2;
+        padding: $input-padding-vert 0;
+        display: inline-block;
+    }
+
+    .checkbox{
+        margin: .75rem .5rem 0 0;
+    }
+
+    input.qty{
+        width: 6rem;
+    }
+    .field-tooltip-action{
+        outline: none !important;
+    }
+
+    &.required{
+        transition: $default-transition;
+        &._error{
+            margin-bottom: 2*$indent-small;
+        }
+        div.mage-error{
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            padding-left: 0;
+        }
+
+        .control{
+            position: relative;
+
+            &._with-tooltip input.input-text + div.mage-error{
+                top: auto;
+                bottom: 1rem;
+            }
+
+            .field-tooltip.toggle{
+                top: -22px;
+            }
+        }
+
+        input.input-text{
+            &.mage-error{
+                margin-bottom: 20px;
+            }
+        }
+
+        &.comment textarea.input-text{
+            &.mage-error{
+                margin-bottom: 2rem;
+            }
+        }
+    }
+}
+
+//Typography
+.legend,
+legend{
+    font-size: 1rem;
+    font-weight: 600;
+    +br{
+        display: none;
+    }
+}
+.control{
+    .nested{
+        margin-top: $indent-small;
+        .field{
+            margin-bottom: 0;
+        }
+    }
+}
+
+input[type="text"], .input-text,
+input[type="email"],
+input[type="password"],
+input[type="number"],
+select,
+textarea{
+    display: block;
+    width: 100%;
+    padding: $input-padding-vert - 2 $input-padding-hor;
+    font-size: $input-font-size;
+    line-height: $input-line-height;
+    min-height: $input-line-height;
+    background: $input-bg-color;
+    border: 1px solid $input-bg-color;
+
+    &.mage-error{
+        border: solid 1px red;
+        font-style: normal;
+    }
+
+    &::-webkit-input-placeholder       {opacity: 1; transition: opacity .3s ease;}
+    &::-moz-placeholder                {opacity: 1; transition: opacity .3s ease;}
+    &:-moz-placeholder                 {opacity: 1; transition: opacity .3s ease;}
+    &:-ms-input-placeholder            {opacity: 1; transition: opacity .3s ease;}
+    &:focus::-webkit-input-placeholder {opacity: .5; transition: opacity .3s ease;}
+    &:focus::-moz-placeholder          {opacity: .5; transition: opacity .3s ease;}
+    &:focus:-moz-placeholder           {opacity: .5; transition: opacity .3s ease;}
+    &:focus:-ms-input-placeholder      {opacity: .5; transition: opacity .3s ease;}
+}
+
+select{
+    height: $input-line-height;
+}
+
+textarea{
+    max-width: 100%;
+}
+
+p.required{
+    color: $red;
+}
+
+//Inline form
+.form-inline{
+    @include make-flex();
+    .control{
+        input,
+        select,
+        textarea{
+            width: auto;
+        }
+    }
+}
+
+.field.required > .label::after,
+.field._required > .label::after,
+.fieldset > .field.required > .label::after, 
+.fieldset > .fields > .field.required > .label::after {
+    color: $red;
+    content: "*";
+    font-size: 12px;
+    margin: 0 0 0 5px;
+}
+
+// Checkbox
+.radio,
+input[type="checkbox"],
+input[type="radio"]{
+    display: inline-block;
+    width: auto;
+    height: $input-line-height;
+    margin: $input-padding-vert $input-padding-vert 0 0;
+}
+
+.field.choice{
+    position: relative;
+
+    input[type=checkbox],
+    input[type=radio]{
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+    }
+
+    input[type=checkbox],
+    input[type=radio]{
+        + .label {
+            font-size: 16px;
+            line-height: 18px;
+            &:before{
+                display: inline-block;
+                width: 18px;
+                height: 18px;
+                font-family: $default-icon-family;
+                font-style: normal;
+                vertical-align: baseline;
+                color: $primary;
+                text-align: center;
+                padding-right: 3px;
+            }
+
+            span{
+                display: inline-block;
+            }
+        }
+    }
+
+    input[type=checkbox] + .label{
+        &:before{
+            content: "\e835";
+        }
+    }
+    input[type=checkbox]:checked + .label:before{
+        content: "\e834";
+    }
+    input[type=checkbox]:disabled:checked + .label:before{
+        content: "\e834";
+        pointer-events: none;
+        opacity: .6;
+    }
+    input[type=radio] + .label{
+        &:before{
+            content: '\e836';
+        }
+    }
+    input[type=radio]:checked + .label:before{
+        content: "\e837";
+    }
+    input[type=checkbox]:disabled:checked + .label:before{
+        content: "\e837";
+        pointer-events: none;
+        opacity: .6;
+    }
+    input[type=checkbox],
+    input[type=radio]{
+        &:disabled + .label:before{
+            pointer-events: none;
+            opacity: .6;
+        }
+    }
+}
+
+//
+//  Button styles
+//  ---------------------------------------------
+
+//Block buttons
+.actions .action,
+.actions-toolbar .action,
+.box-actions .action,
+.product-item-actions .action,
+.checkout.methods .action.primary{
+    @include button-block(); //@mixin source/_mixins.scss
+}
+.checkout.methods .action.primary {
+    line-height: 20px;
+    padding: 17px 20px;
+}
+//Primary Buttons
+.actions-primary .action,
+.primary .action,
+.action.primary,
+.checkout.methods .action.primary{
+    @include button-block__primary(); //@mixin source/_mixins.scss
+}
+
+//Icon buttons
+a.action{
+    &.delete,
+    &.edit,
+    &.change-password{
+        display: inline-block;
+        padding: $button-padding-vert $button-padding-hor;
+        span{
+            display: none;
+        }
+    }
+
+    &.delete{
+        @include font-icon('\e5cd');
+    }
+    &.edit{
+        @include font-icon("\e150");
+    }
+}
+
+
+.actions-toolbar{
+    @include make-flex();
+    margin: 0 -0.25rem;
+    .action{
+        margin: 0 0.25rem;
+        display: inline-block;
+        line-height: 40px;
+        padding: 7px 40px;
+    }
+}
+
+.sidebar {
+    .actions-toolbar {
+        .primary {
+            .action {
+                line-height: 20px;
+                padding: 7px 20px;
+            }
+        }
+        .secondary {
+            .action {
+                background: none;
+                padding: 0;
+                color: $accent;
+                &:hover {
+                    color: $secondary;
+                }
+            }
+        }
+    }
+}
+//
+//  Messages styles
+//  ---------------------------------------------
+
+.mage-error:not(input):not(textarea){
+    font-size: .8rem;
+    line-height:1.2rem;
+    font-style: italic;
+    color: #F11F17;
+    padding: $input-padding-vert $input-padding-hor;
+}

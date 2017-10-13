@@ -1,0 +1,100 @@
+
+
+body {
+    background-color: #ffffff;
+    //background-image: url(http://192.168.44.44/magetique/pub/media/theme_options/default/Untitled-1.jpg);
+    //background-size: cover;
+    //background-attachment: scroll;
+    //background-position: left top;
+    //background-repeat: repeat;
+}
+
+//header.page-header,
+//.rd-navbar-static {
+//    background-color: #ffffff;
+//}
+
+.page-footer{
+    background-color: #ffffff;
+    //background-image: url(http://192.168.44.44/magetique/pub/media/theme_options/default/Untitled-1_1.jpg);
+    //background-size: cover;
+    //background-attachment: scroll;
+    //background-position: left top;
+    //background-repeat: repeat;
+}
+/* END General Settings  */
+
+/* Main Theme Settings  */
+.panel.page-header__panel{
+    background-color: #ffffff;
+    //background-image: url(http://192.168.44.44/magetique/pub/media/theme_options/default/Untitled-1_2.jpg);
+    //background-size: cover;
+    //background-attachment: scroll;
+    //background-position: left top;
+    //background-repeat: repeat;
+}
+
+.sidebar .block .block-title{
+    // background-color: #ffffff;
+    //background-image: url(http://192.168.44.44/magetique/pub/media/theme_options/default/Untitled-1_3.jpg);
+    //background-size: auto;
+    //background-attachment: scroll;
+    //background-position: left top;
+    //background-repeat: repeat;
+}
+/* END Main Theme Settings  */
+
+/* Desktop */
+@media screen and (min-width: 1200px) {
+    .products-grid .product-item{
+        //-webkit-flex-basis: 33.333333333333%;
+        //-ms-flex-preferred-size: 33.333333333333%;
+        //flex-basis: 33.333333333333%;
+        //max-width: 33.333333333333%;
+    }
+}
+/* END Desktop */
+
+/* Tablet landscape */
+@media screen and (min-width: 991px) and (max-width: 1199px) {
+    .products-grid .product-item{
+        //-webkit-flex-basis: 33.333333333333%;
+        //-ms-flex-preferred-size: 33.333333333333%;
+        //flex-basis: 33.333333333333%;
+        //max-width: 33.333333333333%;
+    }
+}
+/* END Tablet landscape */
+
+/* Tablet portrait */
+@media screen and (min-width: 768px) and (max-width: 990px) {
+    .products-grid .product-item{
+        //-webkit-flex-basis: 50%;
+        //-ms-flex-preferred-size: 50%;
+        //flex-basis: 50%;
+        //max-width: 50%;
+    }
+}
+/* END Tablet portrait */
+
+/* Mobile landscape */
+@media screen and (min-width: 481px) and (max-width: 767px) {
+    .products-grid .product-item{
+        //-webkit-flex-basis: 100%;
+        //-ms-flex-preferred-size: 100%;
+        //flex-basis: 100%;
+        //max-width: 100%;
+    }
+}
+/* END Mobile landscape */
+
+/* Mobile portrait */
+@media screen and (max-width: 480px) {
+    .products-grid .product-item{
+        //-webkit-flex-basis: 100%;
+        //-ms-flex-preferred-size: 100%;
+        //flex-basis: 100%;
+        //max-width: 100%;
+    }
+}
+/* Mobile portrait */

@@ -1,0 +1,101 @@
+/*
+* @subsection   Typography
+*/
+
+@for $i from 1 through 6 {
+    h#{$i},
+    .heading-#{$i} {
+        color: $secondary;
+        font-weight: 700;
+        margin-bottom: 0.5em;
+        font-family: $secondary-font-family;
+        line-height: 1.1;
+    }
+}
+
+h1, .heading-1 {
+    font-size: 2.7rem;
+}
+
+h2, .heading-2 {
+    font-size: 2.3rem;
+    font-weight: 400;
+}
+
+h3, .heading-3 {
+    font-size: 1.17rem;
+}
+
+h4, .heading-4 {
+    font-size: 1.13rem;
+    font-weight: 600;
+}
+
+h5, .heading-5 {
+    font-size: .83rem;
+}
+
+h6, .heading-6 {
+    font-size: .67rem;
+}
+
+
+.page-title,
+.section-title{
+    text-align: center;
+}
+.text-center{
+    text-align: center;
+}
+
+a {
+    color: $link-regular;
+    transition: .2s ease;
+    &:hover {
+        color: $link-hover;
+        transition: .3s ease;
+    }
+}
+
+p {
+    margin-bottom: $indent-small;
+}
+
+p,
+.list,
+.contact-info {
+    a {
+        color: $primary;
+        &:hover {
+            color: $link-hover;
+        }
+    }
+}
+
+mark {
+    color: $white;
+    background: $primary;
+}
+
+em {
+    color: $primary;
+}
+
+small {
+    font-size: .8em;
+}
+
+pre{
+    white-space: normal;
+}
+
+dl{
+    dt{
+        font-weight: 700;
+    }
+    dd{
+        font-style: italic;
+        padding-left: $indent-base;
+    }
+}
+

@@ -1,0 +1,34 @@
+.block.newsletter{
+    .heading-4 strong{
+        font-weight: 600;
+    }
+
+    .field{
+        margin-bottom: 0;
+        position: relative;
+    }
+
+    #newsletter{
+        margin-bottom: 0;
+    }
+
+    input{
+        margin-bottom: 0;
+    }
+
+    #newsletter-error{
+        position: static;
+        bottom: -1px;
+        left: 0;
+        background: #fff;
+        border-radius: 3px;
+        padding: 1px 5px;
+        z-index: 999;
+        margin: 3px;
+        @media (min-width: 600px) {
+            position: absolute;
+            transform: translateY(100%);
+            margin: 0;
+        }
+    }
+}
