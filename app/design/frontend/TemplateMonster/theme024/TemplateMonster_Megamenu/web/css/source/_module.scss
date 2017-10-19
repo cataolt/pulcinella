@@ -107,7 +107,7 @@
             z-index: 80;
             padding: 8px 0;
             color: $default;
-            background: $bg-light;
+            background: $black;
             text-align: left;
             opacity: 0;
             visibility: hidden;
@@ -262,9 +262,9 @@
                 font-family: $secondary-font-family;
                 font-size: 16px;
                 @media (min-width: $screen-md-min) {
-                    font-size: 18px;
-                    padding: 10px 20px;
-                    font-weight: 600;
+                    font-size: 24px;
+                    padding: 10px 40px;
+                    font-weight: 900;
                 }
             }
 

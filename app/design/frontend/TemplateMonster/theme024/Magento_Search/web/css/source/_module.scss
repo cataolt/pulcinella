@@ -168,17 +168,18 @@ body.ajax-loading #search.input-text:focus {
         display: block;
         position: static;
         font-family: $out-icon-family;
+        font-weight: 900;
         width: 48px;
-        height: 48px;
+        height: 32px;
         @include toggle-icons-via-rotation(44px, 25px, $rd-navbar-contrast-color, '\e032', '\e00b');
         z-index: 18;
         margin-left: 23px;
         span {
-            color: $white;
+            color: $black;
         }
         &.active {
             span {
-                color: #cdcdcd;
+                color: $accent;
             }
         }
         &:hover {
@@ -194,7 +195,7 @@ body.ajax-loading #search.input-text:focus {
         .form-group{
             position: absolute;
             top: 0;
-            left: -48px;
+            left: -378px;
             height: 50px;
             z-index: 17;
             width: 320px;
@@ -239,7 +240,7 @@ body.ajax-loading #search.input-text:focus {
                 right: 0;
                 top: 50%;
                 width: 50px;
-                font-size: 25px;
+                font-size: 35px;
                 border-radius:25px;
                 color: $secondary;
                 &:hover {

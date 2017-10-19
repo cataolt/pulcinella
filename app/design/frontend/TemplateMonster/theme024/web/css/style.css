@@ -4435,6 +4435,13 @@ a {
     color: #2b2f3e;
     transition: .3s ease; }
 
+.header-add-info a {
+  font-size: 30px;
+  font-weight: 900;
+  color: #000000;}
+.header-add-info a:hover {
+  color: #D71F25;  }
+
 p {
   margin-bottom: 1rem; }
 

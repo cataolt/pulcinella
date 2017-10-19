@@ -210,7 +210,7 @@ $rd-navbar-panel-height: 56px;
         @include toggle-icons-via-rotation(48px, 25px, $rd-navbar-contrast-color, '\e060', '\e02e');
         z-index: 20;
         span {
-            color: $white;
+            color: $black;
         }
         &:hover {
             span {

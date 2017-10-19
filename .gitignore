@@ -7,3 +7,4 @@ lib/*
 dev/*
 var/*
 pub/*
+.idea/*

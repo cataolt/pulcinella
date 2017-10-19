@@ -44,15 +44,15 @@
         <referenceContainer name="header-wrapper" htmlClass="page-header__content">
             <container name="header-wrapper.grid-container" htmlClass="container" htmlTag="div" before="-" >
                 <container name="header-wrapper.grid-container.row" htmlClass="row" htmlTag="div" before="-" >
-                    <container name="header-wrapper.grid-container.left" htmlClass="col-sm-4 col-md-3 h-left" htmlTag="div" />
-                    <container name="header-wrapper.grid-container.center" htmlClass="col-sm-4 col-md-6 h-center" htmlTag="div" />
-                    <container name="header-wrapper.grid-container.right" htmlClass="col-sm-4 col-md-3 h-right" htmlTag="div">
+                    <container name="header-wrapper.grid-container.left" htmlClass="col-sm-4 col-md-3 h-left" htmlTag="div" >
                         <block type="cms/block" class="Magento\Cms\Block\Block" name="add.info" before="-">
                             <arguments>
                                 <argument name="block_id" xsi:type="string">header-add-info</argument>
                             </arguments>
                         </block>
                     </container>
+                    <container name="header-wrapper.grid-container.center" htmlClass="col-sm-4 col-md-6 h-center" htmlTag="div" />
+                    <container name="header-wrapper.grid-container.right" htmlClass="col-sm-4 col-md-3 h-right" htmlTag="div"/>
                 </container>
             </container>
         </referenceContainer>
@@ -79,8 +79,8 @@
         <move element="header"             destination="header.panel.grid-container" after="header.switchers"/> <!-- Welcome message -->
         <move element="store_language"     destination="header.switchers" before="-" />
         <move element="currency"           destination="header.switchers" after="store_language"/>
+        <move element="top.search"         destination="header-wrapper.grid-container.right" after="-" />
         <move element="minicart"           destination="header-wrapper.grid-container.right" after="-"/>
-        <move element="top.search"         destination="header-wrapper.grid-container.left" after="-" />
 
         <referenceBlock name="currency"  remove="true" />
         <referenceBlock name="store_language"  remove="true" />

@@ -37,6 +37,7 @@ body{
 .page-header{
     margin-bottom: $indent-base;
     background-image: url(../images/media/brown-bg.jpg);
+    background-size: 100%;
     background-color: transparent !important;
     .rd-navbar-static {
       background-color: transparent !important;
@@ -291,12 +292,14 @@ $switcher-dropdown-shadow: 1px 2px 3px 0px rgba(0, 0, 0, 0.2);
     border-bottom: 4px double #cdcdcd;
     padding-bottom: 30px;
     .cms-index-index & {
-        background: url("../images/media/brown-bg.jpg") fixed;
+        background: url("../images/media/brown-bg-2.jpg") fixed;
+        background-size: 100%;
         padding-top: 154px;
         padding-bottom: 0;
         overflow: hidden;
         border-bottom: none;
         position: relative;
+        z-index: -2;
         @media (max-width: $screen-md-min - 1) {
             > .container {
                 width: 100%;
@@ -311,7 +314,7 @@ $switcher-dropdown-shadow: 1px 2px 3px 0px rgba(0, 0, 0, 0.2);
             right: 0;
             bottom: 0;
             left: 0;
-            z-index: 99;
+            z-index: -1;
             pointer-events: none;
         }
         &:before {

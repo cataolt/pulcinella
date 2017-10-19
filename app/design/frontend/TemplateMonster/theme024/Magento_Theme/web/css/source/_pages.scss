@@ -814,7 +814,8 @@ dl.custom-page {
         padding: 2.25% 0 25.79%;
         font-size: 7vw;
         text-align: center;
-        color: $white;
+        color: $red;
+        font-weight: bold;
         font-family: $secondary-font-family;
         @media (min-width: $screen-md-min) {
             font-size: 64px;
@@ -856,7 +857,7 @@ dl.custom-page {
 }
 .banner-container-1 {
     text-align: center;
-    background: $white;
+    background: $accent;
     position: relative;
     padding: 83px 0 70px;
     .banner-container-1__left-block {
