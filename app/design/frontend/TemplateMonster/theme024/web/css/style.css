@@ -311,7 +311,15 @@ body._has-modal-custom .modal-custom-overlay {
   .modal-custom .action-close,
   .modal-popup .action-close,
   .modal-slide .action-close {
-    display: block; } }
+    display: block; }
+
+  .banner-container-2 .big-icon {
+    margin-bottom: 10px;}
+
+  .page-header__content {
+    padding-top: 30px;
+  }
+}
 @media print {
   .modal-popup {
     display: none;
@@ -804,9 +812,9 @@ table.data-table {
   right: 0;
   z-index: 120;
   background: #f0f0f0;
-  box-shadow: 0 2px 4px rgba(252, 80, 71, 0.1);
-  background: url("../images/media/brown-bg.jpg"); }
-  .rd-navbar-static.rd-navbar--is-stuck .header-bottom {
+  box-shadow: 0 2px 4px rgba(252, 80, 71, 0.1); }
+  /*background: url("../images/media/brown-bg.jpg"); }*/
+  .rd-navbar-static.rd-navbar--is-stuck .header-bottome {
     display: none; }
   .rd-navbar-static.rd-navbar--is-stuck .rd-navbar-panel {
     display: none; }
@@ -1131,7 +1139,7 @@ table.data-table {
   display: block;
   display: inline-block;
   position: relative;
-  width: 48px;
+  width: 208px;
   height: 48px;
   font-size: 24px;
   line-height: 48px;
@@ -1256,14 +1264,14 @@ table.data-table {
   left: 0;
   top: 0;
   width: 100%;
-  background: #2b2f3e;
+  background: #D71F25;
   box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
   z-index: 160; }
 .rd-navbar-fixed .rd-navbar-toggle {
   position: fixed;
-  z-index: 170;
+  z-index: 165;
   top: 4px;
-  left: 4px; }
+  left: -20px; }
 .rd-navbar-fixed .rd-navbar-brand {
   display: block;
   text-align: left;
@@ -4483,6 +4491,74 @@ body {
 /* Main Theme Settings  */
 .panel.page-header__panel {
   background-color: #ffffff; }
+
+@media (max-width: 768px) {
+  .header-add-info a {
+    font-size: 25px;
+    font-weight: 900;
+    color: #ffffff;
+  }
+  .header-add-info a:hover {
+    color: #ffffff;  }
+}
+
+@media all and (max-width: 490px) {
+  .h-left .header-add-info {
+    display: none;
+  }
+
+  .parallax-text {
+    display: none;
+  }
+
+  rd-navbar-wrapper{
+    height: 214px !important;
+  }
+
+  .parallax-text2 {
+    margin-top: -10px;
+    display: block;
+    font-size: 7vw;
+    text-align: center;
+    color: #000000;
+    font-weight: bold;
+    font-family: "Roboto Slab", serif;
+  }
+
+  .parallax-text2 a {
+    color: #000000;
+  }
+
+  .parallax-text2 a:hover {
+    color: #D71F25;
+  }
+
+  .parallax-1 .index-header-parallax {
+    height: 365px !important;
+  }
+
+  .pizza-layer {
+    height: 365px !important;
+  }
+
+  .parallax-1 .pizza-layer img {
+    left: 45%;
+    height: 65%;
+    max-width: none;
+  }
+
+  .rd-parallax-inner {
+     min-height: 100% !important;
+  }
+
+  .parallax-1 .leaf-layer img {
+    height: 80%;
+    left: -300px;
+    margin-top: -120px;
+    max-width: none;
+    position: absolute;
+  }
+}
 
 /* END Main Theme Settings  */
 /* Desktop */

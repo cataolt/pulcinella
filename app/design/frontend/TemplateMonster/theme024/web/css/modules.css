@@ -177,7 +177,7 @@ body {
   line-height: 1.7;
   text-align: left;
   -webkit-text-size-adjust: none;
-  color: #4e4e4e;
+  color: #5d5d5d;
   background: #ffffff; }
   @media (min-width: 992px) {
     body {
@@ -192,8 +192,8 @@ body {
   background-image: url(../images/media/brown-bg.jpg);
   background-size: 100%;
   background-color: transparent !important; }
-  .page-header .rd-navbar-static {
-    background-color: transparent !important; }
+  /*.page-header .rd-navbar-static {*/
+    /*background-color: transparent !important; }*/
   .cms-index-index .page-header {
     margin-bottom: 0; }
 
@@ -463,7 +463,8 @@ body {
         .cms-index-index .page-main .block.newsletter .heading-2 strong, .cms-index-index .page-main .block.newsletter .block-title strong strong, .block-title .cms-index-index .page-main .block.newsletter strong strong, .cms-index-index .page-main .block.newsletter .catalog-product-view .page-title-wrapper .container strong, .catalog-product-view .page-title-wrapper .cms-index-index .page-main .block.newsletter .container strong, .cms-index-index .page-main .block.newsletter .catalog-product-view .page-title-wrapper .page-print.sales-order-print #maincontent strong, .catalog-product-view .page-title-wrapper .page-print.sales-order-print .cms-index-index .page-main .block.newsletter #maincontent strong, .cms-index-index .page-main .block.newsletter .page-print.sales-order-print .catalog-product-view .page-title-wrapper #maincontent strong, .page-print.sales-order-print .catalog-product-view .page-title-wrapper .cms-index-index .page-main .block.newsletter #maincontent strong,
         .cms-index-index .page-main .block.newsletter .catalog-product-view .page-title-wrapper h1 strong,
         .catalog-product-view .page-title-wrapper .cms-index-index .page-main .block.newsletter h1 strong, .cms-index-index .page-main .block.newsletter .cart-summary > .title strong {
-          color: #FFF; }
+          color: #D71F25;
+          font-weight: 900;}
       .cms-index-index .page-main .block.newsletter #newsletter {
         border-radius: 25px;
         background: #FFF;
@@ -1586,7 +1587,8 @@ dl.custom-page dd {
     margin-bottom: 24px; }
   .banner-container-2 .big-icon {
     font-size: 108px;
-    margin-bottom: 10px;
+    margin-bottom: 70px;
+    margin-top: 70px;
     display: block; }
 
 .widget.featured {
@@ -1595,7 +1597,8 @@ dl.custom-page dd {
     text-align: center;
     margin-bottom: 28px; }
     .widget.featured .block-title strong {
-      color: #FFF; }
+      color: #D71F25;
+      font-weight: 900;}
 
 .ie11 .parallax-1 .index-header-parallax::before,
 .ie11 .cms-index-index .page-main::before {
@@ -1606,7 +1609,7 @@ dl.custom-page dd {
 .products .product-item .price-box {
   font-size: 1.5rem;
   line-height: 1;
-  color: #2b2f3e; }
+  color: #000000; }
   .products .product-item .price-box .price-label {
     display: none; }
 .products .product-item .special-price {
@@ -1617,10 +1620,10 @@ dl.custom-page dd {
   color: #959595; }
 .products .product-item .product-item-name a {
   font-size: 18px;
-  color: #2b2f3e;
+  color: #D71F25;
   font-family: "Roboto Slab", serif; }
   .products .product-item .product-item-name a:hover {
-    color: #fc5047; }
+    color: #D71F25; }
 .products .product-item .product-item-name {
   display: block;
   font-size: 1.13rem;
@@ -2438,7 +2441,7 @@ body.catalog-product-compare-index .table-caption {
   max-width: 100%;
   margin-bottom: 2rem; }
   .products-grid .product-item .product-item-info {
-    background: #f3f3f3;
+    background: #ffffff;
     border-radius: 4px; }
 .products-grid.wishlist .product-item .product-item-info {
   padding: 15px; }
@@ -2520,7 +2523,10 @@ body.catalog-product-compare-index .table-caption {
   font-size: 25px;
   background: transparent;
   padding: 0;
-  color: #fc5047; }
+  color: #D71F25;
+  width: 75px;
+  height: 30px;
+  border-radius: 10px;}
   .products-grid .actions-primary .tocart:before {
     content: "";
     display: inline-block;
@@ -2533,8 +2539,8 @@ body.catalog-product-compare-index .table-caption {
   .products-grid .actions-primary .tocart span {
     display: none; }
   .products-grid .actions-primary .tocart:hover {
-    color: #959595;
-    background: transparent; }
+    color: #ffffff;
+    background: #D71F25; }
 .products-grid .actions-secondary {
   position: absolute;
   top: -60px;
@@ -3308,7 +3314,7 @@ body.ajax-loading #search.input-text:focus {
   display: block;
   position: fixed;
   top: 4px;
-  right: 104px;
+  right: 74px;
   font-family: "FontAwesome";
   width: 48px;
   height: 48px;
@@ -3359,8 +3365,8 @@ body.ajax-loading #search.input-text:focus {
     position: fixed;
     top: 0;
     padding-top: 4px;
-    left: 56px;
-    right: 155px;
+    left: 6px;
+    right: 115px;
     height: 56px;
     z-index: 170;
     visibility: hidden;
@@ -3405,7 +3411,7 @@ body.ajax-loading #search.input-text:focus {
   height: 48px;
   z-index: 18;
   margin-left: 23px;
-  margin-top: -20px}
+  margin-top: -29px}
   .rd-navbar-static .rd-navbar-search-toggle span {
     display: inline-block;
     font-weight: 900;
@@ -3973,7 +3979,7 @@ body.ajax-loading #search.input-text:focus {
   display: block;
   position: fixed;
   top: 6px;
-  right: 30px;
+  right: 0px;
   z-index: 170;
   overflow: visible;
   width: 76px;

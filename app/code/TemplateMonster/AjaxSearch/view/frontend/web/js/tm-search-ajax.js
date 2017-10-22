@@ -12,7 +12,7 @@ define([
                 '<li class="<%- data.row_class %> search-item" id="qs-option-<%- data.index %>" role="option">' +
                     //product item
                     '<% if(data.product) { %>' +
-                        '<a href="<%- data.url %>">' +
+                        '<a>' +
                     '<% if(data.image) { %>' +
                         '<span class="search-thumb">' +
                             '<img src="<%- data.image %>"/>' +
