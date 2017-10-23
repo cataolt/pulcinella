@@ -46,7 +46,7 @@ return array (
     'db_ddl' => 1,
     'eav' => 1,
     'customer_notification' => 1,
-    'full_page' => 1,
+    'full_page' => 0,
     'config_integration' => 1,
     'config_integration_api' => 1,
     'translate' => 1,
