@@ -6487,4 +6487,7 @@ div[class^="swatch-opt-"] {
   .post-page .post-comments-block .action:hover {
     background: #fb2015; }
 
+  .custom-page.text-center.map{
+    margin-top: 40px;
+  }
 /*# sourceMappingURL=modules.css.map */
