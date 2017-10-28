@@ -3,5 +3,8 @@
     <update handle="default_head_blocks"/>
     <body>
         <!-- Theme XML -->
+        <referenceBlock name="footer_links" remove="true"/>
+        <referenceBlock name="breadcrumbs" remove="true" />
+
     </body>
 </page>

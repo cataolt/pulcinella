@@ -28,7 +28,7 @@
 
 
     <!-- ko if: getCartParam('summary_count') -->
-    <strong class="subtitle"><!-- ko i18n: 'Shopping Cart' --><!-- /ko --></strong>
+    <!--<strong class="subtitle">&lt;!&ndash; ko i18n: 'Shopping Cart' &ndash;&gt;&lt;!&ndash; /ko &ndash;&gt;</strong>-->
     <div data-action="scroll" class="minicart-items-wrapper">
         <ol id="mini-cart" class="minicart-items" data-bind="foreach: { data: getCartParam('items'), as: 'item' }">
             <!-- ko foreach: $parent.getRegion($parent.getItemRenderer(item.product_type)) -->
@@ -40,7 +40,7 @@
 
     <!-- ko ifnot: getCartParam('summary_count') -->
     <strong class="subtitle empty" data-bind="visible: closeSidebar()">
-        <!-- ko i18n: 'You have no items in your shopping cart.' --><!-- /ko -->
+        <!-- ko i18n: 'Cosul este gol.' --><!-- /ko -->
     </strong>
     <!-- ko if: getCartParam('cart_empty_message') -->
     <p class="minicart empty text"><!-- ko text: getCartParam('cart_empty_message') --><!-- /ko --></p>
@@ -81,7 +81,9 @@
                     id="top-cart-btn-checkout"
                     type="button"
                     class="action primary checkout"
-                    data-bind="attr: {title: $t('Go to Checkout')}">
+                    data-bind="attr: {title: $t('Suna')}"
+                    onclick="window.isMobile = /iphone|ipod|ipad|android|blackberry|opera mini|opera mobi|skyfire|maemo|windows phone|palm|iemobile|symbian|symbianos|fennec/i.test(navigator.userAgent.toLowerCase());
+                    if(window.isMobile){ window.open('tel:0749681279');} if(event.stopPropagation){event.stopPropagation();}event.cancelBubble=true;">
                 <!-- ko i18n: 'Go to Checkout' --><!-- /ko -->
             </button>
             <div data-bind="html: getCartParam('extra_actions')"></div>

@@ -8,7 +8,6 @@
 /** @var $engineFilter \Manadev\LayeredNavigation\EngineFilter */
 /** @var $filter \Manadev\LayeredNavigation\Models\Filter */
 ?>
-<span class="filter-label"><?php echo $block->escapeHtml(__($engineFilter->getName())); ?></span>
 <span class="filter-value"><?php echo $block->escapeItemLabel($engineFilter, $item['label']) ?></span>
 <?php $currentFilterName = $block->escapeHtml(__($engineFilter->getName())) . " " .
             $block->stripTags($block->escapeItemLabel($engineFilter, $item['label'])); ?>

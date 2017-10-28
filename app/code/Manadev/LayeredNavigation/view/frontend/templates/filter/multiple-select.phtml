@@ -15,13 +15,7 @@
                 <a href="<?php echo $block->getRemoveItemUrl($engineFilter, $item) ?>"<?php echo $block->getRemoveItemLinkAttributes($engineFilter, $item) ?>>
                     <?php echo $block->escapeItemLabel($engineFilter, $item['label']) ?>
                     <?php if ($block->shouldDisplayProductCountOnLayer()): ?>
-                        <span class="count"><?php echo $item['count'] ?><span class="filter-count-label">
-                            <?php if ($item['count'] == 1):?>
-                                <?php echo __('item')?>
-                            <?php else : ?>
-                                <?php echo __('items') ?>
-                            <?php endif;?>
-                        </span></span>
+                        <span class="count"><?php echo $item['count'] ?></span>
                     <?php endif; ?>
                 </a>
             </li>
@@ -30,13 +24,7 @@
                 <a href="<?php echo $block->getAddItemUrl($engineFilter, $item) ?>"<?php echo $block->getAddItemLinkAttributes($engineFilter, $item) ?>>
                     <?php echo $block->escapeItemLabel($engineFilter, $item['label']) ?>
                     <?php if ($block->shouldDisplayProductCountOnLayer()): ?>
-                        <span class="count"><?php echo $item['count'] ?><span class="filter-count-label">
-                            <?php if ($item['count'] == 1):?>
-                                <?php echo __('item')?>
-                            <?php else : ?>
-                                <?php echo __('items') ?>
-                            <?php endif;?>
-                        </span></span>
+                        <span class="count"><?php echo $item['count'] ?></span>
                     <?php endif; ?>
                 </a>
             </li>
@@ -45,11 +33,6 @@
                 <?php echo $block->escapeItemLabel($engineFilter, $item['label']) ?>
                 <?php if ($block->shouldDisplayProductCountOnLayer()): ?>
                         <span class="count"><?php echo $item['count'] ?><span class="filter-count-label">
-                            <?php if ($item['count'] == 1):?>
-                                <?php echo __('item')?>
-                            <?php else : ?>
-                                <?php echo __('items') ?>
-                            <?php endif;?>
                         </span></span>
                 <?php endif; ?>
             </li>
