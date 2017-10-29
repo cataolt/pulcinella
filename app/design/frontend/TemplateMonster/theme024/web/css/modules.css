@@ -6490,4 +6490,14 @@ div[class^="swatch-opt-"] {
   .custom-page.text-center.map{
     margin-top: 40px;
   }
+
+  .menu-for-mobile {
+    display: none;
+  }
+@media (max-width: 768px) {
+  .menu-for-mobile {
+    display: block;
+  }
+}
+
 /*# sourceMappingURL=modules.css.map */

@@ -24,6 +24,10 @@
             <container name="header.bottom" as="header.bottom" label="Header bottom" htmlTag="div" htmlClass="header-bottom"/>
         </referenceContainer>
 
+        <referenceContainer name="header.bottom">
+            <block class="Magento\Framework\View\Element\Template" name="navbar.mobile" template="Magento_Theme::navbar_mobile.phtml"/>
+        </referenceContainer>
+
         <referenceBlock name="skip_to_content" remove="true" />
         <!-- Header. RD-Navbar END -->
 
@@ -165,9 +169,9 @@
         </referenceContainer>
 
         <!-- Page Preloader -->
-        <referenceContainer name="page.wrapper">
-            <block class="Magento\Framework\View\Element\Template" name="page.preloader" template="Magento_Theme::page_preloader.phtml" before="-"/>
-        </referenceContainer>
+        <!--<referenceContainer name="page.wrapper">-->
+            <!--<block class="Magento\Framework\View\Element\Template" name="page.preloader" template="Magento_Theme::page_preloader.phtml" before="-"/>-->
+        <!--</referenceContainer>-->
 
 
         <block type="cms/block" class="Magento\Cms\Block\Block" name="testimonials" before="-">
