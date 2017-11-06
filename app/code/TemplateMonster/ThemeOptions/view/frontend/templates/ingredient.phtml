@@ -1,0 +1,88 @@
+<?php
+$ingredient_list = $block->getAllIngredients();
+?>
+<div id="popup-mpdal" style="display:none;">
+    <form action="<?php echo $block->getFormAction() ?>" method="post" id="form-ingredient">
+        <input type="hidden" name="item_id" id="popup_item_id" />
+        <select id="ingredient_list" name="product_id_1">
+            <?php foreach ($ingredient_list as $key=>$value): ?>
+            <option value="<?php echo $key ?>"> <?php echo $value['name'] . ' ' . (int)$value['price'] . ' RON' ?></option>
+            <?php endforeach; ?>
+        </select>
+        <br/>
+    </form>
+</div>
+
+<script>
+    require(
+        [
+            'jquery',
+            'Magento_Ui/js/modal/modal',
+            'Magento_Customer/js/customer-data'
+        ],
+        function(
+            $,
+            modal,
+            customerData
+        ) {
+            var i = 1;
+            var options = {
+                type: 'popup',
+                responsive: true,
+                innerScroll: true,
+                title: 'Adauga ingredient',
+                buttons:
+                    [
+                        {
+                            text: $.mage.__('Mai adauga'),
+                            class: '',
+                            click: function () {
+                                var ingredient_list = $('#ingredient_list').html();
+                                i++;
+                                var html = '<select id=\'ingredient_list' + i + '\' name=\'product_id_' + i + '\'>' + ingredient_list + '</select><br id=\'br_'+ i + '\'/>';
+                                $( "#form-ingredient" ).append(html);
+                            }
+                        },
+                        {
+                            text: $.mage.__('Sterge'),
+                            class: '',
+                            click: function () {
+                                $('#ingredient_list' + i).remove();
+                                $('#br_' + i).remove();
+                                i--;
+                            }
+                        },
+                        {
+                            text: $.mage.__('Continua'),
+                            class: 'continue-button',
+                            click: function () {
+                                $(".continue-button").hide();
+                                var modal = this;
+                                $.ajax({
+                                    type: "POST",
+                                    url: '<?php echo $block->getFormAction() ?>',
+                                    data: $("#form-ingredient").serialize(), // serializes the form's elements.
+                                    success: function(data)
+                                    {
+                                        $(".continue-button").show();
+                                        modal.closeModal();
+                                        var sections = ['cart'];
+                                        customerData.invalidate(sections);
+                                        customerData.reload(sections, true);
+                                        $('[data-block="minicart"]').find('[data-role="dropdownDialog"]').dropdownDialog("open");
+                                    }
+                                });
+                                }
+                        }
+                    ]
+            };
+
+            var popup = modal(options, $('#popup-mpdal'));
+            $('body').on('click', '.add-ingredient', function(){
+                $("#popup_item_id").val($(event.target).data("cart-item"));
+                $("#popup-mpdal").modal("openModal");
+            });
+
+        }
+    );
+</script>

@@ -12,7 +12,17 @@
                 </ul>
             </div>
             <div class="rd-navbar-toggle" data-rd-navbar-toggle="">
-                <div class="header-add-info"><a href="tel:0732 487 680">0732 487 680</a></div>
+                <div class="header-add-info"><a id="phone-number" href="tel:0732 487 680">0732 487 680</a></div>
+                <script>
+                    require([
+                        'jquery'
+                    ], function($){
+                        $('#phone-number').on('click', function() {
+                            window.open('tel:0732487680','_self');
+                        });
+                    });
+                </script>
+
             </div>
         </div>
     </nav>

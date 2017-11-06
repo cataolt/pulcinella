@@ -4,6 +4,12 @@
         <css src="TemplateMonster_ThemeOptions::fonts/font-awesome-4.5.0/css/font-awesome.min.css" />
     </head>
     <body>
+        <referenceBlock name="head.additional">
+            <block class="Magento\Framework\View\Element\Template" name="googlet_tag_manager.head" as="googlet_tag_manager.head" before="-" template="TemplateMonster_ThemeOptions::google/head.phtml"/>
+        </referenceBlock>
+        <referenceContainer name="after.body.start">
+            <block class="Magento\Framework\View\Element\Template" name="googlet_tag_manager.body" as="googlet_tag_manager.body" before="-" template="TemplateMonster_ThemeOptions::google/body.phtml"/>
+        </referenceContainer>
         <referenceContainer name="header-wrapper">
             <block class="TemplateMonster\ThemeOptions\Block\SocialLinks" name="theme_options.social_links.header" after="top.search">
                 <action method="setPosition">
@@ -21,6 +27,10 @@
                 <block class="TemplateMonster\ThemeOptions\Block\SocialLinks\Renderer\Image" as="renderer.image" />
                 <block class="TemplateMonster\ThemeOptions\Block\SocialLinks\Renderer\Font" as="renderer.font" />
             </block>
+        </referenceContainer>
+
+        <referenceContainer name="before.body.end">
+            <block class="TemplateMonster\ThemeOptions\Block\Ingredients" name="ingredient_popup" as="ingredient_popup"/>
         </referenceContainer>
     </body>
 </page>

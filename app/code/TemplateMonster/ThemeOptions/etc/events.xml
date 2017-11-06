@@ -6,4 +6,7 @@
     <event name="layout_generate_blocks_after">
         <observer name="block_switcher" instance="TemplateMonster\ThemeOptions\Observer\BlockSwitcher" />
     </event>
+    <event name="sales_quote_remove_item">
+        <observer name="remove additional products" instance="TemplateMonster\ThemeOptions\Observer\RemoveProducts" />
+    </event>
 </config>

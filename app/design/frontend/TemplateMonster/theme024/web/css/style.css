@@ -58,7 +58,7 @@ body._has-modal-custom .modal-custom-overlay {
   right: 10px;
   top: 10px;
   overflow: hidden;
-  display: none; }
+  display: block; }
   .modal-custom .action-close span,
   .modal-popup .action-close span,
   .modal-slide .action-close span {
@@ -177,7 +177,7 @@ body._has-modal-custom .modal-custom-overlay {
       .ie10 .modal-popup._inner-scroll .modal-inner-wrap, .ie9 .modal-popup._inner-scroll .modal-inner-wrap {
         max-height: none; }
     .modal-popup._inner-scroll .modal-content {
-      overflow-y: auto; }
+      overflow-y: visible; }
   .modal-popup .modal-header,
   .modal-popup .modal-content,
   .modal-popup .modal-footer {
@@ -195,9 +195,9 @@ body._has-modal-custom .modal-custom-overlay {
     padding-bottom: 1rem;
     padding-top: 1rem; }
     .modal-popup .modal-footer button {
-      margin: 0 3px;
+      margin: 0 3px 5px;
       background: #fc5047;
-      padding: 7px 50px;
+      padding: 7px 40px;
       line-height: 40px;
       display: inline-block;
       -webkit-backface-visibility: hidden;
