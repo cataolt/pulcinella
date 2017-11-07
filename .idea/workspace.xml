@@ -14,122 +14,109 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="LICENSE.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/code/TheCodingTutor/Shell/LICENSE.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Console.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/code/TheCodingTutor/Shell/Controller/Shell/Console.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="routes.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/code/TheCodingTutor/Shell/etc/frontend/routes.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/test.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="17" lean-forward="false" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/code/TheCodingTutor/Shell/Controller/Index/Index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.phtml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/code/TheCodingTutor/Shell/view/frontend/templates/index/index.phtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="shell_index_index.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/code/TheCodingTutor/Shell/view/frontend/layout/shell_index_index.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <marker date="1507755274384" expanded="true" signature="822:868" ph="..." />
-                <marker date="1507755274384" expanded="true" signature="869:1128" ph="..." />
-                <marker date="1507755274384" expanded="false" signature="887:935" ph="..." />
-                <marker date="1507755274384" expanded="true" signature="936:1091" ph="..." />
-                <marker date="1507755274384" expanded="false" signature="957:1051" ph="..." />
-                <marker date="1507755274384" expanded="true" signature="1052:1080" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/etc/config.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2040">
-              <caret line="120" column="25" lean-forward="false" selection-start-line="120" selection-start-column="25" selection-end-line="120" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>0749</find>
+      <find>tel:0732487680</find>
+      <find>0732487680</find>
+      <find>header-add-info</find>
+      <find>add</find>
+      <find>0732</find>
+      <find>.custom-page.text-center.map</find>
+      <find>height: 569px;</find>
+      <find>rd-parallax-layer-holder</find>
+      <find>pizza-layer</find>
+      <find>.parallax-1 .parallax-text</find>
+      <find>.page-footer</find>
+      <find>&lt;/head&gt;</find>
+      <find>&lt;body&gt;</find>
+      <find>.page-footer .footer-col .footer-col-content</find>
+      <find>to your shopping cart</find>
+      <find>Please enter a date between</find>
+      <find>tap to close</find>
+      <find>You added %1 to your shopping cart</find>
+      <find>translate</find>
+      <find>you add</find>
+      <find>menu-for-mobile</find>
+      <find>.header-add-info a</find>
+      <find>.rd-navbar-fixed .rd-navbar-search-toggle</find>
+      <find>.rd-navbar-static .rd-navbar-search-toggle</find>
+      <find>Please wait</find>
+      <find>to your shopping</find>
+      <find>nu exista produse</find>
+      <find>Nu exista produse</find>
+      <find>Are you sure you would like to remove this item from the shopping cart?</find>
+    </findStrings>
+    <dirStrings>
+      <dir>D:\work\www\pulcinella\app\code\Manadev</dir>
+      <dir>D:\work\www\pulcinella\app\code\TemplateMonster</dir>
+      <dir>D:\work\www\pulcinella\app\design\frontend\TemplateMonster\theme024</dir>
+      <dir>D:\work\www\pulcinella\var</dir>
+      <dir>D:\work\www\pulcinella\vendor</dir>
+      <dir>D:\work\www\pulcinella\app\code</dir>
+      <dir>D:\work\www\pulcinella\app</dir>
+      <dir>D:\work\www\pulcinella</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/app/code/Manadev/LayeredNavigation/view/frontend/templates/applied-item/standard.phtml" />
+        <option value="$PROJECT_DIR$/app/code/Manadev/LayeredNavigation/view/frontend/templates/navigation.phtml" />
+        <option value="$PROJECT_DIR$/app/design/frontend/TemplateMonster/framework/Magento_LayeredNavigation/templates/layer/view.phtml" />
+        <option value="$PROJECT_DIR$/app/code/Manadev/LayeredNavigation/i18n/en_US.csv" />
+        <option value="$PROJECT_DIR$/app/code/Manadev/LayeredNavigation/view/frontend/templates/filter/multiple-select.phtml" />
+        <option value="$PROJECT_DIR$/app/design/frontend/TemplateMonster/framework/Magento_Catalog/templates/product/list/toolbar.phtml" />
+        <option value="$PROJECT_DIR$/app/code/TemplateMonster/AjaxCatalog/i18n/en_US.csv" />
+        <option value="$PROJECT_DIR$/app/design/frontend/TemplateMonster/theme024/Magento_Checkout/web/template/minicart/subtotal.html" />
+        <option value="$PROJECT_DIR$/app/design/frontend/TemplateMonster/theme024/Magento_Theme/layout/default.xml" />
+        <option value="$PROJECT_DIR$/var/cache/mage--1/mage---8f5_SYSTEM_STORES1" />
+        <option value="$PROJECT_DIR$/app/design/frontend/TemplateMonster/framework/Magento_Contact/layout/contact_index_index.xml" />
+        <option value="$PROJECT_DIR$/app/design/frontend/TemplateMonster/framework/Magento_Contact/templates/form.phtml" />
+        <option value="$PROJECT_DIR$/app/design/frontend/TemplateMonster/framework/Magento_Contact/templates/map.phtml" />
+        <option value="$PROJECT_DIR$/app/design/frontend/TemplateMonster/framework/Magento_Theme/layout/default.xml" />
+        <option value="$PROJECT_DIR$/app/design/frontend/TemplateMonster/theme024/Magento_Theme/templates/navbar_mobile.phtml" />
+        <option value="$PROJECT_DIR$/app/code/TemplateMonster/AjaxCompare/view/frontend/layout/default.xml" />
+        <option value="$PROJECT_DIR$/app/code/TemplateMonster/ThemeOptions/Block/Ingredient/PopUp.php" />
+        <option value="$PROJECT_DIR$/app/design/frontend/TemplateMonster/theme024/web/js/theme-child.js" />
+        <option value="$PROJECT_DIR$/app/code/TemplateMonster/AjaxCompare/view/frontend/web/js/compare-products-top-link.js" />
         <option value="$PROJECT_DIR$/app/etc/config.php" />
-        <option value="$PROJECT_DIR$/test/test.php" />
-        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/app/code/TemplateMonster/ThemeOptions/Block/Ingredient/Js.php" />
+        <option value="$PROJECT_DIR$/app/code/TemplateMonster/ThemeOptions/view/frontend/templates/js/main.phtml" />
+        <option value="$PROJECT_DIR$/app/code/TemplateMonster/ThemeOptions/view/frontend/requirejs-config.js" />
+        <option value="$PROJECT_DIR$/app/code/TemplateMonster/ThemeOptions/view/frontend/web/js/modal-form.js" />
+        <option value="$PROJECT_DIR$/app/design/frontend/TemplateMonster/theme024/web/css/source/components/_modals.scss" />
+        <option value="$PROJECT_DIR$/app/code/TemplateMonster/ThemeOptions/Block/Ingredients.php" />
+        <option value="$PROJECT_DIR$/app/code/TemplateMonster/ThemeOptions/etc/frontend/sections.xml" />
+        <option value="$PROJECT_DIR$/app/code/TemplateMonster/ThemeOptions/view/frontend/templates/ingredient.phtml" />
+        <option value="$PROJECT_DIR$/app/code/TemplateMonster/ThemeOptions/Controller/Ingredients/Index.php" />
+        <option value="$PROJECT_DIR$/app/code/TemplateMonster/ThemeOptions/Plugin/Quote/Item.php" />
+        <option value="$PROJECT_DIR$/app/code/TemplateMonster/ThemeOptions/etc/events.xml" />
+        <option value="$PROJECT_DIR$/app/code/TemplateMonster/ThemeOptions/Observer/RemoveProducts.php" />
+        <option value="$PROJECT_DIR$/app/code/TemplateMonster/AjaxCompare/view/frontend/web/css/modal-compare.css" />
+        <option value="$PROJECT_DIR$/app/code/TemplateMonster/ThemeOptions/etc/di.xml" />
+        <option value="$PROJECT_DIR$/app/design/frontend/TemplateMonster/theme024/Magento_Checkout/web/template/minicart/item/default.html" />
+        <option value="$PROJECT_DIR$/app/code/TemplateMonster/ThemeOptions/Plugin/DefaultItem.php" />
+        <option value="$PROJECT_DIR$/app/code/TemplateMonster/ThemeOptions/view/frontend/templates/google/body.phtml" />
+        <option value="$PROJECT_DIR$/app/code/TemplateMonster/ThemeOptions/view/frontend/layout/default.xml" />
+        <option value="$PROJECT_DIR$/app/design/frontend/TemplateMonster/framework/TemplateMonster_Megamenu/templates/html/topmenu.phtml" />
+        <option value="$PROJECT_DIR$/app/code/TemplateMonster/ThemeOptions/view/frontend/templates/google/head.phtml" />
+        <option value="$PROJECT_DIR$/app/design/frontend/TemplateMonster/framework/Magento_Checkout/web/template/minicart/content.html" />
+        <option value="$PROJECT_DIR$/app/design/frontend/TemplateMonster/theme024/Magento_Checkout/web/template/minicart/content.html" />
+        <option value="$PROJECT_DIR$/app/design/frontend/TemplateMonster/framework/i18n/en_US.csv" />
+        <option value="$PROJECT_DIR$/app/i18n/TemplateMonster/en_US.csv" />
+        <option value="$PROJECT_DIR$/app/design/frontend/TemplateMonster/theme024/web/css/modules.css" />
+        <option value="$PROJECT_DIR$/app/design/frontend/TemplateMonster/theme024/web/css/style.css" />
+        <option value="$PROJECT_DIR$/app/code/TemplateMonster/ThemeOptions/i18n.csv" />
+        <option value="$PROJECT_DIR$/app/design/frontend/TemplateMonster/theme024/i18n/en_US.csv" />
+        <option value="$PROJECT_DIR$/pub/static/deployed_version.txt" />
+        <option value="$PROJECT_DIR$/app/code/TemplateMonster/ThemeOptions/i18n/en_US.csv" />
+        <option value="$PROJECT_DIR$/pub/static/frontend/TemplateMonster/theme024/en_US/i18n/en_US.csv" />
       </list>
     </option>
   </component>
@@ -144,10 +131,9 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="2" />
-    <option name="width" value="1689" />
-    <option name="height" value="1024" />
+    <option name="x" value="13" />
+    <option name="width" value="1629" />
+    <option name="height" value="1026" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -164,7 +150,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -177,9 +162,56 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pulcinella" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pulcinella" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="var" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pulcinella" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pulcinella" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pub" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pulcinella" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pulcinella" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pub" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -188,8 +220,19 @@
     <property name="js.eslint.eslintPackage" value="" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\work\www\pulcinella\app\code\TemplateMonster\ThemeOptions\view\frontend" />
+      <recent name="D:\work\www\pulcinella\app\code\Manadev\LayeredNavigation\view\frontend\templates" />
+      <recent name="D:\work\www\pulcinella\app\design\frontend\TemplateMonster\theme024" />
+      <recent name="D:\work\www\pulcinella\pub\static\frontend\TemplateMonster\theme024\en_US\images\media" />
+      <recent name="D:\work\www\pulcinella" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\work\www\pulcinella\app\code\TheCodingTutor\Shell" />
+      <recent name="D:\work\www\pulcinella\lib\web\jquery" />
+      <recent name="D:\work\www\pulcinella\app\code\TemplateMonster\ThemeOptions\view\frontend\templates" />
+      <recent name="D:\work\www\pulcinella\app\design\frontend\TemplateMonster\theme024\TemplateMonster_AjaxCompare\web\js" />
+      <recent name="D:\work\www\pulcinella\var\view_preprocessed\html\app\design\frontend\TemplateMonster\theme024\TemplateMonster_ThemeOptions\templates" />
+      <recent name="D:\work\www\pulcinella\var\view_preprocessed\html\app\design\frontend\TemplateMonster\theme024\TemplateMonster_ThemeOptions" />
     </key>
   </component>
   <component name="RunManager">
@@ -264,24 +307,37 @@
       <option name="presentableId" value="Default" />
       <updated>1507844860765</updated>
       <workItem from="1507844862088" duration="3984000" />
-      <workItem from="1507922110453" duration="237000" />
+      <workItem from="1507922110453" duration="50918000" />
+      <workItem from="1508443578027" duration="20280000" />
+      <workItem from="1508627113498" duration="22545000" />
+      <workItem from="1509052808437" duration="7072000" />
+      <workItem from="1509130176383" duration="14434000" />
+      <workItem from="1509197717739" duration="441000" />
+      <workItem from="1509198633761" duration="10220000" />
+      <workItem from="1509288484782" duration="60075000" />
+      <workItem from="1509477416623" duration="611000" />
+      <workItem from="1509564806385" duration="25815000" />
+      <workItem from="1510000622977" duration="5781000" />
+      <workItem from="1510007632574" duration="186000" />
+      <workItem from="1510008529639" duration="4739000" />
+      <workItem from="1510080773480" duration="31000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4221000" />
+    <option name="totallyTimeSpent" value="227132000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="2" width="1689" height="1024" extended-state="0" />
+    <frame x="13" y="0" width="1629" height="1026" extended-state="1" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24985057" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30378178" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3991276" sideWeight="0.51394916" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -289,13 +345,16 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3991276" sideWeight="0.48605084" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.csv" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -305,145 +364,308 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/code/TheCodingTutor/Shell/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/app/code/TemplateMonster/ThemeOptions/etc/frontend/di.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="31" lean-forward="false" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/TheCodingTutor/Shell/LICENSE.txt">
+    <entry file="file://$PROJECT_DIR$/app/code/TemplateMonster/ThemeOptions/Plugin/Catalog/Block/Product/AbstractProductPlugin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state relative-caret-position="-274">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/TheCodingTutor/Shell/Controller/Shell/Console.php">
+    <entry file="file://$PROJECT_DIR$/app/code/TemplateMonster/ThemeOptions/Observer/RemoveProducts.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="561">
+          <caret line="33" column="36" lean-forward="false" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/TheCodingTutor/Shell/etc/frontend/routes.xml">
+    <entry file="file://$PROJECT_DIR$/app/code/TemplateMonster/NewsletterPopup/view/frontend/web/css/module.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="138">
+          <caret line="65" column="9" lean-forward="false" selection-start-line="65" selection-start-column="9" selection-end-line="65" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/test.php">
+    <entry file="file://$PROJECT_DIR$/app/code/TemplateMonster/AjaxCompare/view/frontend/web/css/modal-compare.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="17" lean-forward="false" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
-          <folding />
+        <state relative-caret-position="34">
+          <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/TheCodingTutor/Shell/Controller/Index/Index.php">
+    <entry file="file://$PROJECT_DIR$/pub/static/frontend/TemplateMonster/theme024/en_US/Magento_Checkout/template/minicart/item/default.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="226">
+          <caret line="59" column="125" lean-forward="false" selection-start-line="59" selection-start-column="107" selection-end-line="59" selection-end-column="125" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/TheCodingTutor/Shell/view/frontend/templates/index/index.phtml">
+    <entry file="file://$PROJECT_DIR$/pub/static/frontend/TemplateMonster/theme024/en_US/js/bundle/bundle5.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="-24289">
+          <caret line="2" column="173981" lean-forward="false" selection-start-line="2" selection-start-column="173981" selection-end-line="2" selection-end-column="173981" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/TheCodingTutor/Shell/view/frontend/layout/shell_index_index.xml">
+    <entry file="file://$PROJECT_DIR$/pub/static/frontend/Magento/blank/en_US/js/bundle/bundle4.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="183">
+          <caret line="2" column="109053" lean-forward="false" selection-start-line="2" selection-start-column="109053" selection-end-line="2" selection-end-column="109053" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
+    <entry file="file://$PROJECT_DIR$/vendor/magento/module-checkout/Test/Unit/CustomerData/DefaultItemTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1507755274384" expanded="true" signature="822:868" ph="..." />
-            <marker date="1507755274384" expanded="true" signature="869:1128" ph="..." />
-            <marker date="1507755274384" expanded="false" signature="887:935" ph="..." />
-            <marker date="1507755274384" expanded="true" signature="936:1091" ph="..." />
-            <marker date="1507755274384" expanded="false" signature="957:1051" ph="..." />
-            <marker date="1507755274384" expanded="true" signature="1052:1080" ph="..." />
-          </folding>
+        <state relative-caret-position="313">
+          <caret line="85" column="34" lean-forward="false" selection-start-line="85" selection-start-column="34" selection-end-line="85" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/etc/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2040">
-          <caret line="120" column="25" lean-forward="false" selection-start-line="120" selection-start-column="25" selection-end-line="120" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/TheCodingTutor/Shell/etc/module.xml">
+    <entry file="file://$PROJECT_DIR$/vendor/magento/module-checkout/CustomerData/AbstractItem.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <caret line="13" column="15" lean-forward="false" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/TheCodingTutor/Shell/composer.json">
+    <entry file="file://$PROJECT_DIR$/vendor/magento/module-checkout/CustomerData/ItemInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="13" column="10" lean-forward="false" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/TemplateMonster/ThemeOptions/view/frontend/templates/ingredient.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/TemplateMonster/framework/Magento_Theme/layout/default.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="53" column="76" lean-forward="false" selection-start-line="53" selection-start-column="76" selection-end-line="53" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/TemplateMonster/ThemeOptions/view/frontend/web/js/modal-form.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="17" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/TemplateMonster/ThemeOptions/etc/di.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="89" column="58" lean-forward="false" selection-start-line="89" selection-start-column="16" selection-end-line="89" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/magento/module-checkout/CustomerData/DefaultItem.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="736">
+          <caret line="95" column="23" lean-forward="false" selection-start-line="95" selection-start-column="23" selection-end-line="95" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/TemplateMonster/theme024/Magento_Checkout/web/template/minicart/item/default.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-374">
+          <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/TemplateMonster/ThemeOptions/Plugin/DefaultItem.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="1" lean-forward="false" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pub/media/parallax/images/textlayer.png" />
+    <entry file="file://$PROJECT_DIR$/app/code/TemplateMonster/ThemeOptions/view/frontend/templates/dynamic-styles.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/setup/view/layout/layout.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1241">
+          <caret line="76" column="0" lean-forward="false" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/TemplateMonster/Parallax/view/frontend/layout/parallax_demo_index.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="7" lean-forward="false" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/Manadev/Core/view/adminhtml/layout/default.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="4" lean-forward="false" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/TemplateMonster/ThemeOptions/Block/Ingredients.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="43" lean-forward="false" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/TemplateMonster/Parallax/view/frontend/layout/default.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/TheCodingTutor/Shell/registration.php">
+    <entry file="file://$PROJECT_DIR$/app/code/TemplateMonster/AjaxCompare/view/frontend/layout/default.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="204">
+          <caret line="12" column="58" lean-forward="false" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="58" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/TheCodingTutor/Shell/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/TheCodingTutor/Shell/LICENSE.txt">
+    <entry file="file://$PROJECT_DIR$/app/code/TemplateMonster/ThemeOptions/view/frontend/layout/default.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="289">
+          <caret line="17" column="115" lean-forward="false" selection-start-line="17" selection-start-column="115" selection-end-line="17" selection-end-column="115" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/test.php">
+    <entry file="file://$PROJECT_DIR$/app/code/TemplateMonster/ThemeOptions/view/frontend/templates/google/body.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="42" lean-forward="false" selection-start-line="3" selection-start-column="42" selection-end-line="3" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/TemplateMonster/ThemeOptions/view/frontend/templates/google/head.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="49" lean-forward="false" selection-start-line="4" selection-start-column="49" selection-end-line="4" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/TemplateMonster/framework/TemplateMonster_Megamenu/templates/html/topmenu.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="76" lean-forward="false" selection-start-line="14" selection-start-column="76" selection-end-line="14" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/TemplateMonster/framework/Magento_Checkout/web/template/minicart/content.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1632">
+          <caret line="96" column="29" lean-forward="false" selection-start-line="96" selection-start-column="29" selection-end-line="104" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/TemplateMonster/theme024/Magento_Checkout/web/template/minicart/content.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1564">
+          <caret line="92" column="44" lean-forward="false" selection-start-line="92" selection-start-column="44" selection-end-line="92" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/TemplateMonster/framework/i18n/en_US.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
-          <caret line="1" column="17" lean-forward="false" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pub/static/frontend/Magento/blank/en_US/i18n/en_US.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/etc/di.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11424">
+          <caret line="672" column="43" lean-forward="false" selection-start-line="672" selection-start-column="34" selection-end-line="672" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/magento/module-checkout/view/frontend/web/js/view/minicart.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1207">
+          <caret line="71" column="88" lean-forward="false" selection-start-line="71" selection-start-column="17" selection-end-line="71" selection-end-column="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/magento/language-en_us/language.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/i18n/TemplateMonster/en_US.csv" />
+    <entry file="file://$PROJECT_DIR$/pub/static/frontend/Magento/luma/en_US/i18n/en_US.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/TemplateMonster/ThemeOptions/i18n.csv" />
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/TemplateMonster/theme024/i18n/en_US.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="60" column="31" lean-forward="false" selection-start-line="60" selection-start-column="31" selection-end-line="60" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/TheCodingTutor/Shell/etc/frontend/routes.xml">
+    <entry file="file://$PROJECT_DIR$/vendor/magento/module-bundle/i18n/en_US.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="38" column="25" lean-forward="false" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/magento/module-checkout/i18n/en_US.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pub/static/frontend/TemplateMonster/framework/en_US/Magento_Checkout/js/view/minicart.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="71" column="17" lean-forward="false" selection-start-line="71" selection-start-column="17" selection-end-line="71" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/TemplateMonster/theme024/web/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76568">
+          <caret line="4504" column="46" lean-forward="false" selection-start-line="4504" selection-start-column="46" selection-end-line="4504" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pub/static/deployed_version.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -451,65 +673,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/TheCodingTutor/Shell/Controller/Shell/Console.php">
+    <entry file="file://$PROJECT_DIR$/app/code/TemplateMonster/ThemeOptions/i18n/en_US.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="3519">
+          <caret line="207" column="50" lean-forward="false" selection-start-line="207" selection-start-column="50" selection-end-line="207" selection-end-column="67" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/TheCodingTutor/Shell/view/frontend/templates/index/index.phtml">
+    <entry file="file://$PROJECT_DIR$/pub/static/frontend/TemplateMonster/theme024/en_US/i18n/en_US.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="384">
+          <caret line="28" column="68" lean-forward="false" selection-start-line="28" selection-start-column="68" selection-end-line="28" selection-end-column="68" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/TheCodingTutor/Shell/view/frontend/layout/shell_index_index.xml">
+    <entry file="file://$PROJECT_DIR$/var/cache/mage--0/mage---8f5_TRANSLATE_EN_US_FRONTEND_ENGLISH_5_TEMPLATEMONSTER_NEWSLETTERPOPUP">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="17">
+          <caret line="1" column="2119" lean-forward="false" selection-start-line="1" selection-start-column="2011" selection-end-line="1" selection-end-column="2119" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
+    <entry file="file://$PROJECT_DIR$/pub/static/frontend/Magento/blank/en_US/js/bundle/bundle0.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1507755274384" expanded="true" signature="822:868" ph="..." />
-            <marker date="1507755274384" expanded="true" signature="869:1128" ph="..." />
-            <marker date="1507755274384" expanded="false" signature="887:935" ph="..." />
-            <marker date="1507755274384" expanded="true" signature="936:1091" ph="..." />
-            <marker date="1507755274384" expanded="false" signature="957:1051" ph="..." />
-            <marker date="1507755274384" expanded="true" signature="1052:1080" ph="..." />
-          </folding>
+        <state relative-caret-position="183">
+          <caret line="2" column="689027" lean-forward="false" selection-start-line="2" selection-start-column="689027" selection-end-line="2" selection-end-column="689027" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/etc/config.php">
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/TemplateMonster/theme024/web/css/modules.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2040">
-          <caret line="120" column="25" lean-forward="false" selection-start-line="120" selection-start-column="25" selection-end-line="120" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/TheCodingTutor/Shell/Controller/Index/Index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        <state relative-caret-position="17">
+          <caret line="3410" column="0" lean-forward="false" selection-start-line="3410" selection-start-column="0" selection-end-line="3410" selection-end-column="44" />
           <folding />
         </state>
       </provider>

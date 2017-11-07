@@ -1316,7 +1316,7 @@ table.data-table {
   cursor: pointer;
   padding-bottom: 1.4rem; }
   .message:not(.notice):not(.info) > div:after {
-    content: 'Tap to close';
+    content: 'Inchide';
     position: absolute;
     bottom: 7px;
     right: 0;
@@ -4492,7 +4492,7 @@ body {
 .panel.page-header__panel {
   background-color: #ffffff; }
 
-@media (max-width: 768px) {
+@media (max-width: 668px) {
   .header-add-info a {
     font-size: 25px;
     font-weight: 900;
@@ -4500,6 +4500,11 @@ body {
   }
   .header-add-info a:hover {
     color: #ffffff;  }
+}
+@media (max-width: 768px) {
+  .rd-navbar-static .rd-navbar-search-toggle {
+    margin-top: -0px;
+  }
 }
 
 @media all and (max-width: 490px) {
