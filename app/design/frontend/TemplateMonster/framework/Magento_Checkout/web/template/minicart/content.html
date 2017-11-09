@@ -16,6 +16,13 @@
     </strong>
 </div>
 
+<div class="block-title toggle">
+    <strong>
+        <span class="text"><!-- ko i18n: 'Sumar comanda' --><!-- /ko --></span>
+        <!-- ko text: getCartParam('order_summary') --><!-- /ko -->
+    </strong>
+</div>
+
 <div class="block-content">
     <button type="button"
             id="btn-minicart-close"
@@ -85,6 +92,14 @@
         </div>
     </div>
     <!-- /ko -->
+
+    <div class="toggle">
+        <!-- ko foreach: { data: getCartParam('order_summary'), as: 'product' } -->
+        <strong>
+            <span class="text"><!-- ko text: product --><!-- /ko --></span><br>
+        </strong>
+        <!-- /ko -->
+    </div>
 
     <!-- ko if: getCartParam('possible_onepage_checkout') -->
     <div class="actions">

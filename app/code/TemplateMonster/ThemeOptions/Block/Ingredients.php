@@ -60,6 +60,7 @@ class Ingredients extends Template
         $collection = $this->productCollectionFactory->create();
         $collection->addAttributeToSelect('*');
         $collection->addAttributeToFilter('attribute_set_id', $attributeSetId);
+        $collection->addAttributeToSort('weight');
 
         $result = array();
 

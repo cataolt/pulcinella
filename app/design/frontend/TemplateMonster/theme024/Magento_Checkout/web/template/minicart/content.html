@@ -74,6 +74,14 @@
     <!-- ko if: getCartParam('summary_count') -->
     <!-- /ko -->
 
+    <div class="toggle">
+        <!-- ko foreach: { data: getCartParam('order_summary'), as: 'product' } -->
+        <strong>
+            <span class="text"><!-- ko text: product --><!-- /ko --></span><br/>
+        </strong>
+        <!-- /ko -->
+    </div>
+
     <!-- ko if: getCartParam('possible_onepage_checkout') -->
     <div class="actions">
         <div class="primary">

@@ -3906,7 +3906,7 @@ body.ajax-loading #search.input-text:focus {
   position: fixed;
   top: -100%;
   right: 10px;
-  z-index: 10;
+  z-index: 100;
   opacity: 0; }
 .rd-navbar-fixed .minicart-wrapper.active .rd-navbar-cart {
   opacity: 1;
@@ -6497,7 +6497,7 @@ div[class^="swatch-opt-"] {
   .menu-for-mobile {
     display: none;
   }
-@media (max-width: 668px) {
+@media (max-width: 740px) {
   .menu-for-mobile {
     display: block;
   }

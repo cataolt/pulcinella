@@ -90,4 +90,8 @@
     <type name="Magento\Checkout\CustomerData\AbstractItem">
         <plugin name="AddAttPlug" type="TemplateMonster\ThemeOptions\Plugin\DefaultItem" disabled="false" sortOrder="10"/>
     </type>
+
+    <type name="Magento\Checkout\CustomerData\Cart">
+        <plugin name="AddOrderSummary" type="TemplateMonster\ThemeOptions\Plugin\OrderSummary" disabled="false" sortOrder="10"/>
+    </type>
 </config>

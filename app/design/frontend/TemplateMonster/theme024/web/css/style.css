@@ -4492,7 +4492,7 @@ body {
 .panel.page-header__panel {
   background-color: #ffffff; }
 
-@media (max-width: 668px) {
+@media (max-width: 740px) {
   .header-add-info a {
     font-size: 25px;
     font-weight: 900;
@@ -4507,7 +4507,7 @@ body {
   }
 }
 
-@media all and (max-width: 490px) {
+@media all and (max-width: 740px) {
   .h-left .header-add-info {
     display: none;
   }
@@ -4563,8 +4563,20 @@ body {
     max-width: none;
     position: absolute;
   }
+
+  .modal-popup.confirm .modal-inner-wrap{
+    left: 2px;
+    margin-left: 10px;
+    width: 330px;
+  }
+
 }
 
+@media all and (max-width: 740px) and (orientation: landscape){
+  .parallax-text2 {
+    font-size: 4.5vw;
+  }
+}
 /* END Main Theme Settings  */
 /* Desktop */
 /* END Desktop */
