@@ -5,8 +5,10 @@ $ingredient_list = $block->getAllIngredients();
     <form action="<?php echo $block->getFormAction() ?>" method="post" id="form-ingredient">
         <input type="hidden" name="item_id" id="popup_item_id" />
         <select id="ingredient_list" name="product_id_1">
+            <?php $i = 0; ?>
             <?php foreach ($ingredient_list as $key=>$value): ?>
-            <option value="<?php echo $key ?>"> <?php echo $value['name'] . ' ' . (int)$value['price'] . ' RON' ?></option>
+                <option <?php echo ($i===0)?'selected':''; ?> value="<?php echo $key ?>"> <?php echo $value['name'] . ' ' . (int)$value['price'] . ' RON' ?></option>
+                <?php $i++; ?>
             <?php endforeach; ?>
         </select>
         <br/>
@@ -64,12 +66,14 @@ $ingredient_list = $block->getAllIngredients();
                                     data: $("#form-ingredient").serialize(), // serializes the form's elements.
                                     success: function(data)
                                     {
-                                        $(".continue-button").show();
-                                        modal.closeModal();
-                                        var sections = ['cart'];
-                                        customerData.invalidate(sections);
-                                        customerData.reload(sections, true);
-                                        $('[data-block="minicart"]').find('[data-role="dropdownDialog"]').dropdownDialog("open");
+                                        window.setTimeout(function(){
+                                            $(".continue-button").show();
+                                            var sections = ['cart,messages'];
+                                            customerData.invalidate(sections);
+                                            customerData.reload(sections, true);
+                                            modal.closeModal();
+                                            $('[data-block="minicart"]').find('[data-role="dropdownDialog"]').dropdownDialog("open");
+                                        }, 5000);
                                     }
                                 });
                                 }

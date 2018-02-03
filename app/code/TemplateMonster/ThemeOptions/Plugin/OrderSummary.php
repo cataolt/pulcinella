@@ -55,7 +55,7 @@ class OrderSummary
 
                     foreach ($productsArray as $key=>$value){
                         $ingredient = $this->_productRepository->getById($value);
-                        if(!in_array($ingredient->getId(), $extra)){
+                        if(!array_key_exists($ingredient->getId(), $extra)){
                             $extra[$ingredient->getId()] = array(
                                 'name' => $ingredient->getName(),
                                 'qty' => 1
@@ -78,11 +78,11 @@ class OrderSummary
                     } else {
                         $extraText = ' ';
                         foreach ($extra as $key=>$value){
-                            $extraText = $extraText . $value['qty'] . ' X ' .  $value['name'] . ' ';
+                            $extraText = $extraText . $value['qty'] . 'X ' .  $value['name'] . ' ';
                         }
 
                         $summary[$id] = array(
-                            'name' => $item->getName() . ' extra' . $extraText,
+                            'name' => $item->getName() . ' extra:' . $extraText,
                             'qty' => 1
                         );
                     }

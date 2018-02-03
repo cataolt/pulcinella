@@ -1,0 +1,33 @@
+<?php if($this->isEnabled()): ?>
+    <div id="closed-mpdal">
+        <?php echo $this->getContent(); ?>
+    </div>
+<?php endif; ?>
+
+<script>
+    require(
+        [
+            'jquery',
+            'Magento_Ui/js/modal/modal',
+            'Magento_Customer/js/customer-data'
+        ],
+        function(
+            $,
+            modal,
+            customerData
+        ) {
+            var i = 1;
+            var options = {
+                type: 'popup',
+                responsive: true,
+                innerScroll: true,
+                title: '<?php echo $this->getTitle() ?>'
+            };
+
+            var popup = modal(options, $('#closed-mpdal'));
+            $( window ).load(function() {
+                $("#closed-mpdal").modal("openModal");
+            });
+        }
+    );
+</script>

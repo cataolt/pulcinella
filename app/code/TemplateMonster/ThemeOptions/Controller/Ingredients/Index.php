@@ -104,20 +104,6 @@ class Index extends Action
                         );
                     }
                 }
-                $quote = $this->_cart->getQuote();
-                $quoteItem =  $quote->getItemById($quoteId);
-
-//                $quoteItem->removeOption('additional_options');
-                $quoteItem->addOption(array(
-                    'code' => 'additional_options',
-                    'value' => serialize($ingredients)
-                ));
-//                $quoteItem->re
-//                var_dump($this->configurationHelper->getCustomOptions($quoteItem));die();
-
-                $quoteItem->saveItemOptions();
-                $quoteItem->setAdditionalData(serialize($requestParams));
-                $quoteItem->save();
 
                 foreach ($products as $ingredient){
                     $params = array(
@@ -126,8 +112,21 @@ class Index extends Action
                     );
                     $_product = $this->_productRepository->getById($ingredient);
                     $this->_cart->addProduct($_product, $params);
-                    $this->_cart->save();
                 }
+                $this->_cart->save();
+
+
+                $quote = $this->_cart->getQuote();
+                $quoteItem =  $quote->getItemById($quoteId);
+
+                $quoteItem->addOption(array(
+                    'code' => 'additional_options',
+                    'value' => serialize($ingredients)
+                ));
+
+                $quoteItem->saveItemOptions();
+                $quoteItem->setAdditionalData(serialize($requestParams));
+                $quoteItem->save();
 
             } else {
                 $result['success'] = false;

@@ -31,6 +31,7 @@
 
         <referenceContainer name="before.body.end">
             <block class="TemplateMonster\ThemeOptions\Block\Ingredients" name="ingredient_popup" as="ingredient_popup"/>
+            <block class="TemplateMonster\ThemeOptions\Block\Closed" name="closed_popup" />
         </referenceContainer>
     </body>
 </page>
