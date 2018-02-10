@@ -4238,7 +4238,8 @@ body.ajax-loading #search.input-text:focus {
         #shopping-cart-table .cart.item .col.subtotal {
           font-size: 16px; } }
     #shopping-cart-table .cart.item .product-item-details {
-      max-width: 50%; }
+      max-width: 50%;
+      text-align: right;}
       @media (max-width: 1199px) {
         #shopping-cart-table .cart.item .product-item-details {
           -webkit-flex-basis: 100%;

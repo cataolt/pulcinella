@@ -1,0 +1,15 @@
+<?php
+/**
+ * Copyright © 2013-2017 Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+/**  @var $block \Magento\Checkout\Block\Cart */
+?>
+<div class="cart-empty">
+    <?php echo $block->getChildHtml('checkout_cart_empty_widget'); ?>
+    <p><?php /* @escapeNotVerified */ echo __('Nu exista produse in cos.') ?></p>
+    <p><?php /* @escapeNotVerified */ echo __('Apasa <a href="%1">aici</a> pentru a continua cumparaturile.',
+            $block->escapeUrl($block->getContinueShoppingUrl())) ?></p>
+    <?php echo $block->getChildHtml('shopping.cart.table.after'); ?>
+</div>

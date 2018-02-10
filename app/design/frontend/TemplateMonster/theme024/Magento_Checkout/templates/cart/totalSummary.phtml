@@ -1,0 +1,13 @@
+<?php
+/**  @var $block \TemplateMonster\ThemeOptions\Block\TotalProductsSummary */
+
+$products = $block->getSummary()
+?>
+<div class = 'summary-products'>
+    <?php foreach ($products as $prod): ?>
+        <div>
+            <?php echo $prod; ?>
+        </div>
+    <?php endforeach; ?>
+</div>
+

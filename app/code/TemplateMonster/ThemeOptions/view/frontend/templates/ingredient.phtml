@@ -67,12 +67,18 @@ $ingredient_list = $block->getAllIngredients();
                                     success: function(data)
                                     {
                                         window.setTimeout(function(){
-                                            $(".continue-button").show();
+                                            if (typeof refresh !== 'undefined') {
+                                                $(".continue-button").show();
+                                            }
                                             var sections = ['cart,messages'];
                                             customerData.invalidate(sections);
                                             customerData.reload(sections, true);
-                                            modal.closeModal();
-                                            $('[data-block="minicart"]').find('[data-role="dropdownDialog"]').dropdownDialog("open");
+                                            if (typeof refresh !== 'undefined') {
+                                                location = location;
+                                            } else {
+                                                modal.closeModal();
+                                                $('[data-block="minicart"]').find('[data-role="dropdownDialog"]').dropdownDialog("open");
+                                            }
                                         }, 5000);
                                     }
                                 });

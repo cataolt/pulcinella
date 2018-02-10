@@ -14,7 +14,7 @@
                     <referenceContainer name="cart.summary" htmlClass="cart-summary" before="-">
                         <block class="Magento\Framework\View\Element\Template" name="checkout.cart.summary.title" before="-" template="Magento_Theme::text.phtml">
                             <arguments>
-                                <argument translate="true" name="text" xsi:type="string">Summary</argument>
+                                <argument translate="true" name="text" xsi:type="string">Sumar</argument>
                                 <argument name="tag" xsi:type="string">strong</argument>
                                 <argument name="css_class" xsi:type="string">summary title</argument>
                             </arguments>

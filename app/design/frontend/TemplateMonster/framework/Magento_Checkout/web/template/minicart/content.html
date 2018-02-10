@@ -108,17 +108,8 @@
                     id="top-cart-btn-checkout"
                     type="button"
                     class="action primary checkout"
-                    data-bind="attr: {title: $t('Suna')}"
-                    onclick="
-                    window.isMobile = /iphone|ipod|ipad|android|blackberry|opera mini|opera mobi|skyfire|maemo|windows phone|palm|iemobile|symbian|symbianos|fennec/i.test(navigator.userAgent.toLowerCase());
-                    if(window.isMobile){
-                        window.open('tel:0732487680', '_self');
-                    }
-                    if(event.stopPropagation){
-                        event.stopPropagation();
-                    }
-                    event.cancelBubble=true;">
-                <!-- ko i18n: 'Go to Checkout' --><!-- /ko -->
+                    data-bind="attr: {title: $t('Comanda')}">>
+                <!-- ko i18n: 'Comanda' --><!-- /ko -->
             </button>
             <div data-bind="html: getCartParam('extra_actions')"></div>
         </div>

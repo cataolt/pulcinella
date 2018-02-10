@@ -34,7 +34,7 @@ Close,Close
 "Cosul este gol.","Cosul este gol."
 item,item
 items,items
-"Go to Checkout","Go to Checkout"
+"Go to Checkout","Comanda"
 "See Details","See Details"
 "Options Details","Options Details"
 Qty,Qty
@@ -57,5 +57,6 @@ Login,Login
 "Forgot Your Password?","Forgot Your Password?"
 "Can not finish request.Try again.","Can not finish request.Try again."
 "Information",""
-"Go to Checkout","Suna"
+"Go to Checkout","Comanda"
 "Cart Subtotal","Estimare Cost"
+"Shopping Cart","Cos de cumparaturi"

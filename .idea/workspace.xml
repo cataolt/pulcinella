@@ -15,98 +15,51 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="popup.phtml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/code/TemplateMonster/ThemeOptions/view/frontend/templates/popup.phtml">
+      <file leaf-file-name="edit.phtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/design/frontend/TemplateMonster/theme024/Magento_Checkout/templates/cart/item/renderer/actions/edit.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="50" lean-forward="false" selection-start-line="23" selection-start-column="50" selection-end-line="23" selection-end-column="50" />
+            <state relative-caret-position="191">
+              <caret line="21" column="52" lean-forward="false" selection-start-line="21" selection-start-column="52" selection-end-line="21" selection-end-column="52" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="requirejs-config.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/code/TemplateMonster/NewsletterPopup/view/frontend/requirejs-config.js">
+      <file leaf-file-name="remove.phtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/magento/module-checkout/view/frontend/templates/cart/item/renderer/actions/remove.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="2" />
+            <state relative-caret-position="255">
+              <caret line="18" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Closed.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/code/TemplateMonster/ThemeOptions/Block/Closed.php">
+      <file leaf-file-name="remove.phtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/design/frontend/TemplateMonster/theme024/Magento_Checkout/templates/cart/item/renderer/actions/remove.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1003">
-              <caret line="60" column="39" lean-forward="false" selection-start-line="60" selection-start-column="39" selection-end-line="60" selection-end-column="39" />
-              <folding>
-                <element signature="e#54#116#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Ingredients.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/code/TemplateMonster/ThemeOptions/Block/Ingredients.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1037">
-              <caret line="62" column="50" lean-forward="false" selection-start-line="62" selection-start-column="50" selection-end-line="62" selection-end-column="50" />
+            <state relative-caret-position="204">
+              <caret line="15" column="54" lean-forward="false" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Closed.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/code/TemplateMonster/ThemeOptions/Helper/Closed.php">
+      <file leaf-file-name="modules.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/design/frontend/TemplateMonster/theme024/web/css/modules.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1649">
-              <caret line="102" column="23" lean-forward="false" selection-start-line="102" selection-start-column="23" selection-end-line="102" selection-end-column="23" />
-              <folding>
-                <element signature="e#55#121#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="system.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/code/TemplateMonster/ThemeOptions/etc/adminhtml/system.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="704" column="40" lean-forward="false" selection-start-line="704" selection-start-column="40" selection-end-line="704" selection-end-column="40" />
-              <folding>
-                <element signature="n#tab#0;n#system#0;n#config#0;n#!!top" expanded="false" />
-                <element signature="n#section#0;n#system#0;n#config#0;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="navbar_mobile.phtml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/design/frontend/TemplateMonster/theme024/Magento_Theme/templates/navbar_mobile.phtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="6" lean-forward="false" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
+            <state relative-caret-position="352">
+              <caret line="4239" column="57" lean-forward="false" selection-start-line="4239" selection-start-column="3" selection-end-line="4239" selection-end-column="57" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="default.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/code/TemplateMonster/ThemeOptions/view/frontend/layout/default.xml">
+      <file leaf-file-name="TotalProductsSummary.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/code/TemplateMonster/ThemeOptions/Block/TotalProductsSummary.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="34" column="29" lean-forward="false" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="popup.phtml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/code/TemplateMonster/NewsletterPopup/view/frontend/templates/popup.phtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="6" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="6" />
+            <state relative-caret-position="459">
+              <caret line="93" column="72" lean-forward="false" selection-start-line="93" selection-start-column="72" selection-end-line="93" selection-end-column="72" />
               <folding />
             </state>
           </provider>
@@ -115,8 +68,50 @@
       <file leaf-file-name="ingredient.phtml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/code/TemplateMonster/ThemeOptions/view/frontend/templates/ingredient.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="11" lean-forward="false" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+            <state relative-caret-position="837">
+              <caret line="71" column="45" lean-forward="false" selection-start-line="71" selection-start-column="45" selection-end-line="71" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="default.phtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/design/frontend/TemplateMonster/theme024/Magento_Checkout/templates/cart/item/default.phtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="243">
+              <caret line="18" column="2" lean-forward="false" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="totalSummary.phtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/design/frontend/TemplateMonster/theme024/Magento_Checkout/templates/cart/totalSummary.phtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="12" lean-forward="false" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+              <folding>
+                <marker date="1518282725960" expanded="true" signature="192:268" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="duplicate.phtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/design/frontend/TemplateMonster/theme024/Magento_Checkout/templates/cart/item/renderer/actions/duplicate.phtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="10" column="9" lean-forward="false" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="unit.phtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/design/frontend/TemplateMonster/theme024/Magento_Weee/templates/item/price/unit.phtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="19" column="90" lean-forward="false" selection-start-line="19" selection-start-column="90" selection-end-line="19" selection-end-column="90" />
               <folding />
             </state>
           </provider>
@@ -126,44 +121,47 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>getCartParam</find>
-      <find>getCartParam(</find>
-      <find>setCartParam(</find>
-      <find>summary_count</find>
-      <find>for</find>
-      <find>foreach</find>
+      <find>action-</find>
+      <find>.action-edit:before</find>
+      <find>edit</find>
+      <find>checkout.cart.order.actions</find>
+      <find>actions</find>
+      <find>remove.phtml</find>
+      <find>product description product-item-description</find>
+      <find>product</find>
+      <find>copiaza</find>
+      <find>adauga ingre</find>
+      <find>show_add_ingredient</find>
+      <find>options</find>
+      <find>ingredient.phtml</find>
+      <find>ingredients</find>
+      <find>sectionl</find>
+      <find>price-excluding-tax</find>
+      <find>extra</find>
+      <find>dGetSectionData</find>
+      <find>getSectionData</find>
+      <find>class=&quot;price-excluding-tax&quot;</find>
+      <find>class=&quot;cart-price&quot;</find>
+      <find>price-ex</find>
+      <find>checkout.cart.totals</find>
+      <find>cart.summary</find>
+      <find>cart-p</find>
+      <find>load</find>
+      <find>remove item</find>
       <find>adauga</find>
-      <find>GetItemDat</find>
-      <find>suna</find>
-      <find>Sumar comanda</find>
-      <find>foreac</find>
-      <find>ingredie</find>
-      <find>.rd-navbar-fixed .minicart-wrapper .rd-navbar-cart</find>
-      <find>best online pizza</find>
-      <find>add/uenc</find>
-      <find>class uenc</find>
-      <find>customerData.invalidate(sections);</find>
-      <find>$.mage.__('Continua')</find>
-      <find>$(&quot;.continue-button&quot;).show();</find>
-      <find>removeitem ext</find>
-      <find>/removeitem</find>
-      <find>getRemoveItemUrl</find>
-      <find>removeItemUrl</find>
-      <find>Newsletter Subscription</find>
-      <find>Sign Up for Our Newsletter</find>
-      <find>newsletter-popup</find>
-      <find>popup.phtml</find>
-      <find>insalta</find>
-      <find>insalata</find>
-      <find>vezi cos</find>
+      <find>.cart.item .product-item-details</find>
+      <find>#shopping-cart-table .cart.item .product-item-details</find>
     </findStrings>
     <dirStrings>
       <dir>D:\work\www\pulcinella\app\code\Manadev</dir>
       <dir>D:\work\www\pulcinella\app\code\TemplateMonster</dir>
-      <dir>D:\work\www\pulcinella\app\design\frontend\TemplateMonster\theme024</dir>
       <dir>D:\work\www\pulcinella\var</dir>
-      <dir>D:\work\www\pulcinella\vendor</dir>
       <dir>D:\work\www\pulcinella\app\code</dir>
+      <dir>D:\work\www\pulcinella\app\design\frontend\TemplateMonster</dir>
+      <dir>D:\work\www\pulcinella\vendor</dir>
+      <dir>D:\work\www\pulcinella\vendor\magento\module-checkout</dir>
+      <dir>D:\work\www\pulcinella\app\design\frontend\TemplateMonster\theme024\Magento_Checkout</dir>
+      <dir>D:\work\www\pulcinella\app\design\frontend\TemplateMonster\theme024</dir>
       <dir>D:\work\www\pulcinella\app</dir>
       <dir>D:\work\www\pulcinella</dir>
     </dirStrings>
@@ -174,50 +172,15 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/code/TemplateMonster/AjaxCatalog/i18n/en_US.csv" />
-        <option value="$PROJECT_DIR$/app/design/frontend/TemplateMonster/theme024/Magento_Checkout/web/template/minicart/subtotal.html" />
-        <option value="$PROJECT_DIR$/app/design/frontend/TemplateMonster/theme024/Magento_Theme/layout/default.xml" />
-        <option value="$PROJECT_DIR$/var/cache/mage--1/mage---8f5_SYSTEM_STORES1" />
-        <option value="$PROJECT_DIR$/app/design/frontend/TemplateMonster/framework/Magento_Contact/layout/contact_index_index.xml" />
-        <option value="$PROJECT_DIR$/app/design/frontend/TemplateMonster/framework/Magento_Contact/templates/form.phtml" />
-        <option value="$PROJECT_DIR$/app/design/frontend/TemplateMonster/framework/Magento_Contact/templates/map.phtml" />
-        <option value="$PROJECT_DIR$/app/design/frontend/TemplateMonster/framework/Magento_Theme/layout/default.xml" />
-        <option value="$PROJECT_DIR$/app/code/TemplateMonster/AjaxCompare/view/frontend/layout/default.xml" />
-        <option value="$PROJECT_DIR$/app/code/TemplateMonster/ThemeOptions/Block/Ingredient/PopUp.php" />
-        <option value="$PROJECT_DIR$/app/design/frontend/TemplateMonster/theme024/web/js/theme-child.js" />
-        <option value="$PROJECT_DIR$/app/code/TemplateMonster/AjaxCompare/view/frontend/web/js/compare-products-top-link.js" />
-        <option value="$PROJECT_DIR$/app/etc/config.php" />
-        <option value="$PROJECT_DIR$/app/code/TemplateMonster/ThemeOptions/Block/Ingredient/Js.php" />
-        <option value="$PROJECT_DIR$/app/code/TemplateMonster/ThemeOptions/view/frontend/templates/js/main.phtml" />
-        <option value="$PROJECT_DIR$/app/code/TemplateMonster/ThemeOptions/view/frontend/requirejs-config.js" />
-        <option value="$PROJECT_DIR$/app/code/TemplateMonster/ThemeOptions/view/frontend/web/js/modal-form.js" />
-        <option value="$PROJECT_DIR$/app/design/frontend/TemplateMonster/theme024/web/css/source/components/_modals.scss" />
-        <option value="$PROJECT_DIR$/app/code/TemplateMonster/ThemeOptions/etc/frontend/sections.xml" />
-        <option value="$PROJECT_DIR$/app/code/TemplateMonster/ThemeOptions/Plugin/Quote/Item.php" />
-        <option value="$PROJECT_DIR$/app/code/TemplateMonster/ThemeOptions/etc/events.xml" />
-        <option value="$PROJECT_DIR$/app/code/TemplateMonster/ThemeOptions/Observer/RemoveProducts.php" />
-        <option value="$PROJECT_DIR$/app/code/TemplateMonster/AjaxCompare/view/frontend/web/css/modal-compare.css" />
-        <option value="$PROJECT_DIR$/app/design/frontend/TemplateMonster/theme024/Magento_Checkout/web/template/minicart/item/default.html" />
-        <option value="$PROJECT_DIR$/app/code/TemplateMonster/ThemeOptions/view/frontend/templates/google/body.phtml" />
-        <option value="$PROJECT_DIR$/app/design/frontend/TemplateMonster/framework/TemplateMonster_Megamenu/templates/html/topmenu.phtml" />
-        <option value="$PROJECT_DIR$/app/code/TemplateMonster/ThemeOptions/view/frontend/templates/google/head.phtml" />
-        <option value="$PROJECT_DIR$/app/design/frontend/TemplateMonster/framework/i18n/en_US.csv" />
-        <option value="$PROJECT_DIR$/app/i18n/TemplateMonster/en_US.csv" />
-        <option value="$PROJECT_DIR$/app/code/TemplateMonster/ThemeOptions/i18n.csv" />
-        <option value="$PROJECT_DIR$/app/design/frontend/TemplateMonster/theme024/i18n/en_US.csv" />
         <option value="$PROJECT_DIR$/pub/static/deployed_version.txt" />
         <option value="$PROJECT_DIR$/app/code/TemplateMonster/ThemeOptions/i18n/en_US.csv" />
         <option value="$PROJECT_DIR$/pub/static/frontend/TemplateMonster/theme024/en_US/i18n/en_US.csv" />
         <option value="$PROJECT_DIR$/pub/static/frontend/Magento/luma/en_US/js/bundle/bundle4.js" />
         <option value="$PROJECT_DIR$/app/code/TemplateMonster/ThemeOptions/etc/di.xml" />
-        <option value="$PROJECT_DIR$/app/design/frontend/TemplateMonster/framework/Magento_Checkout/web/template/minicart/content.html" />
-        <option value="$PROJECT_DIR$/app/design/frontend/TemplateMonster/theme024/Magento_Checkout/web/template/minicart/content.html" />
         <option value="$PROJECT_DIR$/app/code/TemplateMonster/ThemeOptions/Plugin/DefaultItem.php" />
-        <option value="$PROJECT_DIR$/app/design/frontend/TemplateMonster/theme024/web/css/modules.css" />
         <option value="$PROJECT_DIR$/app/design/frontend/TemplateMonster/theme024/web/css/style.css" />
         <option value="$PROJECT_DIR$/app/code/TemplateMonster/ThemeOptions/Block/Ingredients.php" />
         <option value="$PROJECT_DIR$/app/code/TemplateMonster/ThemeOptions/Controller/Ingredients/Index.php" />
-        <option value="$PROJECT_DIR$/app/code/TemplateMonster/ThemeOptions/view/frontend/templates/ingredient.phtml" />
         <option value="$PROJECT_DIR$/app/code/TemplateMonster/ThemeOptions/Plugin/OrderSummary.php" />
         <option value="$PROJECT_DIR$/app/code/TemplateMonster/ThemeOptions/view/frontend/layout/default.xml" />
         <option value="$PROJECT_DIR$/app/code/TemplateMonster/ThemeOptions/view/frontend/templates/popup.phtml" />
@@ -225,6 +188,41 @@
         <option value="$PROJECT_DIR$/app/code/TemplateMonster/ThemeOptions/Helper/Closed.php" />
         <option value="$PROJECT_DIR$/app/code/TemplateMonster/ThemeOptions/etc/adminhtml/system.xml" />
         <option value="$PROJECT_DIR$/app/design/frontend/TemplateMonster/theme024/Magento_Theme/templates/navbar_mobile.phtml" />
+        <option value="$PROJECT_DIR$/app/code/TemplateMonster/AjaxCatalog/i18n/en_US.csv" />
+        <option value="$PROJECT_DIR$/app/design/frontend/TemplateMonster/framework/Magento_Checkout/web/template/minicart/content.html" />
+        <option value="$PROJECT_DIR$/app/design/frontend/TemplateMonster/theme024/i18n/en_US.csv" />
+        <option value="$PROJECT_DIR$/app/design/frontend/TemplateMonster/framework/Magento_Checkout/layout/checkout_cart_index.xml" />
+        <option value="$PROJECT_DIR$/app/design/frontend/TemplateMonster/theme024/Magento_Checkout/web/template/minicart/content.html" />
+        <option value="$PROJECT_DIR$/app/design/frontend/TemplateMonster/theme024/Magento_Checkout/templates/cart/shipping.phtml" />
+        <option value="$PROJECT_DIR$/app/design/frontend/TemplateMonster/theme024/Magento_Checkout/templates/onepage/link.phtml" />
+        <option value="$PROJECT_DIR$/app/design/frontend/TemplateMonster/theme024/Magento_Catalog/web/js/price-utils.js" />
+        <option value="$PROJECT_DIR$/app/design/frontend/TemplateMonster/theme024/Magento_Catalog/templates/product/price/amount/default.phtml" />
+        <option value="$PROJECT_DIR$/app/design/frontend/TemplateMonster/theme024/Magento_Checkout/templates/cart/noItems.phtml" />
+        <option value="$PROJECT_DIR$/vendor/magento/module-checkout/view/frontend/templates/cart/item/default.phtml" />
+        <option value="$PROJECT_DIR$/vendor/magento/module-checkout/view/frontend/templates/cart/item/renderer/actions/edit.phtml" />
+        <option value="$PROJECT_DIR$/vendor/magento/module-checkout/view/frontend/layout/checkout_cart_item_renderers.xml" />
+        <option value="$PROJECT_DIR$/app/design/frontend/TemplateMonster/theme024/Magento_Checkout/layout/checkout_cart_item_renderers.xml" />
+        <option value="$PROJECT_DIR$/app/design/frontend/TemplateMonster/theme024/Magento_Checkout/templates/cart/form.phtml" />
+        <option value="$PROJECT_DIR$/vendor/magento/module-checkout/view/frontend/templates/item/price/unit.phtml" />
+        <option value="$PROJECT_DIR$/vendor/magento/module-sales/view/frontend/templates/items/price/row.phtml" />
+        <option value="$PROJECT_DIR$/vendor/magento/module-sales/view/frontend/templates/items/price/unit.phtml" />
+        <option value="$PROJECT_DIR$/vendor/magento/module-tax/view/frontend/templates/item/price/row.phtml" />
+        <option value="$PROJECT_DIR$/vendor/magento/module-tax/view/frontend/templates/item/price/unit.phtml" />
+        <option value="$PROJECT_DIR$/vendor/magento/module-checkout/view/frontend/templates/onepage/review/item/price/row_excl_tax.phtml" />
+        <option value="$PROJECT_DIR$/vendor/magento/module-checkout/view/frontend/templates/onepage/review/item/price/unit_excl_tax.phtml" />
+        <option value="$PROJECT_DIR$/vendor/magento/module-weee/view/frontend/templates/item/price/unit.phtml" />
+        <option value="$PROJECT_DIR$/vendor/magento/module-checkout/view/frontend/templates/item/price/row.phtml" />
+        <option value="$PROJECT_DIR$/app/design/frontend/TemplateMonster/theme024/Magento_Checkout/templates/cart/item/renderer/actions/duplicate.phtml" />
+        <option value="$PROJECT_DIR$/vendor/magento/module-checkout/view/frontend/layout/checkout_cart_index.xml" />
+        <option value="$PROJECT_DIR$/app/design/frontend/TemplateMonster/theme024/Magento_Checkout/layout/checkout_cart_index.xml" />
+        <option value="$PROJECT_DIR$/app/design/frontend/TemplateMonster/theme024/Magento_Checkout/templates/cart/totalSummary.phtml" />
+        <option value="$PROJECT_DIR$/app/code/TemplateMonster/ThemeOptions/Block/TotalProductsSummary.php" />
+        <option value="$PROJECT_DIR$/app/code/TemplateMonster/ThemeOptions/view/frontend/templates/ingredient.phtml" />
+        <option value="$PROJECT_DIR$/app/design/frontend/TemplateMonster/theme024/Magento_Checkout/templates/cart/item/renderer/actions/edit.phtml" />
+        <option value="$PROJECT_DIR$/app/design/frontend/TemplateMonster/theme024/Magento_Weee/templates/item/price/unit.phtml" />
+        <option value="$PROJECT_DIR$/app/design/frontend/TemplateMonster/theme024/Magento_Checkout/templates/cart/item/default.phtml" />
+        <option value="$PROJECT_DIR$/app/design/frontend/TemplateMonster/theme024/Magento_Checkout/templates/cart/item/renderer/actions/remove.phtml" />
+        <option value="$PROJECT_DIR$/app/design/frontend/TemplateMonster/theme024/web/css/modules.css" />
       </list>
     </option>
   </component>
@@ -240,8 +238,8 @@
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
     <option name="x" value="13" />
-    <option name="width" value="1629" />
-    <option name="height" value="1026" />
+    <option name="width" value="1758" />
+    <option name="height" value="1123" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -258,7 +256,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -268,20 +265,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="pulcinella" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pulcinella" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pulcinella" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="var" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -317,8 +300,439 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pulcinella" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pulcinella" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pub" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frontend" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pulcinella" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pulcinella" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pulcinella" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pulcinella" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="design" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frontend" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TemplateMonster" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="theme024" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pulcinella" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pulcinella" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="design" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frontend" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TemplateMonster" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="theme024" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Magento_Weee" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="item" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="price" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pulcinella" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pulcinella" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="design" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frontend" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TemplateMonster" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="theme024" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Magento_Checkout" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pulcinella" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pulcinella" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="design" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frontend" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TemplateMonster" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="theme024" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Magento_Checkout" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pulcinella" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pulcinella" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="design" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frontend" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TemplateMonster" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="theme024" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Magento_Checkout" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cart" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pulcinella" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pulcinella" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="design" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frontend" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TemplateMonster" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="theme024" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Magento_Checkout" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cart" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="item" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pulcinella" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pulcinella" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="design" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frontend" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TemplateMonster" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="theme024" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Magento_Checkout" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cart" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="item" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="renderer" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="actions" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pulcinella" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pulcinella" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="design" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frontend" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TemplateMonster" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="theme024" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Magento_Checkout" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pulcinella" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pulcinella" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="design" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frontend" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TemplateMonster" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pulcinella" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pulcinella" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="code" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pulcinella" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pulcinella" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="code" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TemplateMonster" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -328,19 +742,19 @@
     <property name="js.eslint.eslintPackage" value="" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\work\www\pulcinella\app\code\TemplateMonster\ThemeOptions\view\frontend" />
-      <recent name="D:\work\www\pulcinella\app\code\Manadev\LayeredNavigation\view\frontend\templates" />
-      <recent name="D:\work\www\pulcinella\app\design\frontend\TemplateMonster\theme024" />
-      <recent name="D:\work\www\pulcinella\pub\static\frontend\TemplateMonster\theme024\en_US\images\media" />
-      <recent name="D:\work\www\pulcinella" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\work\www\pulcinella\lib\web\jquery" />
       <recent name="D:\work\www\pulcinella\app\code\TemplateMonster\ThemeOptions\view\frontend\templates" />
       <recent name="D:\work\www\pulcinella\app\design\frontend\TemplateMonster\theme024\TemplateMonster_AjaxCompare\web\js" />
       <recent name="D:\work\www\pulcinella\var\view_preprocessed\html\app\design\frontend\TemplateMonster\theme024\TemplateMonster_ThemeOptions\templates" />
       <recent name="D:\work\www\pulcinella\var\view_preprocessed\html\app\design\frontend\TemplateMonster\theme024\TemplateMonster_ThemeOptions" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\work\www\pulcinella\app\code\TemplateMonster\ThemeOptions\view\frontend" />
+      <recent name="D:\work\www\pulcinella\app\code\Manadev\LayeredNavigation\view\frontend\templates" />
+      <recent name="D:\work\www\pulcinella\app\design\frontend\TemplateMonster\theme024" />
+      <recent name="D:\work\www\pulcinella\pub\static\frontend\TemplateMonster\theme024\en_US\images\media" />
+      <recent name="D:\work\www\pulcinella" />
     </key>
   </component>
   <component name="RunManager">
@@ -434,22 +848,27 @@
       <workItem from="1511383905070" duration="78000" />
       <workItem from="1512220078590" duration="6169000" />
       <workItem from="1516218115107" duration="723000" />
+      <workItem from="1517767011585" duration="9068000" />
+      <workItem from="1517951880058" duration="7310000" />
+      <workItem from="1518019789615" duration="7609000" />
+      <workItem from="1518210203097" duration="9975000" />
+      <workItem from="1518264998091" duration="15851000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="260353000" />
+    <option name="totallyTimeSpent" value="310166000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="13" y="0" width="1629" height="1026" extended-state="0" />
+    <frame x="13" y="0" width="1758" height="1123" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30378178" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28128588" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3991276" sideWeight="0.51394916" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3991276" sideWeight="0.48605084" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40927023" sideWeight="0.48605084" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29783037" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -460,7 +879,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39940828" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -479,370 +898,405 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/etc/env.php">
+    <entry file="file://$PROJECT_DIR$/app/code/TemplateMonster/ThemeOptions/etc/di.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1530">
+          <caret line="90" column="82" lean-forward="false" selection-start-line="90" selection-start-column="76" selection-end-line="90" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/TemplateMonster/ThemeOptions/Plugin/Catalog/Block/Product/ListProductPlugin.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/design/frontend/TemplateMonster/theme024/Magento_Checkout/web/template/minicart/subtotal.html">
+    <entry file="file://$PROJECT_DIR$/app/code/TemplateMonster/ThemeOptions/Plugin/Quote/Item.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="23" lean-forward="false" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pub/static/frontend/Magento/luma/en_US/js/bundle/bundle4.js">
+    <entry file="file://$PROJECT_DIR$/pub/static/frontend/TemplateMonster/theme024/en_US/css/source/_mixins.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="2" column="14767" lean-forward="false" selection-start-line="2" selection-start-column="14767" selection-end-line="2" selection-end-column="14767" />
+        <state relative-caret-position="181">
+          <caret line="352" column="13" lean-forward="false" selection-start-line="352" selection-start-column="13" selection-end-line="352" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/magento/module-checkout/CustomerData/Cart.php">
+    <entry file="file://$PROJECT_DIR$/pub/static/frontend/TemplateMonster/theme024/en_US/Magento_GiftMessage/template/gift-message-form.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="86" column="34" lean-forward="false" selection-start-line="86" selection-start-column="20" selection-end-line="86" selection-end-column="34" />
+        <state relative-caret-position="408">
+          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/TemplateMonster/ThemeOptions/etc/di.xml">
+    <entry file="file://$PROJECT_DIR$/vendor/magento/module-gift-message/view/frontend/layout/checkout_cart_index.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
-          <caret line="94" column="93" lean-forward="false" selection-start-line="94" selection-start-column="93" selection-end-line="94" selection-end-column="93" />
+        <state relative-caret-position="306">
+          <caret line="18" column="108" lean-forward="false" selection-start-line="18" selection-start-column="96" selection-end-line="18" selection-end-column="108" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/design/frontend/TemplateMonster/theme024/Magento_Checkout/web/template/minicart/item/default.html">
+    <entry file="file://$PROJECT_DIR$/vendor/magento/theme-frontend-luma/Magento_Checkout/layout/checkout_cart_index.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="49" column="36" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/design/frontend/TemplateMonster/framework/Magento_Checkout/web/template/minicart/content.html">
+    <entry file="file://$PROJECT_DIR$/vendor/magento/module-catalog/view/frontend/layout/checkout_cart_item_renderers.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="98" column="79" lean-forward="false" selection-start-line="98" selection-start-column="79" selection-end-line="98" selection-end-column="79" />
+        <state relative-caret-position="221">
+          <caret line="13" column="206" lean-forward="false" selection-start-line="13" selection-start-column="206" selection-end-line="13" selection-end-column="206" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/design/frontend/TemplateMonster/theme024/Magento_Checkout/web/template/minicart/content.html">
+    <entry file="file://$PROJECT_DIR$/vendor/magento/module-checkout/view/frontend/layout/checkout_cart_item_renderers.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="79" column="80" lean-forward="false" selection-start-line="79" selection-start-column="80" selection-end-line="79" selection-end-column="80" />
+        <state relative-caret-position="221">
+          <caret line="13" column="44" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/TemplateMonster/ThemeOptions/Observer/RemoveProducts.php">
+    <entry file="file://$PROJECT_DIR$/vendor/magento/module-checkout/Block/Cart/Item/Renderer/Actions/Generic.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="58" lean-forward="false" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="58" />
+        <state relative-caret-position="272">
+          <caret line="20" column="21" lean-forward="false" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/design/frontend/TemplateMonster/theme024/web/css/modules.css">
+    <entry file="file://$PROJECT_DIR$/vendor/magento/module-quote/Model/Quote/Item/AbstractItem.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66436">
-          <caret line="3908" column="14" lean-forward="false" selection-start-line="3908" selection-start-column="14" selection-end-line="3908" selection-end-column="14" />
+        <state relative-caret-position="181">
+          <caret line="132" column="23" lean-forward="false" selection-start-line="132" selection-start-column="16" selection-end-line="132" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/design/frontend/TemplateMonster/theme024/web/css/style.css">
+    <entry file="file://$PROJECT_DIR$/vendor/magento/module-catalog/Block/Product/AbstractProduct.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="77673">
-          <caret line="4569" column="17" lean-forward="false" selection-start-line="4569" selection-start-column="17" selection-end-line="4569" selection-end-column="17" />
+        <state relative-caret-position="157">
+          <caret line="67" column="41" lean-forward="true" selection-start-line="67" selection-start-column="12" selection-end-line="67" selection-end-column="41" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dump.sql">
+    <entry file="file://$PROJECT_DIR$/vendor/magento/module-checkout/Block/Cart/Item/Renderer/Actions/Edit.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="47226">
-          <caret line="2778" column="18735" lean-forward="false" selection-start-line="2778" selection-start-column="18735" selection-end-line="2778" selection-end-column="18735" />
+        <state relative-caret-position="68">
+          <caret line="7" column="22" lean-forward="false" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/magento/module-checkout/Helper/Cart.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="73" column="29" lean-forward="false" selection-start-line="73" selection-start-column="20" selection-end-line="73" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/TemplateMonster/theme024/TemplateMonster_FeaturedProduct/templates/widget/products-grid.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="118" column="134" lean-forward="false" selection-start-line="118" selection-start-column="92" selection-end-line="118" selection-end-column="134" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/code/TemplateMonster/ThemeOptions/Plugin/DefaultItem.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="67" lean-forward="false" selection-start-line="14" selection-start-column="62" selection-end-line="14" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pub/static/frontend/Magento/blank/en_US/Magento_Customer/js/customer-data.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="343" column="42" lean-forward="true" selection-start-line="343" selection-start-column="42" selection-end-line="343" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pub/static/frontend/Magento/blank/en_US/js/bundle/bundle0.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="2" column="108575" lean-forward="false" selection-start-line="2" selection-start-column="108575" selection-end-line="2" selection-end-column="108575" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pub/static/frontend/TemplateMonster/theme024/en_US/Magento_Customer/js/customer-data.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="346" column="16" lean-forward="false" selection-start-line="346" selection-start-column="16" selection-end-line="346" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pub/static/frontend/TemplateMonster/framework/en_US/Magento_Customer/js/section-config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="21" column="8" lean-forward="false" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/var/view_preprocessed/html/app/code/TemplateMonster/ThemeOptions/view/frontend/templates/ingredient.phtml" />
-    <entry file="file://$PROJECT_DIR$/vendor/magento/module-checkout/Controller/Sidebar/RemoveItem.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="56" column="7" lean-forward="false" selection-start-line="56" selection-start-column="7" selection-end-line="56" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/magento/module-checkout/etc/frontend/sections.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="35" column="26" lean-forward="false" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pub/static/frontend/TemplateMonster/framework/en_US/Magento_Checkout/js/view/minicart.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1931">
-          <caret line="20" column="15" lean-forward="false" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/magento/module-checkout/Block/Cart/Sidebar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="68" column="26" lean-forward="false" selection-start-line="68" selection-start-column="13" selection-end-line="68" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pub/static/frontend/TemplateMonster/framework/en_US/Magento_Customer/js/customer-data.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="297" column="8" lean-forward="false" selection-start-line="297" selection-start-column="8" selection-end-line="297" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/etc/di.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="517">
-          <caret line="672" column="43" lean-forward="false" selection-start-line="672" selection-start-column="34" selection-end-line="672" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/TemplateMonster/ThemeOptions/etc/frontend/di.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/TemplateMonster/ThemeOptions/etc/frontend/sections.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/TemplateMonster/ThemeOptions/Controller/Ingredients/Index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1870">
-          <caret line="113" column="65" lean-forward="false" selection-start-line="113" selection-start-column="65" selection-end-line="113" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/TemplateMonster/ThemeOptions/Plugin/OrderSummary.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="57" column="44" lean-forward="false" selection-start-line="57" selection-start-column="28" selection-end-line="57" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/TemplateMonster/NewsletterPopup/etc/config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="25" lean-forward="false" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/TemplateMonster/NewsletterPopup/view/frontend/templates/styles.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/TemplateMonster/AjaxCompare/view/frontend/layout/default.xml">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
-          <caret line="16" column="74" lean-forward="false" selection-start-line="16" selection-start-column="74" selection-end-line="16" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/TemplateMonster/NewsletterPopup/Block/PopUp.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="19" column="28" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="93" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/TemplateMonster/NewsletterPopup/etc/adminhtml/system.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2123">
-          <caret line="664" column="18" lean-forward="false" selection-start-line="6" selection-start-column="8" selection-end-line="664" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/TemplateMonster/NewsletterPopup/view/frontend/web/js/popup.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/TemplateMonster/NewsletterPopup/view/frontend/layout/default_head_blocks.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/TemplateMonster/NewsletterPopup/view/frontend/layout/default.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="29" lean-forward="true" selection-start-line="3" selection-start-column="8" selection-end-line="8" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/TemplateMonster/NewsletterPopup/view/frontend/templates/popup/subscribe.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="40" lean-forward="true" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/TemplateMonster/NewsletterPopup/view/frontend/templates/popup/configure.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="65" lean-forward="false" selection-start-line="4" selection-start-column="65" selection-end-line="4" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/TemplateMonster/NewsletterPopup/Block/PopUp/Configure.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="80" column="5" lean-forward="false" selection-start-line="67" selection-start-column="4" selection-end-line="80" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/TemplateMonster/ThemeOptions/view/frontend/web/js/modal-form.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="17" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="5" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/TemplateMonster/NewsletterPopup/Helper/Data.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1560">
-          <caret line="233" column="20" lean-forward="false" selection-start-line="233" selection-start-column="20" selection-end-line="233" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/TemplateMonster/NewsletterPopup/view/frontend/templates/popup.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="6" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="6" />
+          <caret line="16" column="9" lean-forward="false" selection-start-line="13" selection-start-column="8" selection-end-line="16" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/TemplateMonster/ThemeOptions/view/frontend/templates/ingredient.phtml">
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/TemplateMonster/theme024/Magento_Checkout/templates/cart/form.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="11" lean-forward="false" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+        <state relative-caret-position="425">
+          <caret line="28" column="117" lean-forward="false" selection-start-line="28" selection-start-column="117" selection-end-line="28" selection-end-column="117" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/code/TemplateMonster/ThemeOptions/Block/Ingredients.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1037">
-          <caret line="62" column="50" lean-forward="false" selection-start-line="62" selection-start-column="50" selection-end-line="62" selection-end-column="50" />
+        <state relative-caret-position="306">
+          <caret line="19" column="28" lean-forward="false" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/TemplateMonster/NewsletterPopup/view/frontend/requirejs-config.js">
+    <entry file="file://$PROJECT_DIR$/app/code/TemplateMonster/ThemeOptions/etc/frontend/sections.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="2" />
+        <state relative-caret-position="51">
+          <caret line="3" column="32" lean-forward="false" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/code/TemplateMonster/ThemeOptions/view/frontend/layout/default.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="29" lean-forward="false" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
+        <state relative-caret-position="544">
+          <caret line="32" column="61" lean-forward="false" selection-start-line="32" selection-start-column="61" selection-end-line="32" selection-end-column="61" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/TemplateMonster/ThemeOptions/view/frontend/templates/popup.phtml">
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/TemplateMonster/theme024/Magento_Checkout/web/template/minicart/item/default.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="50" lean-forward="false" selection-start-line="23" selection-start-column="50" selection-end-line="23" selection-end-column="50" />
+        <state relative-caret-position="181">
+          <caret line="33" column="31" lean-forward="false" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/magento/module-checkout/CustomerData/Cart.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="88" column="10" lean-forward="false" selection-start-line="88" selection-start-column="10" selection-end-line="88" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pub/static/frontend/TemplateMonster/theme024/en_US/Magento_Weee/template/checkout/summary/item/price/row_excl_tax.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="13" column="10" lean-forward="false" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/var/view_preprocessed/html/vendor/magento/module-checkout/view/frontend/templates/item/price/row.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="211" lean-forward="false" selection-start-line="0" selection-start-column="211" selection-end-line="0" selection-end-column="211" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/magento/module-checkout/view/frontend/templates/item/price/unit.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="12" column="7" lean-forward="false" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/magento/module-sales/view/frontend/templates/items/price/row.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="10" column="2" lean-forward="true" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/magento/module-sales/view/frontend/templates/items/price/unit.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="10" column="2" lean-forward="true" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/magento/module-tax/view/frontend/templates/item/price/row.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" column="2" lean-forward="true" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/magento/module-tax/view/frontend/templates/item/price/unit.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/magento/module-checkout/view/frontend/templates/onepage/review/item/price/row_excl_tax.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" column="2" lean-forward="true" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/magento/module-checkout/view/frontend/templates/onepage/review/item/price/unit_excl_tax.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" column="2" lean-forward="true" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/magento/module-checkout/view/frontend/templates/cart/item/price/sidebar.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/magento/module-weee/view/frontend/templates/item/price/unit.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/magento/module-checkout/view/frontend/templates/item/price/row.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="10" column="27" lean-forward="false" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/magento/module-checkout/view/frontend/layout/checkout_cart_index.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="424">
+          <caret line="206" column="108" lean-forward="false" selection-start-line="206" selection-start-column="108" selection-end-line="206" selection-end-column="108" />
+          <folding>
+            <element signature="n#block#1;n#container#1;n#container#0;n#container#0;n#block#0;n#referenceContainer#1;n#body#0;n#page#0;n#!!top" expanded="false" />
+            <element signature="n#container#0;n#container#1;n#container#0;n#container#0;n#block#0;n#referenceContainer#1;n#body#0;n#page#0;n#!!top" expanded="false" />
+            <element signature="n#item#0;n#item#3;n#item#0;n#item#0;n#argument#0;n#arguments#0;n#block#0;n#container#0;n#container#1;n#container#0;n#container#0;n#block#0;n#referenceContainer#1;n#body#0;n#page#0;n#!!top" expanded="false" />
+            <element signature="n#item#1;n#item#3;n#item#0;n#item#0;n#argument#0;n#arguments#0;n#block#0;n#container#0;n#container#1;n#container#0;n#container#0;n#block#0;n#referenceContainer#1;n#body#0;n#page#0;n#!!top" expanded="false" />
+            <element signature="n#block#3;n#container#1;n#container#0;n#container#0;n#block#0;n#referenceContainer#1;n#body#0;n#page#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/TemplateMonster/framework/Magento_Checkout/layout/checkout_cart_index.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="97">
+          <caret line="14" column="112" lean-forward="false" selection-start-line="14" selection-start-column="85" selection-end-line="14" selection-end-column="112" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/code/TemplateMonster/ThemeOptions/Block/Closed.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1003">
-          <caret line="60" column="39" lean-forward="false" selection-start-line="60" selection-start-column="39" selection-end-line="60" selection-end-column="39" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="62" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/TemplateMonster/ThemeOptions/Plugin/OrderSummary.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-68">
+          <caret line="8" column="4" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="13" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/TemplateMonster/theme024/Magento_Checkout/templates/cart/noItems.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="7" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/TemplateMonster/theme024/Magento_Checkout/layout/checkout_cart_item_renderers.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="219" lean-forward="false" selection-start-line="13" selection-start-column="219" selection-end-line="13" selection-end-column="219" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/TemplateMonster/theme024/Magento_Checkout/layout/checkout_cart_index.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="50" column="61" lean-forward="false" selection-start-line="50" selection-start-column="61" selection-end-line="50" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/TemplateMonster/theme024/Magento_Checkout/templates/cart/totalSummary.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="12" lean-forward="false" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
           <folding>
-            <element signature="e#54#116#0#PHP" expanded="true" />
+            <marker date="1518282725960" expanded="true" signature="192:268" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/TemplateMonster/ThemeOptions/Helper/Closed.php">
+    <entry file="file://$PROJECT_DIR$/app/code/TemplateMonster/ThemeOptions/Block/TotalProductsSummary.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1649">
-          <caret line="102" column="23" lean-forward="false" selection-start-line="102" selection-start-column="23" selection-end-line="102" selection-end-column="23" />
-          <folding>
-            <element signature="e#55#121#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="459">
+          <caret line="93" column="72" lean-forward="false" selection-start-line="93" selection-start-column="72" selection-end-line="93" selection-end-column="72" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/TemplateMonster/ThemeOptions/etc/adminhtml/system.xml">
+    <entry file="file://$PROJECT_DIR$/app/code/TemplateMonster/ThemeOptions/view/frontend/templates/ingredient.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="704" column="40" lean-forward="false" selection-start-line="704" selection-start-column="40" selection-end-line="704" selection-end-column="40" />
-          <folding>
-            <element signature="n#tab#0;n#system#0;n#config#0;n#!!top" expanded="false" />
-            <element signature="n#section#0;n#system#0;n#config#0;n#!!top" expanded="false" />
-          </folding>
+        <state relative-caret-position="837">
+          <caret line="71" column="45" lean-forward="false" selection-start-line="71" selection-start-column="45" selection-end-line="71" selection-end-column="45" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/design/frontend/TemplateMonster/theme024/Magento_Theme/templates/navbar_mobile.phtml">
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/TemplateMonster/theme024/Magento_Checkout/templates/cart/item/renderer/actions/duplicate.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="6" lean-forward="false" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
+        <state relative-caret-position="119">
+          <caret line="10" column="9" lean-forward="false" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/TemplateMonster/theme024/Magento_Weee/templates/item/price/unit.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="19" column="90" lean-forward="false" selection-start-line="19" selection-start-column="90" selection-end-line="19" selection-end-column="90" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/TemplateMonster/theme024/Magento_Checkout/templates/cart/item/default.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="18" column="2" lean-forward="false" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/TemplateMonster/theme024/Magento_Checkout/templates/cart/item/renderer/actions/edit.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="21" column="52" lean-forward="false" selection-start-line="21" selection-start-column="52" selection-end-line="21" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/magento/module-checkout/view/frontend/templates/cart/item/renderer/actions/remove.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/TemplateMonster/theme024/Magento_Checkout/templates/cart/item/renderer/actions/remove.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="15" column="54" lean-forward="false" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/TemplateMonster/theme024/web/css/modules.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="4239" column="57" lean-forward="false" selection-start-line="4239" selection-start-column="3" selection-end-line="4239" selection-end-column="57" />
           <folding />
         </state>
       </provider>

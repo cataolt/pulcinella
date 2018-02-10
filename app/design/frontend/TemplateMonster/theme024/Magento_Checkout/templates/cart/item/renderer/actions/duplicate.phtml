@@ -1,0 +1,23 @@
+<?php
+/**
+ * Copyright © 2013-2017 Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+// @codingStandardsIgnoreFile
+
+/** @var $block \Magento\Checkout\Block\Cart\Item\Renderer\Actions\Edit */
+
+$postDataHelper = $this->helper('Magento\Framework\Data\Helper\PostHelper');
+$item = $block->getItem()->getProduct();
+$cartHelper = $this->helper('Magento\Checkout\Helper\Cart');
+$cartUrl = $cartHelper->getAddUrl($item);
+$postData = $postDataHelper->getPostData($cartUrl, ['product' => $item])
+?>
+<a class="action action-gift"
+   title="<?php echo $block->escapeHtml(__('Duplica')); ?>"
+   data-post='<?php /* @escapeNotVerified */ echo $postData ?>'>
+    <span>
+        <?php /* @escapeNotVerified */ echo __('Duplica') ?>
+    </span>
+</a>

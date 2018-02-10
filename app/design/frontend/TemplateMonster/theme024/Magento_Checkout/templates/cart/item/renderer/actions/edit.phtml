@@ -1,0 +1,48 @@
+<?php
+/**
+ * Copyright © 2013-2017 Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+// @codingStandardsIgnoreFile
+
+/** @var $block \Magento\Checkout\Block\Cart\Item\Renderer\Actions\Edit */
+$showAddIngredient = true;
+if(in_array((int)$block->getItem()->getProduct()->getAttributeSetId(), array(11,12))){
+    $showAddIngredient = false;
+}
+if($block->getItem()->getData('additional_data')){
+    $showAddIngredient = false;
+}
+?>
+<?php if ($block->isProductVisibleInSiteVisibility() && $showAddIngredient): ?>
+    <a class="action action-edit add-ingredient-cart" data-cart-item = "<?php echo $block->getItem()->getId();?>"
+       title="<?php echo $block->escapeHtml(__('Adauga ingredient')); ?>">
+        <span>
+            <?php /* @escapeNotVerified */ echo __('Adauga ingredient') ?>
+        </span>
+    </a>
+<?php endif ?>
+
+<script>
+    var refresh = true;
+    require(
+        [
+            'jquery',
+            'Magento_Ui/js/modal/modal',
+            'Magento_Customer/js/customer-data'
+        ],
+        function(
+            $,
+            modal,
+            customerData
+        ) {
+            $('body').on('click', '.add-ingredient-cart', function(){
+                var go = true;
+                $("#popup_item_id").val($(event.target).data("cart-item"));
+                $("#popup-mpdal").modal("openModal");
+            });
+
+        }
+    );
+//</script>
