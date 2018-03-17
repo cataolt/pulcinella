@@ -20,7 +20,7 @@ return array (
       'default' => 
       array (
         'host' => 'localhost',
-        'dbname' => 'pulcinella2',
+        'dbname' => 'pulcinel_pulcinella',
         'username' => 'root',
         'password' => '',
         'active' => '1',

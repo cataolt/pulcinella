@@ -1,19 +1,19 @@
 <!--
 /**
- * Copyright © 2016 Magento. All rights reserved.
+ * Copyright © 2013-2017 Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
 -->
 <li id="shipping" class="checkout-shipping-address" data-bind="fadeVisible: visible()">
-    <div class="step-title" data-bind="i18n: 'Shipping Address'" data-role="title"></div>
+    <div class="step-title" data-bind="i18n: 'Adresa de livrare'" data-role="title"></div>
     <div id="checkout-step-shipping"
          class="step-content"
          data-role="content">
 
         <!-- ko if: (!quoteIsVirtual) -->
-            <!-- ko foreach: getRegion('customer-email') -->
-                <!-- ko template: getTemplate() --><!-- /ko -->
-            <!--/ko-->
+        <!-- ko foreach: getRegion('customer-email') -->
+        <!-- ko template: getTemplate() --><!-- /ko -->
+        <!--/ko-->
         <!--/ko-->
 
         <!-- ko foreach: getRegion('address-list') -->
@@ -29,7 +29,7 @@
         <button type="button"
                 data-bind="click: showFormPopUp, visible: !isNewAddressAdded()"
                 class="action action-show-popup">
-            <span data-bind="i18n: 'New Address'"></span></button>
+            <span data-bind="i18n: 'Adresa noua'"></span></button>
         <div id="opc-new-shipping-address" data-bind="visible: isFormPopUpVisible()">
             <!-- ko template: 'Magento_Checkout/shipping-address/form' --><!-- /ko -->
         </div>
@@ -53,7 +53,6 @@
     data-bind="fadeVisible: visible(), blockLoader: isLoading"
     role="presentation">
     <div class="checkout-shipping-method">
-        <div class="step-title" data-bind="i18n: 'Shipping Methods'" data-role="title"></div>
         <!-- ko foreach: getRegion('before-shipping-method-form') -->
         <!-- ko template: getTemplate() --><!-- /ko -->
         <!-- /ko -->
@@ -67,17 +66,17 @@
                 <div id="checkout-shipping-method-load">
                     <table class="table-checkout-shipping-method">
                         <thead>
-                            <tr class="table-row">
-                                <th class="col col-method" data-bind="i18n: 'Select Method'"></th>
-                                <th class="col col-price" data-bind="i18n: 'Price'"></th>
-                                <th class="col col-method" data-bind="i18n: 'Method Title'"></th>
-                                <th class="col col-carrier" data-bind="i18n: 'Carrier Title'"></th>
-                            </tr>
+                        <tr class="row">
+                            <th class="col col-method" data-bind="i18n: 'Select Method'"></th>
+                            <th class="col col-price" data-bind="i18n: 'Price'"></th>
+                            <th class="col col-method" data-bind="i18n: 'Method Title'"></th>
+                            <th class="col col-carrier" data-bind="i18n: 'Carrier Title'"></th>
+                        </tr>
                         </thead>
                         <tbody>
 
                         <!--ko foreach: { data: rates(), as: 'method'}-->
-                        <tr class="table-row" data-bind="click: $parent.selectShippingMethod">
+                        <tr class="row" data-bind="click: $parent.selectShippingMethod">
                             <td class="col col-method">
                                 <!-- ko ifnot: method.error_message -->
                                 <!-- ko if: $parent.rates().length == 1 -->
@@ -111,14 +110,14 @@
                             </td>
 
                             <td class="col col-method"
-                                    data-bind="text: method.method_title, attr: {'id': 'label_method_' + method.method_code + '_' + method.carrier_code}"></td>
+                                data-bind="text: method.method_title, attr: {'id': 'label_method_' + method.method_code + '_' + method.carrier_code}"></td>
 
                             <td class="col col-carrier"
-                                    data-bind="text: method.carrier_title, attr: {'id': 'label_carrier_' + method.method_code + '_' + method.carrier_code}"></td>
+                                data-bind="text: method.carrier_title, attr: {'id': 'label_carrier_' + method.method_code + '_' + method.carrier_code}"></td>
                         </tr>
 
                         <!-- ko if:  method.error_message -->
-                        <tr class="table-row row-error">
+                        <tr class="row row-error">
                             <td class="col col-error" colspan="4">
                                 <div class="message error">
                                     <div data-bind="text: method.error_message"></div>
@@ -148,7 +147,7 @@
                 <div class="actions-toolbar" id="shipping-method-buttons-container">
                     <div class="primary">
                         <button data-role="opc-continue" type="submit" class="button action continue primary">
-                            <span><!-- ko i18n: 'Next'--><!-- /ko --></span>
+                            <span><!-- ko i18n: 'Mai departe'--><!-- /ko --></span>
                         </button>
                     </div>
                 </div>

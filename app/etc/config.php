@@ -2,6 +2,7 @@
 return array (
   'modules' => 
   array (
+    'MagePal_Reindex' => 1,
     'Magento_Store' => 1,
     'Magento_AdvancedPricingImportExport' => 1,
     'Magento_Directory' => 1,
@@ -113,8 +114,10 @@ return array (
     'TemplateMonster_AjaxSearch' => 1,
     'TemplateMonster_AjaxWishlist' => 1,
     'TemplateMonster_Blog' => 1,
+    'TemplateMonster_Customer' => 1,
     'TemplateMonster_FeaturedProduct' => 1,
     'TemplateMonster_GoogleMap' => 1,
+    'TemplateMonster_LatLng' => 1,
     'TemplateMonster_Megamenu' => 1,
     'TemplateMonster_NewsletterPopup' => 1,
     'TemplateMonster_Parallax' => 1,
@@ -122,5 +125,6 @@ return array (
     'TemplateMonster_SocialSharing' => 1,
     'TemplateMonster_ThemeOptions' => 1,
     'TheCodingTutor_Shell' => 1,
+    'Zorn_OptionalTelephone' => 1,
   ),
 );

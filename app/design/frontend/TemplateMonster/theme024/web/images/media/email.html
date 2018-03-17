@@ -65,6 +65,21 @@
             </div>
         </fieldset>
         <!--Hidden fields -->
+
+        <div class="field required">
+            <label class="label" for="customer-telephone">
+                <span data-bind="i18n: 'Telefon'"></span>
+            </label>
+            <div class="control _with-tooltip">
+                <input class="input-text"
+                       type="text"
+                       data-bind="
+                            textInput: telephone",
+                       name="telephone"
+                       data-validate="{required:true}"
+                       id="customer-telephone" />
+            </div>
+        </div>
     </fieldset>
 </form>
 <!-- /ko -->

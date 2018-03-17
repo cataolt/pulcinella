@@ -12,7 +12,8 @@
     </head>
     <body>
         <referenceBlock name="top.links">
-            <block class="TemplateMonster\Blog\Block\Link" name="blog.link" template="TemplateMonster_Blog::link.phtml" after="-" />
+            <!--<block class="TemplateMonster\Blog\Block\Link" name="blog.link" template="TemplateMonster_Blog::link.phtml" after="-" />-->
+            <referenceBlock name="catalog.compare.link"  remove="true" />
         </referenceBlock>
     </body>
 </page>

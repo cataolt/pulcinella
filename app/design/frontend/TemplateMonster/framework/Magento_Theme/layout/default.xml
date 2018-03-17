@@ -85,6 +85,8 @@
         <move element="currency"           destination="header.switchers" after="store_language"/>
         <move element="top.search"         destination="header-wrapper.grid-container.right" after="-" />
         <move element="minicart"           destination="header-wrapper.grid-container.right" after="-"/>
+        <move element="navbar.collapse"    destination="header-wrapper.grid-container.right" after="top.search"/>
+        <move element="rd.navbar.collapse" destination="header-wrapper.grid-container.right" after="navbar.collapse"/>
 
         <referenceBlock name="currency"  remove="true" />
         <referenceBlock name="store_language"  remove="true" />

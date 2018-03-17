@@ -46,6 +46,7 @@
         <?php if ($_gender->isEnabled()): ?>
             <?php echo $_gender->setGender($block->getFormData()->getGender())->toHtml() ?>
         <?php endif ?>
+
     </fieldset>
     <?php if ($block->getShowAddressFields()): ?>
         <fieldset class="fieldset address">
@@ -57,13 +58,6 @@
                     <input type="text" name="company" id="company" value="<?php echo $block->escapeHtml($block->getFormData()->getCompany()) ?>" title="<?php /* @escapeNotVerified */ echo __('Company') ?>" class="input-text <?php /* @escapeNotVerified */ echo $this->helper('Magento\Customer\Helper\Address')->getAttributeValidationClass('company') ?>">
                 </div>
             </div>
-            <div class="field telephone">
-                <label for="telephone" class="label"><span><?php /* @escapeNotVerified */ echo __('Phone Number') ?></span></label>
-                <div class="control">
-                    <input type="text" name="telephone" id="telephone" value="<?php echo $block->escapeHtml($block->getFormData()->getTelephone()) ?>" title="<?php /* @escapeNotVerified */ echo __('Phone Number') ?>" class="input-text <?php /* @escapeNotVerified */ echo $this->helper('Magento\Customer\Helper\Address')->getAttributeValidationClass('telephone') ?>">
-                </div>
-            </div>
-
             <?php $_streetValidationClass = $this->helper('Magento\Customer\Helper\Address')->getAttributeValidationClass('street'); ?>
 
             <div class="field street required">

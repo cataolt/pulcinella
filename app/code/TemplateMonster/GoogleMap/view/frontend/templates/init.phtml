@@ -14,14 +14,14 @@ $helper = $this->helper('TemplateMonster\GoogleMap\Helper\Config\Settings');
         'googleMapPagePlugin'
     ], function($){
         $(window).on('load.map', function(){
-            loadScript();
+//            loadScript/();
         })
     });
 
     function loadScript() {
         var script = document.createElement("script");
         script.type = "text/javascript";
-        script.src = "http://maps.googleapis.com/maps/api/js?sensor=true<?php echo $data->getApiKey(); ?>&callback=initialize";
+        script.src = "http://maps.googleapis.com/maps/api/js?<?php echo $data->getApiKey(); ?>&callback=initialize";
         document.body.appendChild(script);
     }
 

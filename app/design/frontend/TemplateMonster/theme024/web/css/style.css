@@ -873,11 +873,13 @@ table.data-table {
     position: relative;
     width: 48px;
     height: 48px;
-    font-size: 25px;
+    font-size: 35px;
     line-height: 48px;
     text-align: center;
     cursor: pointer;
-    color: #FFF; }
+    margin-left: 10px;
+    margin-top: -20px;
+    color: #000000; }
     .rd-navbar-static .rd-navbar-collapse-toggle span, .rd-navbar-static .rd-navbar-collapse-toggle span:before, .rd-navbar-static .rd-navbar-collapse-toggle span:after {
       transition: .3s all ease; }
     .rd-navbar-static .rd-navbar-collapse-toggle span:before, .rd-navbar-static .rd-navbar-collapse-toggle span:after {
@@ -909,15 +911,15 @@ table.data-table {
     opacity: 1;
     visibility: visible; }
   .rd-navbar-static .rd-navbar-collapse-toggle span {
-    color: #FFF; }
+    color: #000000; }
   .rd-navbar-static .rd-navbar-collapse-toggle:hover span {
-    color: #fc5047; }
+    color: #D71F25; }
 .rd-navbar-static .rd-navbar-collapse {
   display: block;
   text-align: left;
   position: absolute;
-  top: 50px;
-  left: 25px;
+  top: 20px;
+  left: -20px;
   color: #FFF;
   padding: 40px;
   z-index: 19;
@@ -1000,9 +1002,9 @@ table.data-table {
       .rd-navbar-static .rd-navbar-collapse .links li + li {
         padding-top: 15px; }
       .rd-navbar-static .rd-navbar-collapse .links li a {
-        color: #fc5047; }
+        color: #000000; }
         .rd-navbar-static .rd-navbar-collapse .links li a:hover {
-          color: #2b2f3e; }
+          color: #fc5047; }
 
 /*
 * @subsection   RD Navbar Fixed
@@ -1049,7 +1051,7 @@ table.data-table {
       transition: .3s all ease .2s;
       opacity: 1; }
     .rd-navbar-fixed .rd-navbar-collapse.active:before {
-      background: #2b2f3e;
+      background: #D71F25;
       -webkit-transform: scale(25);
       transform: scale(25); }
     .rd-navbar-fixed .rd-navbar-collapse.active .switcher.currency,
@@ -1089,8 +1091,8 @@ table.data-table {
 .rd-navbar-fixed .rd-navbar-collapse-toggle {
   display: block;
   position: fixed;
-  top: 4px;
-  right: 4px;
+  top: 8px;
+  right: 0px;
   font-family: "FontAwesome";
   width: 48px;
   height: 48px;
@@ -1100,7 +1102,7 @@ table.data-table {
     position: relative;
     width: 48px;
     height: 48px;
-    font-size: 28px;
+    font-size: 30px;
     line-height: 48px;
     text-align: center;
     cursor: pointer;
