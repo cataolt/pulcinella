@@ -16,7 +16,7 @@ if($block->getItem()->getData('additional_data')){
 }
 ?>
 <?php if ($block->isProductVisibleInSiteVisibility() && $showAddIngredient): ?>
-    <a class="action action-edit add-ingredient-cart" data-cart-item = "<?php echo $block->getItem()->getId();?>"
+    <a class="action action-edit add-ingredient-cart black" data-cart-item = "<?php echo $block->getItem()->getId();?>"
        title="<?php echo $block->escapeHtml(__('Adauga ingredient')); ?>">
         <span>
             <?php /* @escapeNotVerified */ echo __('Adauga ingredient') ?>

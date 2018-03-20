@@ -94,4 +94,19 @@
     <type name="Magento\Checkout\CustomerData\Cart">
         <plugin name="AddOrderSummary" type="TemplateMonster\ThemeOptions\Plugin\OrderSummary" disabled="false" sortOrder="10"/>
     </type>
+
+    <type name="Magento\Checkout\Model\DefaultConfigProvider">
+        <plugin name="RemoveProductFromCartTotal" type="TemplateMonster\ThemeOptions\Plugin\RemoveProductSummary" disabled="false" sortOrder="20"/>
+    </type>
+
+    <type name="Magento\Quote\Model\Cart\CartTotalRepository">
+        <plugin name="RemoveProductFromCartFinalTotal" type="TemplateMonster\ThemeOptions\Plugin\RemoveProductSummaryReview" disabled="false" sortOrder="30"/>
+    </type>
+
+    <type name="Magento\Framework\View\Element\AbstractBlock">
+        <plugin name="addDateFormat" type="TemplateMonster\ThemeOptions\Plugin\DateFormat" disabled="false" sortOrder="10"/>
+    </type>
+
+    <!--<preference for="Magento\Sales\Block\Order\Item\Renderer\DefaultRenderer" type="TemplateMonster\ThemeOptions\Block\Order\Item\Renderer\DefaultRenderer" />-->
+
 </config>

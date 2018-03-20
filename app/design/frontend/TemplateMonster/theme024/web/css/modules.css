@@ -4189,7 +4189,8 @@ body.ajax-loading #search.input-text:focus {
         line-height: 37px;
         line-height: inherit; }
         #shopping-cart-table .cart.item .actions-toolbar .action-gift:before {
-          content: "";
+          content: "\002B";
+          /*content: "\U2295";*/
           display: inline-block;
           font-family: "Material Icons";
           font-weight: 400;
@@ -4285,7 +4286,7 @@ body.ajax-loading #search.input-text:focus {
       line-height: 37px;
       line-height: inherit; }
       #shopping-cart-table .item-control .action-gift:before {
-        content: "";
+        content: "\f067";
         display: inline-block;
         font-family: "Material Icons";
         font-weight: 400;
@@ -4663,10 +4664,16 @@ body._has-modal-custom .modal-custom-overlay {
       color: #FFF;
       background: #fc5047;
       color: #FFF; }
+      .modal-popup .modal-footer .button-black {
+        background: #000000;
+      }
       .modal-popup .modal-footer button:hover {
         background: #fb2015; }
       .modal-popup .modal-footer button:hover {
         background: #fb2015; }
+      .modal-popup .modal-footer .button-black button:hover {
+        background: #2d2d2d;
+      }
   .modal-popup .modal-footer-actions {
     text-align: right; }
   .modal-popup.confirm .modal-inner-wrap {
@@ -6533,3 +6540,69 @@ div[class^="swatch-opt-"] {
    width: 100%;
    height: 500px;
  }
+
+#shopping-cart-table .cart.item .actions-toolbar .black {
+  background: #000000 }
+#shopping-cart-table .cart.item .actions-toolbar .black a:hover {
+  background: #2d2d2d }
+
+.shipping-address-item button{
+  color: #FFF;
+  border-radius: 27px;
+  background: #000000;
+  position: absolute;
+  margin-left: 70%;
+  margin-top: -40px;
+  padding: 10px;
+}
+
+.checkout-step-shipping .action-show-popup {
+  margin: 0 0.25rem;
+  display: inline-block;
+  line-height: 40px;
+  padding: 7px 40px;
+  background: #000000;
+  color: #FFF;
+  border-radius: 27px;
+  font-family: "Roboto Slab", serif;
+  font-size: 15px;
+}
+
+#shipping-method-buttons-container {
+  display: inline;
+  text-align: right;
+}
+
+.payment-group .payment-method .payment-method-content{
+  text-align: right;
+}
+
+.payment-group .payment-method .payment-method-content .actions-toolbar{
+  display: inline-block;
+}
+
+.step-content .action-show-popup span {
+  display: inline-block;
+  margin-bottom: 10px;
+  line-height: 40px;
+  padding: 7px 20px;
+  background: #000000;
+  color: #FFF;
+  border-radius: 27px;
+  font-family: "Roboto Slab", serif;
+  font-size: 15px;
+  margin-top: 27px;
+  position: absolute;
+}
+
+.step-content .action-show-popup {
+  max-width: 40%;
+}
+
+.checkout-container .opc-summary-wrapper .modal-inner-wrap .modal-header .action-close {
+  display: none;
+}
+
+.orders-history .table-order-items .actions a {
+  padding: 2px 30px;
+}

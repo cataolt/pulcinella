@@ -31,5 +31,9 @@ class ShippingInformationManagementPlugin
         $lon = $extAttributes->getLon();
         $quote = $this->quoteRepository->getActive($cartId);
         $quote->setLon($lon);
+
+        $shippingAddress = $addressInformation->getShippingAddress();
+        $shippingAddress->setLat($lat);
+        $shippingAddress->setLon($lon);
     }
 }

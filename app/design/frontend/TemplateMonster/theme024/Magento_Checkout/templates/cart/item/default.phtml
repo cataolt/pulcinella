@@ -37,11 +37,7 @@ $showInCart = !(in_array($product->getAttributeSetId(), array(10)));
         <?php endif; ?>
             <div class="product-item-details">
                 <strong class="product-item-name">
-                    <?php if ($block->hasProductUrl()):?>
-                        <a href="<?php /* @escapeNotVerified */ echo $block->getProductUrl() ?>"><?php echo $block->escapeHtml($block->getProductName()) ?></a>
-                    <?php else: ?>
                         <?php echo $block->escapeHtml($block->getProductName()) ?>
-                    <?php endif; ?>
                 </strong>
                 <?php if ($_options = $block->getOptionList()):?>
                     <dl class="item-options">

@@ -14,7 +14,7 @@ $cartHelper = $this->helper('Magento\Checkout\Helper\Cart');
 $cartUrl = $cartHelper->getAddUrl($item);
 $postData = $postDataHelper->getPostData($cartUrl, ['product' => $item])
 ?>
-<a class="action action-gift"
+<a class="action action-gift black"
    title="<?php echo $block->escapeHtml(__('Duplica')); ?>"
    data-post='<?php /* @escapeNotVerified */ echo $postData ?>'>
     <span>

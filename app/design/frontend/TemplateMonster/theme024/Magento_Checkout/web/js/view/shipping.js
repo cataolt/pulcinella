@@ -101,30 +101,7 @@ define(
                 this.isFormPopUpVisible.subscribe(function (value) {
                     if (value) {
                         self.getPopUp().openModal();
-
-                        var marker = false;
-                        var map;
-
-                        //The center location of our map.
-                        var centerOfMap = new google.maps.LatLng(45.7541614,21.2324269);
-
-                        //Map options.
-                        var options = {
-                            center: centerOfMap, //Set center.
-                            zoom: 13 //The zoom value.
-                        };
-
-                        //Create the map object.
-                        map = new google.maps.Map(document.getElementById('map-checkout'), options);
-                        var lat = $('[name="lat"]').val();
-                        var lon = $('[name="lon"]').val();
-                        if(lat != '' && lon != '' ){
-                            marker = new google.maps.Marker({
-                                position: new google.maps.LatLng(lat,lon),
-                                map: map,
-                                draggable: true //make it draggable
-                            });
-                        }
+                        self.drawMap();
                     }
                 });
 

@@ -1,0 +1,46 @@
+<?php
+
+// @codingStandardsIgnoreFile
+
+/** @var  $block \TemplateMonster\ThemeOptions\Block\Order\Item\Renderer\DefaultRenderer */
+$_item = $block->getItem();
+$product = $_item->getProduct();
+$additionalData = $_item->getAdditionalData();
+$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+$options = array();
+if($additionalData) {
+    $productsArray = unserialize($additionalData);
+    foreach ($productsArray as $key=>$value){
+        $productId = $value;
+        $objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+        $productObject = $objectManager->create('Magento\Catalog\Model\Product')->load($productId);
+        $options[] = array(
+            'name' => $productObject->getName(),
+            'price' => (int)$productObject->getPrice() . " RON"
+        );
+    }
+}
+
+?>
+<?php if($product->getAttributeSetId() != 10): ?>
+    <tr id="order-item-row">
+        <td class="col name" data-th="<?php echo $block->escapeHtml(__('Product Name')); ?>">
+            <strong class="product name product-item-name"><?php echo $block->escapeHtml($_item->getName()) . $_item->getId() ?></strong>
+            <?php if (!empty($options)): ?>
+                <dl class="item-options">
+                    <?php foreach ($options as $_option) : ?>
+                        <dt><?php echo $block->escapeHtml($_option['name']) ?></dt>
+                        <dd>
+                            <?php echo nl2br($block->escapeHtml($_option['price'])) ?>
+                        </dd>
+                    <?php endforeach; ?>
+                </dl>
+            <?php endif; ?>
+        </td>
+        <td class="col price" data-th="<?php echo $block->escapeHtml(__('Price')); ?>">
+            <?php echo $block->getItemPriceHtml(); ?>
+        </td>
+    </tr>
+<?php endif; ?>
+
+<?php         unset($productObject); ?>

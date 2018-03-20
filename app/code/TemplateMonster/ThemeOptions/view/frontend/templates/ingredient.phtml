@@ -37,7 +37,7 @@ $ingredient_list = $block->getAllIngredients();
                     [
                         {
                             text: $.mage.__('Mai adauga'),
-                            class: '',
+                            class: 'button-black',
                             click: function () {
                                 var ingredient_list = $('#ingredient_list').html();
                                 i++;
@@ -47,7 +47,7 @@ $ingredient_list = $block->getAllIngredients();
                         },
                         {
                             text: $.mage.__('Sterge'),
-                            class: '',
+                            class: 'button-black',
                             click: function () {
                                 $('#ingredient_list' + i).remove();
                                 $('#br_' + i).remove();
