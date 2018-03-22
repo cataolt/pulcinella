@@ -4189,8 +4189,8 @@ body.ajax-loading #search.input-text:focus {
         line-height: 37px;
         line-height: inherit; }
         #shopping-cart-table .cart.item .actions-toolbar .action-gift:before {
-          content: "\002B";
-          /*content: "\U2295";*/
+          content: "\E800";
+          /*content: "\uE800";*/
           display: inline-block;
           font-family: "Material Icons";
           font-weight: 400;
@@ -6525,11 +6525,11 @@ div[class^="swatch-opt-"] {
 /*# sourceMappingURL=modules.css.map */
 
 #checkout-shipping-method-load{
-  display: none;
+  /*display: none;*/
 }
 
 .opc-block-shipping-information {
-  display: none;
+  /*display: none;*/
 }
 
 .hide-checkout {
@@ -6575,6 +6575,11 @@ div[class^="swatch-opt-"] {
 
 .payment-group .payment-method .payment-method-content{
   text-align: right;
+  display: none;
+}
+
+.payment-group .payment-method .payment-method-content._active{
+  display: block;
 }
 
 .payment-group .payment-method .payment-method-content .actions-toolbar{
@@ -6592,7 +6597,6 @@ div[class^="swatch-opt-"] {
   font-family: "Roboto Slab", serif;
   font-size: 15px;
   margin-top: 27px;
-  position: absolute;
 }
 
 .step-content .action-show-popup {
@@ -6604,5 +6608,17 @@ div[class^="swatch-opt-"] {
 }
 
 .orders-history .table-order-items .actions a {
-  padding: 2px 30px;
+  padding: 2px 20px;
+}
+
+.table-checkout-shipping-method .row {
+  display: table-row;
+}
+
+.table-checkout-shipping-method {
+  width: auto;
+}
+
+.orders-recent .table-order-items .actions a {
+  padding: 2px 20px;
 }

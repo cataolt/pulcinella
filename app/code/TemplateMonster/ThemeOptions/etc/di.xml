@@ -107,6 +107,11 @@
         <plugin name="addDateFormat" type="TemplateMonster\ThemeOptions\Plugin\DateFormat" disabled="false" sortOrder="10"/>
     </type>
 
-    <!--<preference for="Magento\Sales\Block\Order\Item\Renderer\DefaultRenderer" type="TemplateMonster\ThemeOptions\Block\Order\Item\Renderer\DefaultRenderer" />-->
+    <type name="Magento\Quote\Model\Quote">
+        <plugin name="unmergeQuote" type="TemplateMonster\ThemeOptions\Plugin\UnmergeQuote" disabled="false" sortOrder="10"/>
+    </type>
 
+    <preference for="Magento\Sales\Model\Order\Email\Sender\OrderSender" type="TemplateMonster\ThemeOptions\Model\Order\Email\Sender\OrderSender" />
+
+    <preference for="Magento\Quote\Observer\Webapi\SubmitObserver" type="TemplateMonster\ThemeOptions\Observer\Webapi\SubmitObserver" />
 </config>

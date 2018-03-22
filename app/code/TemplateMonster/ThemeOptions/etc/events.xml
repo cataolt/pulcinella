@@ -9,4 +9,7 @@
     <event name="sales_quote_remove_item">
         <observer name="remove additional products" instance="TemplateMonster\ThemeOptions\Observer\RemoveProducts" />
     </event>
+    <event name="checkout_type_onepage_save_order_after">
+        <observer name="remove new email date" instance="TemplateMonster\ThemeOptions\Observer\RemoveMail" />
+    </event>
 </config>
