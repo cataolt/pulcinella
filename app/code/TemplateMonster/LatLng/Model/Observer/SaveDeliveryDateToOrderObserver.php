@@ -27,6 +27,7 @@ class SaveDeliveryDateToOrderObserver implements ObserverInterface
         $quote = $quoteRepository->get($order->getQuoteId());
         $order->setLat( $quote->getLat() );
         $order->setLon( $quote->getLon() );
+        $order->setCustomerTelephone( $quote->getCustomerTelephone() );
 
         return $this;
     }

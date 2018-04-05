@@ -25,7 +25,7 @@
                                                             <item name="children" xsi:type="array">
                                                                 <!--Remove fields-->
                                                                 <item name="telephone" xsi:type="array">
-                                                                    <item name="visible" xsi:type="boolean">false</item>
+                                                                    <item name="visible" xsi:type="boolean">true</item>
                                                                 </item>
                                                                 <item name="company" xsi:type="array">
                                                                     <item name="visible" xsi:type="boolean">false</item>

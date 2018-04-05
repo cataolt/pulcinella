@@ -115,6 +115,7 @@ return array (
     'TemplateMonster_AjaxWishlist' => 1,
     'TemplateMonster_Blog' => 1,
     'TemplateMonster_Customer' => 1,
+    'TemplateMonster_Ebriza' => 1,
     'TemplateMonster_FeaturedProduct' => 1,
     'TemplateMonster_GoogleMap' => 1,
     'TemplateMonster_LatLng' => 1,

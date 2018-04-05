@@ -22,7 +22,6 @@ class DefaultRenderer extends \Magento\Sales\Block\Order\Item\Renderer\DefaultRe
         \Magento\Catalog\Model\Product\OptionFactory $productOptionFactory,
         array $data = []
     ) {
-//        var_dump('here');die();
         parent::__construct($context, $string, $productOptionFactory, $data);
         $this->_productRepository = $productRepository;
     }
