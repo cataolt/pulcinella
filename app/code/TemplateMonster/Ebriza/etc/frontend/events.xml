@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="customer_save_after">
+        <observer name="customer_save_after_sync_ebriza" instance="TemplateMonster\Ebriza\Observer\Customer" />
+    </event>
+
+    <event name="customer_address_save_after">
+        <observer name="customer_address_save_after_sync_ebriza" instance="TemplateMonster\Ebriza\Observer\CustomerAddress" />
+    </event>
+</config>

@@ -142,6 +142,7 @@ class Customers  extends Sync {
                 $customer->setTelephone($data['phone']);
                 $customer->setEbrizaId($data['id']);
                 $customer->setNeedEbrizaSync(0);
+                $customer->setSkipEbriza(true);
                 $customer->save();
 
                 $addreses = $data['addresses'];
@@ -158,9 +159,13 @@ class Customers  extends Sync {
                         if (!$found) {
                             $addressDataObject = $this->addressDataFactory->create();
                             $addressDataObject->setCustomerId($customer->getId());
-                            $addressDataObject->setStreet($address['street']);
-                            $addressDataObject->setLat($address['lat']);
-                            $addressDataObject->setLon($address['long']);
+                            $addressDataObject->setStreet(array($address['street']));
+                            $addressDataObject->setCountryId('RO');
+                            $addressDataObject->setRegionId('Timiş');
+                            $addressDataObject->setPostcode('1234');
+                            $addressDataObject->setCustomAttribute('lat', $address['lat']);
+                            $addressDataObject->setCustomAttribute('lon', $address['long']);
+                            $addressDataObject->setCustomAttribute('skip_ebriza', 1);
                             $newAddress = $this->addressRepository->save($addressDataObject);
                         }
                     }

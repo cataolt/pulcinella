@@ -8,9 +8,11 @@ class CustomerAddress implements \Magento\Framework\Event\ObserverInterface
         $customerAddress = $observer->getEvent()->getCustomerAddress();
         $customer = $customerAddress->getCustomer();
 
-        if($customer->getNeedEbrizaSync() != 1){
-            $customer->setNeedEbrizaSync(1);
-            $customer->save();
+        if($customerAddress->getSkipEbriza() != true) {
+            if ($customer->getNeedEbrizaSync() != 1) {
+                $customer->setNeedEbrizaSync(1);
+                $customer->save();
+            }
         }
     }
 }

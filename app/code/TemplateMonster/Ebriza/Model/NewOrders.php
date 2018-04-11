@@ -244,6 +244,10 @@ class NewOrders  extends Customers {
             $order->setStatus(\Magento\Sales\Model\Order::STATE_PROCESSING);
             $order->addStatusToHistory($order->getStatus(), 'Order sent in Ebriza with ' . $result['id']);
             $order->save();
+
+            $objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+            $emailSender = $objectManager->create('\Magento\Sales\Model\Order\Email\Sender\OrderSender');
+            $emailSender->send($order);
         }
     }
 }

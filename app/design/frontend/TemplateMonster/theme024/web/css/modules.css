@@ -6517,6 +6517,10 @@ div[class^="swatch-opt-"] {
     width: 50%;
     margin-left: 25%;
   }
+
+  .rd-parallax-layer.pizza-layer {
+    margin-top: 90px;
+  }
 }
 
 .footer-col {
@@ -6621,4 +6625,20 @@ div[class^="swatch-opt-"] {
 
 .orders-recent .table-order-items .actions a {
   padding: 2px 20px;
+}
+
+.modal-content div[name="shippingAddress.telephone"]{
+  display:none;
+}
+
+.rd-parallax-layer.leaf-layer {
+  margin-top: 30px;
+}
+
+section.rd-parallax.index-header-parallax{
+  height: 502px !important;
+}
+
+.rd-parallax-inner {
+  height: 504px !important;
 }

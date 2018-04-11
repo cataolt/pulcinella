@@ -162,6 +162,15 @@
                 map: map,
                 draggable: true //make it draggable
             });
+        } else {
+            marker = new google.maps.Marker({
+                position: centerOfMap,
+                map: map,
+                draggable: true //make it draggable
+            });
+
+            document.getElementById('lat').value = centerOfMap.lat(); //latitude
+            document.getElementById('lon').value = centerOfMap.lng();
         }
 
         //Listen for any clicks on the map.

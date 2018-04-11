@@ -7,9 +7,11 @@ class Customer implements \Magento\Framework\Event\ObserverInterface
     {
         $customer = $observer->getEvent()->getCustomer();
 
-        if($customer->getData('need_ebriza_sync') != 1){
-            $customer->setData('need_ebriza_sync',1);
-            $customer->save();
+        if($customer->getSkipEbriza() != true) {
+            if ($customer->getData('need_ebriza_sync') != 1) {
+                $customer->setData('need_ebriza_sync', 1);
+                $customer->save();
+            }
         }
     }
 }

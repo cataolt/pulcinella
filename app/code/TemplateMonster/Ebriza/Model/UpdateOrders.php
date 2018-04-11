@@ -59,7 +59,7 @@ class UpdateOrders  extends Sync {
             $token = $this->getToken();
         }
 
-        $url = 'https://www.ebrizademo.com/api/bills/get?id=' . $this->data['id'];
+        $url = 'https://www.ebrizademo.com/api/orders/get?id=' . $this->data['id'];
         $clientId = 'D6739DC4-A3F8-4FF4-B7D5-1A715520A026';
         $headers = array(
             'Authorization' => 'bearer ' . $token . '',
@@ -87,18 +87,14 @@ class UpdateOrders  extends Sync {
     protected function updateOrder($order, $result){
         try {
             if(!empty($result) && array_key_exists('id', $result)){
-                var_dump($order->getIncrementId());
-                var_dump($result);die();
-
-                $order->setData('ebriza_id', $result['id']);
-                $order->setState(\Magento\Sales\Model\Order::STATE_PROCESSING, true);
-                $order->setStatus(\Magento\Sales\Model\Order::STATE_PROCESSING);
-                $order->addStatusToHistory($order->getStatus(), 'Order sent in Ebriza with ' . $result['id']);
+                $order->setState(\Magento\Sales\Model\Order::STATE_COMPLETE, true);
+                $order->setStatus(\Magento\Sales\Model\Order::STATE_COMPLETE);
+                $order->addStatusToHistory($order->getStatus(), 'Order complete in Ebriza with ' . $result['id']);
                 $order->save();
             }
         }  catch (Exception $e){
             $this->log($e->getMessage());
-            echo 'unable to save customer';
+            echo 'unable to save order';
         }
     }
 }
