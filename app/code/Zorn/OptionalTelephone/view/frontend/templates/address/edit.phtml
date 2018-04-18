@@ -170,7 +170,7 @@
             });
 
             document.getElementById('lat').value = centerOfMap.lat(); //latitude
-            document.getElementById('lon').value = centerOfMap.lng();
+            document.getElementById('lon').value = centerOfMap.lon();
         }
 
         //Listen for any clicks on the map.
@@ -200,6 +200,7 @@
         function markerLocation(){
             //Get location.
             var currentLocation = marker.getPosition();
+            
             //Add lat and lng values to a field that we can save.
             document.getElementById('lat').value = currentLocation.lat(); //latitude
             document.getElementById('lon').value = currentLocation.lng(); //longitude
