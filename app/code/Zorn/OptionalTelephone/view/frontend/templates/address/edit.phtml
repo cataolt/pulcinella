@@ -170,7 +170,7 @@
             });
 
             document.getElementById('lat').value = centerOfMap.lat(); //latitude
-            document.getElementById('lon').value = centerOfMap.lon();
+            document.getElementById('lon').value = centerOfMap.lng();
         }
 
         //Listen for any clicks on the map.
@@ -200,14 +200,28 @@
         function markerLocation(){
             //Get location.
             var currentLocation = marker.getPosition();
-            
+            var geocoder = new google.maps.Geocoder;
+
             //Add lat and lng values to a field that we can save.
             document.getElementById('lat').value = currentLocation.lat(); //latitude
             document.getElementById('lon').value = currentLocation.lng(); //longitude
+
+            var markerLoc = new google.maps.LatLng(currentLocation.lat(),currentLocation.lng());
+            geocoder.geocode({'location': markerLoc}, function(results, status) {
+                if (status === 'OK') {
+                    if (results[0]) {
+                        var addressArray = (results[0].formatted_address).split(',', 2);
+                        document.getElementById('street_1').value = addressArray[0];
+                    } else {
+                        window.alert('No results found');
+                    }
+                } else {
+                    window.alert('Geocoder failed due to: ' + status);
+                }
+            });
         }
     });
 
-    function initialize() {}
 </script>
 
 

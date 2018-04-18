@@ -37,9 +37,9 @@ if($block->getItem()->getData('additional_data')){
             modal,
             customerData
         ) {
-            $('body').on('click', '.add-ingredient-cart', function(){
-                var go = true;
-                $("#popup_item_id").val($(event.target).data("cart-item"));
+            $('body').on('click', '.add-ingredient-cart', function(e){
+                e = e || window.event;
+                $("#popup_item_id").val($(e.target).data("cart-item"));
                 $("#popup-mpdal").modal("openModal");
             });
 

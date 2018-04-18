@@ -243,3 +243,4 @@ Sidebar,Sidebar
 "Your order number is: %1.","Numarul comenzii tale este: %1."
 "Your order # is: <span>%1</span>.","Numarul comenzii tale este: <span>%1</span>."
 "Phone number":"Telefon"
+"If there is an account associated with %1 you will receive an email with a link to reset your password.","Daca exista un cont asociat %1 vei primi un email cu instructiunile de restare."

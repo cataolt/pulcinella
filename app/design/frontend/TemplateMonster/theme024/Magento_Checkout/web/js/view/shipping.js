@@ -356,6 +356,21 @@ define(
                     //Add lat and lng values to a field that we can save.
                     $("input[name='lat']").val(currentLocation.lat());  //latitude
                     $("input[name='lon']").val(currentLocation.lng());
+
+                    var markerLoc = new google.maps.LatLng(currentLocation.lat(),currentLocation.lng());
+                    var geocoder = new google.maps.Geocoder;
+                    geocoder.geocode({'location': markerLoc}, function(results, status) {
+                        if (status === 'OK') {
+                            if (results[0]) {
+                                var addressArray = (results[0].formatted_address).split(',', 2);
+                                $("input[name='street[0]']").val(addressArray[0]);
+                            } else {
+                                window.alert('No results found');
+                            }
+                        } else {
+                            window.alert('Geocoder failed due to: ' + status);
+                        }
+                    });
                 });
             }
 
