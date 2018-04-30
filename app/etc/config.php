@@ -123,6 +123,7 @@ return array (
     'TemplateMonster_NewShipping' => 1,
     'TemplateMonster_NewsletterPopup' => 1,
     'TemplateMonster_OfflinePaymentMethods' => 1,
+    'TemplateMonster_OrderComment' => 1,
     'TemplateMonster_Parallax' => 1,
     'TemplateMonster_SocialLogin' => 1,
     'TemplateMonster_SocialSharing' => 1,

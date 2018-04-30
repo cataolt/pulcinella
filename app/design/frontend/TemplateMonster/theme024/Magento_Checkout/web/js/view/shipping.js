@@ -363,7 +363,8 @@ define(
                         if (status === 'OK') {
                             if (results[0]) {
                                 var addressArray = (results[0].formatted_address).split(',', 2);
-                                $("input[name='street[0]']").val(addressArray[0]);
+                                $('[name="street[0]"]').val(addressArray[0]);
+                                $('[name="street[0]"]').trigger("change")
                             } else {
                                 window.alert('No results found');
                             }

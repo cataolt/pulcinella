@@ -816,10 +816,21 @@ table.data-table {
   /*background: url("../images/media/brown-bg.jpg"); }*/
   .rd-navbar-static.rd-navbar--is-stuck .header-bottome {
     display: none; }
-  .rd-navbar-static.rd-navbar--is-stuck .rd-navbar-panel {
-    display: none; }
-  .rd-navbar-static.rd-navbar--is-stuck .page-header__panel,
   .rd-navbar-static.rd-navbar--is-stuck .page-header__content {
+    padding: 0; }
+  .rd-navbar-static.rd-navbar--is-stuck .page-header__content .container .row {
+    display: flex;
+    justify-content: flex-end; }
+  .rd-navbar-static.rd-navbar--is-stuck .page-header__panel,
+  .rd-navbar-static.rd-navbar--is-stuck .page-header__content .container .row .h-left {
+    display: none; }
+  .rd-navbar-static.rd-navbar--is-stuck .page-header__content .container .row .h-center {
+    display: none; }
+  .rd-navbar-static.rd-navbar--is-stuck .page-header__content .container .row .h-right .rd-navbar-search-toggle {
+    display: none; }
+  .rd-navbar-static.rd-navbar--is-stuck .page-header__content .container .row .h-right .rd-navbar-collapse-toggle {
+    display: none; }
+  .rd-navbar-static.rd-navbar--is-stuck .page-header__content .container .row .h-right .rd-navbar-cart-wrap .minicart-wrapper .rd-navbar-cart-fixed {
     display: none; }
 .rd-navbar-static .rd-navbar-inner {
   max-width: 1200px;
@@ -4592,3 +4603,4 @@ body {
 /* Mobile portrait */
 
 /*# sourceMappingURL=style.css.map */
+

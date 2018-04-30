@@ -88,8 +88,9 @@ $ingredient_list = $block->getAllIngredients();
             };
 
             var popup = modal(options, $('#popup-mpdal'));
-            $('body').on('click', '.add-ingredient', function(){
-                $("#popup_item_id").val($(event.target).data("cart-item"));
+            $('body').on('click', '.add-ingredient', function(e){
+                e = e || window.event;
+                $("#popup_item_id").val($(e.target).data("cart-item"));
                 $("#popup-mpdal").modal("openModal");
             });
 

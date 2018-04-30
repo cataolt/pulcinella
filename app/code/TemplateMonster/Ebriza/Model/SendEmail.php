@@ -2,33 +2,41 @@
 
 namespace TemplateMonster\Ebriza\Model;
 
-class UpdateOrders  extends Sync {
+use DateTime;
+
+
+class SendEmail  extends Sync {
     protected $data;
 
     protected $_orderCollectionFactory;
+
+    protected $_orderSender;
 
     public function __construct(
 
         \Magento\Framework\HTTP\Client\Curl $curl,
         \Magento\Framework\Json\Helper\Data $jsonHelper,
         \Magento\Framework\Stdlib\DateTime\DateTime $datetime,
-        \Magento\Sales\Model\ResourceModel\Order\CollectionFactory $orderCollectionFactory
+        \Magento\Sales\Model\ResourceModel\Order\CollectionFactory $orderCollectionFactory,
+        \Magento\Sales\Model\Order\Email\Sender\OrderSender $orderSender
 
     ){
         $this->_orderCollectionFactory  = $orderCollectionFactory;
+        $this->_orderSender  = $orderSender;
         parent::__construct($curl, $jsonHelper, $datetime);
     }
+
     /**
      * Initialize resource model
      *
      * @return void
      */
-    public function syncOrders()
+    public function sendEmail()
     {
         $this->getToken();
         $orders = $this->getOrdersToSync();
         foreach ($orders as $order){
-            $this->log('Try to update order with with id ' . $order->getId());
+            $this->log('Send email for order with id ' . $order->getId());
             $this->syncOrder($order);
         }
     }
@@ -46,10 +54,9 @@ class UpdateOrders  extends Sync {
         $collection = $this->_orderCollectionFactory->create();
         $collection->addFieldToSelect("*");
         $collection->addFieldToFilter("status", 'processing');
-        $collection->addFieldToFilter("ebriza_delivery_time",array('neq' => NULL));
+        $collection->addFieldToFilter("ebriza_delivery_time",array('null' => true));
         return $collection;
     }
-
 
     private function execute(){
         $arrayResponse = array();
@@ -60,7 +67,7 @@ class UpdateOrders  extends Sync {
             $token = $this->getToken();
         }
 
-        $url = 'https://www.ebrizademo.com/api/orders/get?id=' . $this->data['id'];
+        $url = 'https://www.ebrizademo.com/api/bills/get?id=' . $this->data['id'];
         $clientId = 'D6739DC4-A3F8-4FF4-B7D5-1A715520A026';
         $headers = array(
             'Authorization' => 'bearer ' . $token . '',
@@ -88,10 +95,24 @@ class UpdateOrders  extends Sync {
     protected function updateOrder($order, $result){
         try {
             if(!empty($result) && array_key_exists('id', $result)){
-                $order->setState(\Magento\Sales\Model\Order::STATE_COMPLETE, true);
-                $order->setStatus(\Magento\Sales\Model\Order::STATE_COMPLETE);
-                $order->addStatusToHistory($order->getStatus(), 'Order complete in Ebriza with ' . $result['id']);
-                $order->save();
+                if(array_key_exists('deliveryDate', $result)){
+                    if(!is_null($result['deliveryDate'])){
+                        if($result['deliveryDate'] != $result['timestamp']) {
+                            $start_date = new DateTime($result['deliveryDate']);
+                            $end_date = new DateTime($this->datetime->date('Y-m-d H:i:s'));
+                            $interval = $start_date->diff($end_date);
+                            $hours = $interval->format('%h');
+                            $minutes = $interval->format('%i');
+                            $min = ($hours * 60 + $minutes);
+                            $order->setData('ebriza_delivery_time', $min);
+                            $order->save();
+                            $this->_orderSender->send($order);
+                        }
+                    } else {
+                        $this->log('order not yet updated');
+                    }
+
+                }
             }
         }  catch (Exception $e){
             $this->log($e->getMessage());
