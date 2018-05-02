@@ -111,7 +111,19 @@
         <plugin name="unmergeQuote" type="TemplateMonster\ThemeOptions\Plugin\UnmergeQuote" disabled="false" sortOrder="10"/>
     </type>
 
+    <type name="Magento\Checkout\Model\Cart">
+        <plugin name="pluginAddProductToCart" type="TemplateMonster\ThemeOptions\Plugin\ClosedAddToCart" sortOrder="10" disabled="false"/>
+    </type>
+    <type name="Magento\Checkout\Controller\Cart\Index">
+        <plugin name="pluginAddCartClosed" type="TemplateMonster\ThemeOptions\Plugin\ClosedCart" sortOrder="10" disabled="false"/>
+    </type>
+    <type name="Magento\Checkout\Controller\Index\Index">
+        <plugin name="pluginCheckoutClosed" type="TemplateMonster\ThemeOptions\Plugin\ClosedCheckout" sortOrder="10" disabled="false"/>
+    </type>
+
     <preference for="Magento\Sales\Model\Order\Email\Sender\OrderSender" type="TemplateMonster\ThemeOptions\Model\Order\Email\Sender\OrderSender" />
 
     <preference for="Magento\Quote\Observer\Webapi\SubmitObserver" type="TemplateMonster\ThemeOptions\Observer\Webapi\SubmitObserver" />
+
+
 </config>

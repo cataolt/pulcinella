@@ -709,13 +709,12 @@
                     <comment>Closed pop-up Content.</comment>
                     <frontend_model>TemplateMonster\NewsletterPopup\Block\Adminhtml\System\Config\Field\Editor</frontend_model>
                 </field>
-                <field id="closed_hour_start" translate="label comment" type="text" sortOrder="43" showInDefault="1" showInWebsite="1" showInStore="1">
+                <field id="open_hour_start" translate="label comment" type="text" sortOrder="43" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>Start Time</label>
                     <comment>Start time in format h:m.</comment>
                 </field>
-                <field id="closed_hour_end" translate="label comment" type="text" sortOrder="44" showInDefault="1" showInWebsite="1" showInStore="1">
+                <field id="open_hour_end" translate="label comment" type="text" sortOrder="44" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>End Time</label>
-                    <comment>Closed pop-up Content.</comment>
                     <comment>End time in format h:m.</comment>
                 </field>
             </group>

@@ -32,6 +32,16 @@ class Closed extends AbstractHelper
     const XML_PATH_TITLE = 'closed_popup/general/title';
 
     /**
+     * Show on startup config option.
+     */
+    const XML_PATH_START_HOUR = 'closed_popup/general/open_hour_start';
+
+    /**
+     * Show on startup config option.
+     */
+    const XML_PATH_END_HOUR = 'closed_popup/general/open_hour_end';
+
+    /**
      * @var InitialConfig
      */
     protected $initialConfig;
@@ -53,14 +63,18 @@ class Closed extends AbstractHelper
      * @param ConfigDataFactory $configDataFactory
      * @param Context           $context
      */
+
+    protected $date;
     public function __construct(
         InitialConfig $initialConfig,
         ConfigDataFactory $configDataFactory,
+        \Magento\Framework\Stdlib\DateTime\DateTime $date,
         Context $context
     )
     {
         $this->initialConfig = $initialConfig;
         $this->configDataFactory = $configDataFactory;
+        $this->date = $date;
         parent::__construct($context);
     }
 
@@ -103,6 +117,30 @@ class Closed extends AbstractHelper
         return $result;
     }
 
+    public function getOpenStartHour(){
+        $result = $this->scopeConfig->getValue(
+            self::XML_PATH_START_HOUR,
+            ScopeInterface::SCOPE_STORE
+        );
+        if(!$result){
+            $result = "10:00";
+        }
+
+        return $result;
+    }
+
+    public function getOpenStartEnd(){
+        $result = $this->scopeConfig->getValue(
+            self::XML_PATH_END_HOUR,
+            ScopeInterface::SCOPE_STORE
+        );
+        if(!$result){
+            $result = "20:00";
+        }
+
+        return $result;
+    }
+
     /**
      * Get initial config data.
      *
@@ -134,5 +172,37 @@ class Closed extends AbstractHelper
         }
 
         return $this->scopeConfig->getValue($path, ScopeInterface::SCOPE_STORE);
+    }
+
+    public function isClosingHour() {
+        $hour = (int)$this->date->date('H');
+        $minute = (int)$this->date->date('i');
+
+        $openString = $this->getOpenStartHour();
+        $openArray = explode(':',$openString);
+        $openHour = (int)$openArray[0];
+        $openMinute = (int)$openArray[1];
+
+        $closeString = $this->getOpenStartEnd();
+        $closeArray = explode(':',$closeString);
+        $closeHour = (int)$closeArray[0];
+        $closeMinute = (int)$closeArray[1];
+//        var_dump($hour);die();
+        if($hour > $openHour && $hour < $closeHour){
+            return false;
+        } else {
+            if($hour == $openHour){
+                if($minute >= $openMinute){
+                    return false;
+                }
+            }
+            if($hour == $closeHour){
+                if($minute <= $closeMinute){
+                    return false;
+                }
+            }
+        }
+        return true;
+
     }
 }

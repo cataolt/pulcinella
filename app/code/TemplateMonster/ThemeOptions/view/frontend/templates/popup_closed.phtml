@@ -1,0 +1,39 @@
+<?php
+$start = $this->getOpenStartHour();
+$end = $this->getOpenStartEnd();
+?>
+
+<?php if($this->isClosingHour()): ?>
+    <div id="closed-mpdal-hours">
+        <h2 style="text-align: center;">In intervalul orar <?php echo $start; ?> si <?php echo $end; ?></h2>
+        <h2 style="text-align: center;">Magazinul este inchis!</h2>
+    </div>
+<?php endif; ?>
+
+<script>
+    require(
+        [
+            'jquery',
+            'Magento_Ui/js/modal/modal',
+            'Magento_Customer/js/customer-data'
+        ],
+        function(
+            $,
+            modal,
+            customerData
+        ) {
+            var i = 1;
+            var options = {
+                type: 'popup',
+                responsive: true,
+                innerScroll: true,
+                title: '<?php echo 'Ne pare rau!' ?>'
+            };
+
+            var popup = modal(options, $('#closed-mpdal-hours'));
+            $( window ).load(function() {
+                $("#closed-mpdal-hours").modal("openModal");
+            });
+        }
+    );
+</script>
