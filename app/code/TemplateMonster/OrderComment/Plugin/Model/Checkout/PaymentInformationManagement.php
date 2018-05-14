@@ -7,6 +7,8 @@
 namespace TemplateMonster\OrderComment\Plugin\Model\Checkout;
 
 use Magento\Quote\Api\Data\PaymentInterface;
+use Magento\Framework\Exception\CouldNotSaveException;
+
 
 /**
  * Class PaymentInformationManagement
@@ -35,6 +37,8 @@ class PaymentInformationManagement
      */
     protected $_filterManager;
 
+    protected $_helper;
+
     /**
      * PaymentInformationManagement constructor.
      *
@@ -45,6 +49,7 @@ class PaymentInformationManagement
         \Magento\Framework\Json\Helper\Data $jsonHelper,
         \Magento\Framework\Filter\FilterManager $filterManager,
         \Magento\Sales\Model\Order\Status\HistoryFactory $historyFactory,
+        \TemplateMonster\NewShipping\Helper\Data $helper,
         \Magento\Sales\Model\OrderFactory $orderFactory
     )
     {
@@ -52,6 +57,7 @@ class PaymentInformationManagement
         $this->_filterManager = $filterManager;
         $this->historyFactory = $historyFactory;
         $this->orderFactory = $orderFactory;
+        $this->_helper = $helper;
     }
 
     public function aroundSavePaymentInformation(
@@ -62,8 +68,16 @@ class PaymentInformationManagement
         \Magento\Quote\Api\Data\AddressInterface $billingAddress = null
     )
     {
+
         $objectManager = \Magento\Framework\App\ObjectManager::getInstance();
         $checkoutSession = $objectManager->create('\Magento\Checkout\Model\Session');
+
+        $minimumAmount = $this->_helper->getMinimumAmount();
+        if ($checkoutSession->getQuote()->getShippingMethod() == 'freeshipping_freeshipping' && $checkoutSession->getQuote()->getGrandTotal() < $minimumAmount){
+            var_dump(__('Pentru aceasta zona comanda este de ' . $minimumAmount . ' RON!'));die();
+            throw new CouldNotSaveException(__('Pentru aceasta zona comanda este de ' . $minimumAmount . ' RON!'));
+            return false;
+        }
 
         $comment = NULL;
         // get JSON post data

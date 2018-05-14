@@ -1,0 +1,95 @@
+<?php
+/**
+ * MageVision Cart Product Comment Extension
+ *
+ * @category     MageVision
+ * @package      MageVision_CartProductComment
+ * @author       MageVision Team
+ * @copyright    Copyright (c) 2017 MageVision (http://www.magevision.com)
+ * @license      LICENSE_MV.txt or http://www.magevision.com/license-agreement/
+ */
+?>
+<?php $_item = $block->getItem() ?>
+<?php $_order = $block->getOrder() ?>
+<?php $cartProductCommentHelper = $this->helper('MageVision\CartProductComment\Helper\Data'); ?>
+
+<?php $parentItem = $block->getItem() ?>
+<?php $items = array_merge([$parentItem], $parentItem->getChildrenItems()); ?>
+
+<?php if ($block->getItemOptions() || $_item->getDescription() || $this->helper('Magento\GiftMessage\Helper\Message')->isMessagesAllowed('order_item', $_item) && $_item->getGiftMessageId()): ?>
+    <?php $_showlastRow = true ?>
+<?php else: ?>
+    <?php $_showlastRow = false ?>
+<?php endif; ?>
+
+<?php $_prevOptionId = '' ?>
+
+<?php foreach ($items as $_item): ?>
+
+    <?php if ($_item->getParentItem()): ?>
+        <?php $attributes = $block->getSelectionAttributes($_item) ?>
+        <?php if ($_prevOptionId != $attributes['option_id']): ?>
+            <tr class="bundle-option-label">
+                <td colspan="3">
+                    <strong><em><?php /* @escapeNotVerified */ echo $attributes['option_label'] ?></em></strong>
+                </td>
+            </tr>
+            <?php $_prevOptionId = $attributes['option_id'] ?>
+        <?php endif; ?>
+    <?php endif; ?>
+    <?php if (!$_item->getParentItem()): ?>
+        <tr class="bundle-item bundle-parent">
+            <td class="item-info">
+                <p class="product-name"><?php echo $block->escapeHtml($_item->getName()) ?></p>
+                <p class="sku"><?php /* @escapeNotVerified */ echo __('SKU') ?>: <?php echo $block->escapeHtml($block->getSku($_item)) ?></p>
+                <?php if ($cartProductCommentHelper->isEnabled() && $_item->getComment()): ?>
+                    <p class="comment"><?php /* @escapeNotVerified */  echo __('Comment'); ?>: <?php echo $block->escapeHtml($_item->getComment()) ?></p>
+                <?php endif; ?>
+            </td>
+            <td class="item-qty">
+                <?php /* @escapeNotVerified */ echo $_item->getQtyOrdered() * 1 ?>
+            </td>
+            <td class="item-price">
+                <?php /* @escapeNotVerified */ echo $block->getItemPrice($_item) ?>
+            </td>
+        </tr>
+    <?php else: ?>
+        <tr class="bundle-item bundle-option-value">
+            <td class="item-info" colspan="3">
+                <p><?php echo $block->getValueHtml($_item) ?></p>
+                <?php if ($cartProductCommentHelper->isEnabled() && $_item->getComment()): ?>
+                    <p class="comment"><?php /* @escapeNotVerified */  echo __('Comment'); ?>: <?php echo $block->escapeHtml($_item->getComment()) ?></p>
+                <?php endif; ?>
+            </td>
+        </tr>
+    <?php endif; ?>
+
+<?php endforeach; ?>
+
+<?php if ($_showlastRow): ?>
+    <tr>
+        <td colspan="3" class="item-extra">
+            <?php if ($block->getItemOptions()): ?>
+            <dl>
+                <?php foreach ($block->getItemOptions() as $option): ?>
+                <dt><strong><em><?php /* @escapeNotVerified */ echo $option['label'] ?></em></strong></dt>
+                            <dd><?php /* @escapeNotVerified */ echo $option['value'] ?></dd>
+                <?php endforeach; ?>
+            </dl>
+            <?php endif; ?>
+            <?php if ($_item->getGiftMessageId() && $_giftMessage = $this->helper('Magento\GiftMessage\Helper\Message')->getGiftMessage($_item->getGiftMessageId())): ?>
+                <table class="message-gift">
+                    <tr>
+                        <td>
+                            <h3><?php /* @escapeNotVerified */ echo __('Gift Message') ?></h3>
+                            <strong><?php /* @escapeNotVerified */ echo __('From:') ?></strong> <?php echo $block->escapeHtml($_giftMessage->getSender()) ?>
+                            <br /><strong><?php /* @escapeNotVerified */ echo __('To:') ?></strong> <?php echo $block->escapeHtml($_giftMessage->getRecipient()) ?>
+                            <br /><strong><?php /* @escapeNotVerified */ echo __('Message:') ?></strong>
+                            <br /><?php echo $block->escapeHtml($_giftMessage->getMessage()) ?>
+                        </td>
+                    </tr>
+                </table>
+            <?php endif; ?>
+        </td>
+    </tr>
+<?php endif; ?>

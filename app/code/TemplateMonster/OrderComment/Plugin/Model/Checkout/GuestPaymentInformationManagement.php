@@ -32,6 +32,9 @@ class GuestPaymentInformationManagement
      */
 	protected $_filterManager;
 
+    protected $_helper;
+
+
     /**
      * GuestPaymentInformationManagement constructor.
      *
@@ -42,12 +45,15 @@ class GuestPaymentInformationManagement
         \Magento\Framework\Json\Helper\Data $jsonHelper,
         \Magento\Framework\Filter\FilterManager $filterManager,
 		\Magento\Sales\Model\Order\Status\HistoryFactory $historyFactory,
-		\Magento\Sales\Model\OrderFactory $orderFactory
+        \TemplateMonster\NewShipping\Helper\Data $helper,
+        \Magento\Sales\Model\OrderFactory $orderFactory
     ) {
         $this->_jsonHelper = $jsonHelper;
         $this->_filterManager = $filterManager;
 		$this->_historyFactory = $historyFactory;
 		$this->_orderFactory = $orderFactory;
+        $this->_helper = $helper;
+
     }
 
     /**
@@ -66,7 +72,18 @@ class GuestPaymentInformationManagement
 		$email,
         \Magento\Quote\Api\Data\PaymentInterface $paymentMethod,
         \Magento\Quote\Api\Data\AddressInterface $billingAddress
-    ) {	
+    ) {
+
+        $minimumAmount = $this->_helper->getMinimumAmount();
+
+        $objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+        $checkoutSession = $objectManager->create('\Magento\Checkout\Model\Session');
+        if ($checkoutSession->getQuote()->getShippingMethod() == 'freeshipping_freeshipping' && $checkoutSession->getQuote()->getGrandTotal() < $minimumAmount){
+            var_dump(__('Pentru aceasta zona comanda este de ' . $minimumAmount . ' RON!'));die();
+            throw new CouldNotSaveException(__('Pentru aceasta zona comanda este de ' . $minimumAmount . ' RON!'));
+            return false;
+        }
+
 		/** @param string $comment */
 		$comment = NULL;
 		// get JSON post data

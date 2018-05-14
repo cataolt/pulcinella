@@ -20,6 +20,7 @@ class Sync  extends AbstractModel {
 
     protected $_expire;
 
+    protected $scopeConfig;
     /**
      * @param Context                             $context
      * @param \Magento\Framework\HTTP\Client\Curl $curl
@@ -27,11 +28,13 @@ class Sync  extends AbstractModel {
     public function __construct(
         \Magento\Framework\HTTP\Client\Curl $curl,
         \Magento\Framework\Json\Helper\Data $jsonHelper,
-        \Magento\Framework\Stdlib\DateTime\DateTime $datetime
+        \Magento\Framework\Stdlib\DateTime\DateTime $datetime,
+        \Magento\Framework\App\Config\ScopeConfigInterface $scopeConfig
     ) {
         $this->_curl = $curl;
         $this->jsonHelper = $jsonHelper;
         $this->datetime = $datetime;
+        $this->scopeConfig = $scopeConfig;
     }
 
     /**
@@ -41,10 +44,11 @@ class Sync  extends AbstractModel {
      */
     protected function getToken()
     {
-        $url = 'https://www.ebrizademo.com/api/token';
-        $public = '731A38D0-B071-4E47-ACD1-682DB30DBC86';
-        $secret = 'EHAJ5qNG8GSWG5E6X0MMUqgshXDvD4AQf8NTd2x7FSJM7cWbv3pqFvzMJNGZ2wNCrcI3RMLwhIRWhLrJ';
-        $clientId = 'D6739DC4-A3F8-4FF4-B7D5-1A715520A026';
+        $storeScope = \Magento\Store\Model\ScopeInterface::SCOPE_STORES;
+        $url = $this->scopeConfig->getValue("ebriza/general/auth_url", $storeScope);
+        $public = $this->scopeConfig->getValue("ebriza/general/public", $storeScope);;
+        $secret = $this->scopeConfig->getValue("ebriza/general/private", $storeScope);;
+        $clientId = $this->scopeConfig->getValue("ebriza/general/client_id", $storeScope);;
 
         $params = array(
             'grant_type' => 'client_credentials'

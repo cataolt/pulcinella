@@ -1,0 +1,60 @@
+<?php
+/**
+ * MageVision Cart Product Comment Extension
+ *
+ * @category     MageVision
+ * @package      MageVision_CartProductComment
+ * @author       MageVision Team
+ * @copyright    Copyright (c) 2017 MageVision (http://www.magevision.com)
+ * @license      LICENSE_MV.txt or http://www.magevision.com/license-agreement/
+ */
+?>
+<?php $_item = $block->getItem() ?>
+<?php $_order = $block->getItem()->getOrder() ?>
+<?php $cartProductCommentHelper = $this->helper('MageVision\CartProductComment\Helper\Data'); ?>
+<tr>
+    <td class="item-info has-extra">
+        <p class="product-name"><?php echo $block->escapeHtml($_item->getName()) ?></p>
+        <p class="sku"><?php /* @escapeNotVerified */ echo __('SKU') ?>: <?php echo $block->escapeHtml($block->getSku($_item)) ?></p>
+        <?php if ($block->getItemOptions()): ?>
+        <dl>
+            <?php foreach ($block->getItemOptions() as $option): ?>
+            <dt><strong><em><?php /* @escapeNotVerified */ echo $option['label'] ?></em></strong></dt>
+            <dd><?php /* @escapeNotVerified */ echo $option['value'] ?></dd>
+            <?php endforeach; ?>
+        </dl>
+        <?php endif; ?>
+        <?php if ($links = $block->getLinks()->getPurchasedItems()): ?>
+        <dl>
+            <dt><strong><em><?php /* @escapeNotVerified */ echo $block->getLinksTitle() ?></em></strong></dt>
+            <?php foreach ($links as $link): ?>
+                <dd>
+                    <?php echo $block->escapeHtml($link->getLinkTitle()) ?>&nbsp;
+                    (<a href="<?php /* @escapeNotVerified */ echo $block->getPurchasedLinkUrl($link) ?>"><?php /* @escapeNotVerified */ echo __('download') ?></a>)
+                </dd>
+            <?php endforeach; ?>
+        </dl>
+        <?php endif; ?>
+        <?php echo $block->escapeHtml($_item->getDescription()) ?>
+        <?php if ($cartProductCommentHelper->isEnabled() && $_item->getComment()): ?>
+            <p class="comment"><?php /* @escapeNotVerified */  echo __('Comment'); ?>: <?php echo $block->escapeHtml($_item->getComment()) ?></p>
+        <?php endif; ?>
+        <?php if ($_item->getGiftMessageId() && $_giftMessage = $this->helper('Magento\GiftMessage\Helper\Message')->getGiftMessage($_item->getGiftMessageId())): ?>
+            <table class="message-gift">
+                <tr>
+                    <td>
+                        <h3><?php /* @escapeNotVerified */ echo __('Gift Message') ?></h3>
+                        <strong><?php /* @escapeNotVerified */ echo __('From:') ?></strong> <?php echo $block->escapeHtml($_giftMessage->getSender()) ?>
+                        <br /><strong><?php /* @escapeNotVerified */ echo __('To:') ?></strong> <?php echo $block->escapeHtml($_giftMessage->getRecipient()) ?>
+                        <br /><strong><?php /* @escapeNotVerified */ echo __('Message:') ?></strong>
+                        <br /><?php $block->escapeHtml($_giftMessage->getMessage()) ?>
+                    </td>
+                </tr>
+            </table>
+        <?php endif; ?>
+    </td>
+    <td class="item-qty"><?php /* @escapeNotVerified */ echo $_item->getQtyOrdered() * 1 ?></td>
+    <td class="item-price">
+        <?php /* @escapeNotVerified */ echo $block->getItemPrice($_item) ?>
+    </td>
+</tr>

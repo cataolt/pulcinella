@@ -11,11 +11,20 @@
 <div class="checkout-success">
     <?php if ($block->getOrderId()):?>
         <?php if ($block->getCanViewOrder()) :?>
-            <p><?php echo __('Your order number is: %1.', sprintf('<a href="%s" class="order-number"><strong>%s</strong></a>', $block->escapeHtml($block->getViewOrderUrl()), $block->escapeHtml($block->getOrderId()))) ?></p>
+            <p><?php echo __('Partea cea mai grea a trecut, iar comanda %1 e pe maini bune. Pune la rece berea sau sucul si verifica-ti email-ul pentru detaliile de livrare.', sprintf('<a href="%s" class="order-number"><strong>%s</strong></a>', $block->escapeHtml($block->getViewOrderUrl()), $block->escapeHtml($block->getOrderId()))) ?></p>
         <?php  else :?>
-            <p><?php echo __('Your order # is: <span>%1</span>.', $block->escapeHtml($block->getOrderId())) ?></p>
+            <p><?php echo __('Partea cea mai grea a trecut, iar comanda <span>%1</span> e pe maini bune. Pune la rece berea sau sucul si verifica-ti email-ul pentru detaliile de livrare.', $block->escapeHtml($block->getOrderId())) ?></p>
         <?php endif;?>
     <?php endif;?>
+    <div>
+        <p>Daca ai optat pentru ridicare personala, te asteptam in maximum 30 de minute. Da, cam atat de repede ne miscam 😃</p>
+    </div>
+    <div>
+        <p>Iti multumim ca ai ales cea mai italiana italiana italiana pizza din oras!</p>
+    </div>
+    <p>
+        <p>Pulcinella</p>
+    </div>
 
     <?php echo $block->getAdditionalInfoHtml() ?>
 

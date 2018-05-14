@@ -18,12 +18,12 @@ class SendEmail  extends Sync {
         \Magento\Framework\Json\Helper\Data $jsonHelper,
         \Magento\Framework\Stdlib\DateTime\DateTime $datetime,
         \Magento\Sales\Model\ResourceModel\Order\CollectionFactory $orderCollectionFactory,
-        \Magento\Sales\Model\Order\Email\Sender\OrderSender $orderSender
-
+        \Magento\Sales\Model\Order\Email\Sender\OrderSender $orderSender,
+        \Magento\Framework\App\Config\ScopeConfigInterface $scopeConfig
     ){
         $this->_orderCollectionFactory  = $orderCollectionFactory;
         $this->_orderSender  = $orderSender;
-        parent::__construct($curl, $jsonHelper, $datetime);
+        parent::__construct($curl, $jsonHelper, $datetime, $scopeConfig);
     }
 
     /**
@@ -67,8 +67,12 @@ class SendEmail  extends Sync {
             $token = $this->getToken();
         }
 
-        $url = 'https://www.ebrizademo.com/api/bills/get?id=' . $this->data['id'];
-        $clientId = 'D6739DC4-A3F8-4FF4-B7D5-1A715520A026';
+
+        $storeScope = \Magento\Store\Model\ScopeInterface::SCOPE_STORES;
+        $url = $this->scopeConfig->getValue("ebriza/general/get_bill_url", $storeScope);
+        $url = $url . $this->data['id'];
+        $clientId = $this->scopeConfig->getValue("ebriza/general/client_id", $storeScope);
+
         $headers = array(
             'Authorization' => 'bearer ' . $token . '',
             'ebriza-clientid' => '' . $clientId . '',

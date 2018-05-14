@@ -175,8 +175,8 @@ class Closed extends AbstractHelper
     }
 
     public function isClosingHour() {
-        $hour = (int)$this->date->date('H');
-        $minute = (int)$this->date->date('i');
+        $hour = (int)date('H');
+        $minute = (int)date('i');
 
         $openString = $this->getOpenStartHour();
         $openArray = explode(':',$openString);

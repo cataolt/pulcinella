@@ -26,12 +26,13 @@ class Customers  extends Sync {
         \Magento\Customer\Api\Data\AddressInterfaceFactory $addressDataFactory,
         \Magento\Framework\HTTP\Client\Curl $curl,
         \Magento\Framework\Json\Helper\Data $jsonHelper,
-        \Magento\Framework\Stdlib\DateTime\DateTime $datetime
+        \Magento\Framework\Stdlib\DateTime\DateTime $datetime,
+        \Magento\Framework\App\Config\ScopeConfigInterface $scopeConfig
     ){
         $this->customerCollectionFactory  = $customerCollectionFactory;
         $this->addressRepository = $addressRepository;
         $this->addressDataFactory = $addressDataFactory;
-        parent::__construct($curl, $jsonHelper, $datetime);
+        parent::__construct($curl, $jsonHelper, $datetime, $scopeConfig);
     }
     /**
      * Initialize resource model
@@ -108,8 +109,9 @@ class Customers  extends Sync {
             $token = $this->getToken();
         }
 
-        $url = 'https://www.ebrizademo.com/api/clients/getoradd';
-        $clientId = 'D6739DC4-A3F8-4FF4-B7D5-1A715520A026';
+        $storeScope = \Magento\Store\Model\ScopeInterface::SCOPE_STORES;
+        $url = $this->scopeConfig->getValue("ebriza/general/customers_url", $storeScope);
+        $clientId = $this->scopeConfig->getValue("ebriza/general/client_id", $storeScope);;
         $headers = array(
             'Authorization' => 'bearer ' . $token . '',
             'ebriza-clientid' => '' . $clientId . '',

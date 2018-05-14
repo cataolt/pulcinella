@@ -3,6 +3,7 @@ return array (
   'modules' => 
   array (
     'MagePal_Reindex' => 1,
+    'MageVision_CartProductComment' => 1,
     'Magento_Store' => 1,
     'Magento_AdvancedPricingImportExport' => 1,
     'Magento_Directory' => 1,

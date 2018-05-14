@@ -116,13 +116,36 @@ define(['jquery',], function () {
                             if (results[0]) {
                                 var addressArray = (results[0].formatted_address).split(',', 2);
                                 $("input[name='street[0]']").val(addressArray[0]);
+
+                                var addressArray = (results[0].formatted_address).split(',');
+                                var city = (addressArray[1].trim()).split(' ', 2);
+                                if(SelectHasValue('city', city[0])){
+                                    $("select[name='city']").val(city[0]);
+                                    $("input[name='street[0]']").val(addressArray[0]);
+                                } else {
+                                    $("select[name='city']").val('');
+                                    $("input[name='street[0]']").val('');
+                                    $("input[name='street[1]']").val('');
+                                    window.alert('Adresa nu se afla in zona de livrare');
+                                }
                             } else {
                                 window.alert('No results found');
                             }
                         } else {
                             window.alert('Geocoder failed due to: ' + status);
                         }
+                        function SelectHasValue(select, value) {
+                            var obj = $("select[name='city'] option");
+                            var exist = false;
+                            obj.each(function() {
+                                if (this.value == value) {
+                                    exist = true;
+                                }
+                            });
+                            return exist;
+                        }
                     });
+
                 });
             }
         }

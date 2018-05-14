@@ -25,6 +25,19 @@
     <fieldset class="fieldset">
         <legend class="legend"><span><?php /* @escapeNotVerified */ echo __('Address') ?></span></legend><br>
         <?php $_streetValidationClass = $this->helper('Magento\Customer\Helper\Address')->getAttributeValidationClass('street'); ?>
+
+        <div class="field city required">
+            <label for="city" class="label"><span><?php /* @escapeNotVerified */ echo __('Localitate') ?></span></label>
+            <div class="control">
+                <select id="city" name="city" title="<?php /* @escapeNotVerified */ echo __('Localitate') ?>" class="validate-select";?>>
+                    <option <?php echo ($block->getAddress()->getCity() == 'Timișoara')?'selected':'' ?> value="<?php /* @escapeNotVerified */ echo __('Timișoara') ?>"><?php /* @escapeNotVerified */ echo __('Timișoara') ?></option>
+                    <option <?php echo ($block->getAddress()->getCity() == 'Săcălaz')?'selected':'' ?> value="<?php /* @escapeNotVerified */ echo __('Săcălaz') ?>"><?php /* @escapeNotVerified */ echo __('Săcălaz') ?></option>
+                    <option <?php echo ($block->getAddress()->getCity() == 'Dumbrăvița')?'selected':'' ?> value="<?php /* @escapeNotVerified */ echo __('Dumbrăvița') ?>"><?php /* @escapeNotVerified */ echo __('Dumbrăvița') ?></option>
+                    <option <?php echo ($block->getAddress()->getCity() == 'Ghiroda')?'selected':'' ?> value="<?php /* @escapeNotVerified */ echo __('Ghiroda') ?>"><?php /* @escapeNotVerified */ echo __('Ghiroda') ?></option>
+                    <option <?php echo ($block->getAddress()->getCity() == 'Giroc')?'selected':'' ?> value="<?php /* @escapeNotVerified */ echo __('Giroc') ?>"><?php /* @escapeNotVerified */ echo __('Giroc') ?></option>
+                </select>
+            </div>
+        </div>
         <div class="field street required">
             <label for="street_1" class="label"><span><?php /* @escapeNotVerified */ echo __('Street Address') ?></span></label>
             <div class="control">
@@ -53,7 +66,6 @@
                 </div>
             </div>
         <?php endif; ?>
-        <input type="hidden" name="city" value="Timisoara" title="<?php /* @escapeNotVerified */ echo __('City') ?>" class="input-text <?php /* @escapeNotVerified */ echo $this->helper('Magento\Customer\Helper\Address')->getAttributeValidationClass('city') ?>" id="city" />
 
         <input type="hidden" id="region_id" name="region_id" value="315"  title="<?php /* @escapeNotVerified */ echo __('State/Province') ?>" class="input-text <?php /* @escapeNotVerified */ echo $this->helper('Magento\Customer\Helper\Address')->getAttributeValidationClass('region') ?>"<?php echo(!$block->getConfig('general/region/display_all')) ? ' disabled="disabled"' : '';?>/>
         <input type="hidden" id="region" name="region" value="Timis"  title="<?php /* @escapeNotVerified */ echo __('State/Province') ?>" class="input-text <?php /* @escapeNotVerified */ echo $this->helper('Magento\Customer\Helper\Address')->getAttributeValidationClass('region') ?>"<?php echo(!$block->getConfig('general/region/display_all')) ? ' disabled="disabled"' : '';?>/>
@@ -210,8 +222,17 @@
             geocoder.geocode({'location': markerLoc}, function(results, status) {
                 if (status === 'OK') {
                     if (results[0]) {
-                        var addressArray = (results[0].formatted_address).split(',', 2);
-                        document.getElementById('street_1').value = addressArray[0];
+                        var addressArray = (results[0].formatted_address).split(',');
+                        var city = (addressArray[1].trim()).split(' ', 2);
+                        if(SelectHasValue('city', city[0])){
+                            document.getElementById('city').value = city[0];
+                            document.getElementById('street_1').value = addressArray[0];
+                        } else {
+                            document.getElementById('city').value = '';
+                            document.getElementById('street_1').value = '';
+                            document.getElementById('street_2').value = '';
+                            window.alert('Adresa nu se afla in zona de livrare');
+                        }
                     } else {
                         window.alert('No results found');
                     }
@@ -221,6 +242,16 @@
             });
         }
     });
+
+    function SelectHasValue(select, value) {
+        obj = document.getElementById(select);
+
+        if (obj !== null) {
+            return (obj.innerHTML.indexOf('value="' + value + '"') > -1);
+        } else {
+            return false;
+        }
+    }
 
 </script>
 

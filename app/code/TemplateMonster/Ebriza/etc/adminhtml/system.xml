@@ -8,6 +8,7 @@
         <section id="ebriza" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="5" translate="label">
             <label>General</label>
             <tab>ebriza</tab>
+            <resource>TemplateMonster_Ebriza::ebriza_configuration</resource>
             <group id="general" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="0" translate="label">
                 <label>General</label>
                 <field id="active" translate="label comment" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
@@ -16,10 +17,22 @@
                     <source_model>Magento\Config\Model\Config\Source\Enabledisable</source_model>
                 </field>
                 <field id="auth_url" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
-                    <label>Url</label>
+                    <label>Auth Url</label>
                 </field>
-                <field id="client_id" translate="label" type="text" sortOrder="2" showInDefault="1" showInWebsite="0" showInStore="0">
-                    <label>Client Id</label>
+                <field id="customers_url" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Customers Url</label>
+                </field>
+                <field id="open_bill_url" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Open Bill Url</label>
+                </field>
+                <field id="get_bill_url" translate="label" type="text" sortOrder="2" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Get Bill Url</label>
+                </field>
+                <field id="orders_url" translate="label" type="text" sortOrder="2" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Orders Url</label>
+                </field>
+                <field id="products_url" translate="label" type="text" sortOrder="2" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Products Url</label>
                 </field>
                 <field id="public" translate="label" type="text" sortOrder="2" showInDefault="1" showInWebsite="0" showInStore="0">
                     <label>Public</label>
@@ -27,7 +40,29 @@
                 <field id="private" translate="label" type="text" sortOrder="3" showInDefault="1" showInWebsite="0" showInStore="0">
                     <label>Private</label>
                 </field>
+                <field id="client_id" translate="label" type="text" sortOrder="2" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Client Id</label>
+                </field>
             </group>
         </section>
+        <section id="sales" translate="label" type="text" sortOrder="300" showInDefault="1" showInWebsite="1" showInStore="1">
+            <group id="minimum_order" translate="label" sortOrder="50" showInDefault="1" showInWebsite="1" showInStore="1">
+                <field id="region_1" translate="label" sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Region 1 delivery cities</label>
+                    <comment>Separate them by ;.</comment>
+                </field>
+                <field id="region_1_amount" translate="label" sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Region 1 minimum amount</label>
+                </field>
+                <field id="region_2" translate="label" sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Region 2 delivery cities</label>
+                    <comment>Separate them by ;.</comment>
+                </field>
+                <field id="region_2_amount" translate="label" sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Region 2 minimum amount</label>
+                </field>
+            </group>
+        </section>
+
     </system>
 </config>

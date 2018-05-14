@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!--
+ * MageVision Cart Product Comment Extension
+ *
+ * @category     MageVision
+ * @package      MageVision_CartProductComment
+ * @author       MageVision Team
+ * @copyright    Copyright (c) 2017 MageVision (http://www.magevision.com)
+ * @license      LICENSE_MV.txt or http://www.magevision.com/license-agreement/
+ */
+ -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <cartproductcomment>
+            <general>
+                <enabled>0</enabled>
+                <display_update_button>1</display_update_button>
+            </general>
+        </cartproductcomment>
+    </default>
+</config>

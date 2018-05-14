@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\OfflineShipping\Model\Carrier\Freeshipping">
+        <plugin name="pluginChangeLables" type="TemplateMonster\NewShipping\Plugin\Method" sortOrder="10" disabled="false"/>
+    </type>
+    <type name="Magento\Checkout\Model\ShippingInformationManagement">
+        <plugin name="pluginChangeShippingInformation" type="TemplateMonster\NewShipping\Plugin\ShippingInformation" sortOrder="10" disabled="false"/>
+    </type>
+    <type name="Magento\Quote\Model\ShippingMethodManagement">
+        <plugin name="pluginChangeShippingInformation" type="TemplateMonster\NewShipping\Plugin\Shipping" sortOrder="10" disabled="false"/>
+    </type>
+</config>

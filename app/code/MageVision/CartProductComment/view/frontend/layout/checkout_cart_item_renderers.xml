@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!--
+ * MageVision Cart Product Comment Extension
+ *
+ * @category     MageVision
+ * @package      MageVision_CartProductComment
+ * @author       MageVision Team
+ * @copyright    Copyright (c) 2017 MageVision (http://www.magevision.com)
+ * @license      LICENSE_MV.txt or http://www.magevision.com/license-agreement/
+ */
+ -->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="checkout.cart.form">
+            <action method="setOverriddenTemplates">
+                <argument xsi:type="array">
+                    <!-- list override templates -->
+                    <item name="default" xsi:type="string">MageVision_CartProductComment::checkout/cart/item/default.phtml</item>
+                    <item name="simple" xsi:type="string">MageVision_CartProductComment::checkout/cart/item/default.phtml</item>
+                    <item name="virtual" xsi:type="string">MageVision_CartProductComment::checkout/cart/item/default.phtml</item>
+                    <item name="configurable" xsi:type="string">MageVision_CartProductComment::checkout/cart/item/default.phtml</item>
+                    <item name="downloadable" xsi:type="string">MageVision_CartProductComment::checkout/cart/item/default.phtml</item>
+                    <item name="grouped" xsi:type="string">MageVision_CartProductComment::checkout/cart/item/default.phtml</item>
+                    <item name="bundle" xsi:type="string">MageVision_CartProductComment::checkout/cart/item/default.phtml</item>
+                </argument>
+            </action>
+        </referenceBlock>
+    </body>
+</page>

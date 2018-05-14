@@ -18,12 +18,13 @@ class Products  extends Sync {
         \Magento\Framework\Stdlib\DateTime\DateTime $datetime,
         \Magento\Framework\Api\SearchCriteriaBuilder $searchCriteriaBuilder,
         \Magento\Framework\Api\FilterBuilder $filterBuilder,
-        \Magento\Catalog\Model\ProductRepository $productRepository
+        \Magento\Catalog\Model\ProductRepository $productRepository,
+        \Magento\Framework\App\Config\ScopeConfigInterface $scopeConfig
     ){
         $this->filterBuilder = $filterBuilder;
         $this->searchCriteriaBuilder = $searchCriteriaBuilder;
         $this->productRepository = $productRepository;
-        parent::__construct($curl, $jsonHelper, $datetime);
+        parent::__construct($curl, $jsonHelper, $datetime, $scopeConfig);
     }
     /**
      * Initialize resource model
@@ -108,8 +109,9 @@ class Products  extends Sync {
         } else {
             $token = $this->getToken();
         }
-        $url = 'https://www.ebrizademo.com/api/items';
-        $clientId = 'D6739DC4-A3F8-4FF4-B7D5-1A715520A026';
+        $storeScope = \Magento\Store\Model\ScopeInterface::SCOPE_STORES;
+        $url = $this->scopeConfig->getValue("ebriza/general/products_url", $storeScope);
+        $clientId = $this->scopeConfig->getValue("ebriza/general/client_id", $storeScope);
         $headers = array(
             'Authorization' => 'bearer ' . $token . '',
             'ebriza-clientid' => '' . $clientId . '',

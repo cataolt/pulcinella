@@ -4590,6 +4590,14 @@ body {
     font-size: 4.5vw;
   }
 }
+
+.col .comment {
+  padding: 10px;
+}
+
+.comment textarea {
+  height: 100px;
+}
 /* END Main Theme Settings  */
 /* Desktop */
 /* END Desktop */

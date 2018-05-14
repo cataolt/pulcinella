@@ -12,11 +12,11 @@ class UpdateOrders  extends Sync {
         \Magento\Framework\HTTP\Client\Curl $curl,
         \Magento\Framework\Json\Helper\Data $jsonHelper,
         \Magento\Framework\Stdlib\DateTime\DateTime $datetime,
-        \Magento\Sales\Model\ResourceModel\Order\CollectionFactory $orderCollectionFactory
-
+        \Magento\Sales\Model\ResourceModel\Order\CollectionFactory $orderCollectionFactory,
+        \Magento\Framework\App\Config\ScopeConfigInterface $scopeConfig
     ){
         $this->_orderCollectionFactory  = $orderCollectionFactory;
-        parent::__construct($curl, $jsonHelper, $datetime);
+        parent::__construct($curl, $jsonHelper, $datetime, $scopeConfig);
     }
     /**
      * Initialize resource model
@@ -60,8 +60,11 @@ class UpdateOrders  extends Sync {
             $token = $this->getToken();
         }
 
-        $url = 'https://www.ebrizademo.com/api/orders/get?id=' . $this->data['id'];
-        $clientId = 'D6739DC4-A3F8-4FF4-B7D5-1A715520A026';
+        $storeScope = \Magento\Store\Model\ScopeInterface::SCOPE_STORES;
+        $url = $this->scopeConfig->getValue("ebriza/general/orders_url", $storeScope);
+        $url = $url . $this->data['id'];
+        $clientId = $this->scopeConfig->getValue("ebriza/general/client_id", $storeScope);
+
         $headers = array(
             'Authorization' => 'bearer ' . $token . '',
             'ebriza-clientid' => '' . $clientId . '',

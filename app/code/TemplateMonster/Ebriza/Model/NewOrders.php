@@ -19,13 +19,14 @@ class NewOrders  extends Customers {
         \Magento\Sales\Model\ResourceModel\Order\CollectionFactory $orderCollectionFactory,
         \Magento\Customer\Api\CustomerRepositoryInterface $customerRepositoryInterface,
         \Magento\Catalog\Model\ProductRepository $productRepository,
+        \Magento\Framework\App\Config\ScopeConfigInterface $scopeConfig,
         \Magento\Directory\Model\CountryFactory $countryFactory
     ){
         $this->_orderCollectionFactory  = $orderCollectionFactory;
         $this->_customerRepositoryInterface = $customerRepositoryInterface;
         $this->_productRepository = $productRepository;
         $this->_countryFactory = $countryFactory;
-        parent::__construct($customerCollectionFactory, $addressRepository, $addressDataFactory, $curl, $jsonHelper, $datetime);
+        parent::__construct($customerCollectionFactory, $addressRepository, $addressDataFactory, $curl, $jsonHelper, $datetime, $scopeConfig);
     }
     /**
      * Initialize resource model
@@ -75,6 +76,16 @@ class NewOrders  extends Customers {
 
     private function generateOrderData($order){
         $orderItems = $order->getAllItems();
+
+        $comments = $order->getStatusHistoryCollection();
+        $globalComment = '';
+        if($comments->getSize() > 0) {
+            $comment = $comments->getFirstItem();
+            $globalComment = $comment->getData('comment');
+        }
+        $paymentInfo = ($order->getPayment()->getMethod() === 'cashondelivery') ? '' : ' plata: POS';
+        $globalComment = $globalComment . $paymentInfo;
+
         $items = array();
         foreach($orderItems as $orderItem){
             $productId = $orderItem->getProductId();
@@ -84,27 +95,35 @@ class NewOrders  extends Customers {
 
                 if (!(in_array($product->getAttributeSetId(), array(10)))) {
                     if ($additionalData) {
+                        $productsArray = unserialize($additionalData);
+                        $extra = ' Extra: ';
+                        $extraItems = array();
                         $items[] = array(
                             "id" => $product->getData('ebriza_id'),
                             "quantity" => 1,
                             'Lock' => 'Lock' . $orderItem->getId(),
-                            'IsMod' => "false"
+                            'IsMod' => "false",
+                            'note' => $extra . $orderItem->getData('comment') . ' ' . $globalComment
                         );
-                        $productsArray = unserialize($additionalData);
                         foreach ($productsArray as $key=>$value){
                             $productId = $value;
                             $product = $this->_productRepository->getById($productId);
-                            $items[] = array(
+                            $extra = $extra . $product->getName() . ', ';
+                            $extraItems[] = array(
                                 "id" => $product->getData('ebriza_id'),
                                 "quantity" => 1,
                                 'Lock' => 'Lock' . $orderItem->getId(),
                                 'IsMod' => "true"
                             );
                         }
+                        foreach ($extraItems as $extraItem){
+                            $items[] = $extraItem;
+                        }
                     } else {
                         $items[] = array(
                             "id" => $product->getData('ebriza_id'),
-                            "quantity" => 1
+                            "quantity" => 1,
+                            "note" => $orderItem->getData('comment') . ' ' . $globalComment
                         );
                     }
                 }
@@ -212,8 +231,9 @@ class NewOrders  extends Customers {
             $token = $this->getToken();
         }
 
-        $url = 'https://www.ebrizademo.com/api/bills/open';
-        $clientId = 'D6739DC4-A3F8-4FF4-B7D5-1A715520A026';
+        $storeScope = \Magento\Store\Model\ScopeInterface::SCOPE_STORES;
+        $url = $this->scopeConfig->getValue("ebriza/general/open_bill_url", $storeScope);
+        $clientId = $this->scopeConfig->getValue("ebriza/general/client_id", $storeScope);
         $headers = array(
             'Authorization' => 'bearer ' . $token . '',
             'ebriza-clientid' => '' . $clientId . '',
@@ -244,10 +264,6 @@ class NewOrders  extends Customers {
             $order->setStatus(\Magento\Sales\Model\Order::STATE_PROCESSING);
             $order->addStatusToHistory($order->getStatus(), 'Order sent in Ebriza with ' . $result['id']);
             $order->save();
-
-//            $objectManager = \Magento\Framework\App\ObjectManager::getInstance();
-//            $emailSender = $objectManager->create('\Magento\Sales\Model\Order\Email\Sender\OrderSender');
-//            $emailSender->send($order);
         }
     }
 }
