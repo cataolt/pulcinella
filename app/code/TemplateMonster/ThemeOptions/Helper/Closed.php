@@ -42,6 +42,26 @@ class Closed extends AbstractHelper
     const XML_PATH_END_HOUR = 'closed_popup/general/open_hour_end';
 
     /**
+     * Show on startup config option.
+     */
+    const XML_SATURDAY_PATH_START_HOUR = 'closed_popup/general/saturday_hour_start';
+
+    /**
+     * Show on startup config option.
+     */
+    const XML_SATURDAY_PATH_END_HOUR = 'closed_popup/general/saturday_hour_end';
+
+    /**
+     * Show on startup config option.
+     */
+    const XML_SUNDAY_PATH_START_HOUR = 'closed_popup/general/sunday_hour_start';
+
+    /**
+     * Show on startup config option.
+     */
+    const XML_SUNDAY_PATH_END_HOUR = 'closed_popup/general/sunday_hour_end';
+
+    /**
      * @var InitialConfig
      */
     protected $initialConfig;
@@ -118,10 +138,27 @@ class Closed extends AbstractHelper
     }
 
     public function getOpenStartHour(){
-        $result = $this->scopeConfig->getValue(
-            self::XML_PATH_START_HOUR,
-            ScopeInterface::SCOPE_STORE
-        );
+        $day = (int)date('w');
+        switch ($day){
+            case 0:
+                $result = $this->scopeConfig->getValue(
+                    self::XML_SUNDAY_PATH_START_HOUR,
+                    ScopeInterface::SCOPE_STORE
+                );
+                break;
+            case 6:
+                $result = $this->scopeConfig->getValue(
+                    self::XML_SATURDAY_PATH_START_HOUR,
+                    ScopeInterface::SCOPE_STORE
+                );
+                break;
+            default:
+                $result = $this->scopeConfig->getValue(
+                    self::XML_PATH_START_HOUR,
+                    ScopeInterface::SCOPE_STORE
+                );
+        }
+
         if(!$result){
             $result = "10:00";
         }
@@ -130,10 +167,27 @@ class Closed extends AbstractHelper
     }
 
     public function getOpenStartEnd(){
-        $result = $this->scopeConfig->getValue(
-            self::XML_PATH_END_HOUR,
-            ScopeInterface::SCOPE_STORE
-        );
+        $day = (int)date('w');
+        switch ($day){
+            case 0:
+                $result = $this->scopeConfig->getValue(
+                    self::XML_SUNDAY_PATH_END_HOUR,
+                    ScopeInterface::SCOPE_STORE
+                );
+                break;
+            case 6:
+                $result = $this->scopeConfig->getValue(
+                    self::XML_SATURDAY_PATH_END_HOUR,
+                    ScopeInterface::SCOPE_STORE
+                );
+                break;
+            default:
+                $result = $this->scopeConfig->getValue(
+                    self::XML_PATH_END_HOUR,
+                    ScopeInterface::SCOPE_STORE
+                );
+        }
+
         if(!$result){
             $result = "20:00";
         }
@@ -175,7 +229,7 @@ class Closed extends AbstractHelper
     }
 
     public function isClosingHour() {
-        $hour = (int)date('H');
+        $hour = (int)date('H') + 3;
         $minute = (int)date('i');
 
         $openString = $this->getOpenStartHour();
@@ -187,7 +241,6 @@ class Closed extends AbstractHelper
         $closeArray = explode(':',$closeString);
         $closeHour = (int)$closeArray[0];
         $closeMinute = (int)$closeArray[1];
-//        var_dump($hour);die();
         if($hour > $openHour && $hour < $closeHour){
             return false;
         } else {

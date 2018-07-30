@@ -29,7 +29,7 @@
                 <th class="col item" scope="col"><span><?php /* @escapeNotVerified */ echo __('Produs') ?></span></th>
                 <th class="col price" scope="col"><span><?php /* @escapeNotVerified */ echo __('Pret') ?></span></th>
                 <?php if ($cartProductCommentHelper->isEnabled()): ?>
-                    <th class="col comment" scope="col"><span><?php echo $block->escapeHtml(__('Comment')) ?></span></th>
+                    <th class="col qty" scope="col"><span><?php echo $block->escapeHtml(__('Comment')) ?></span></th>
                 <?php endif; ?>
                 <th class="col qty" scope="col"><span><?php /* @escapeNotVerified */ echo __('Modifica|Sterge|Copiaza') ?></span></th>
             </tr>
@@ -69,3 +69,34 @@
 <?php echo $block->getChildHtml('checkout.cart.order.actions') ?>
 <?php echo $block->getChildHtml('shopping.cart.table.after'); ?>
 
+<script type="text/javascript">
+    require([
+        'jquery',
+        'googleMapPagePlugin'
+    ], function($){
+        $("textarea").blur(function() {
+            var id = $(this).attr('id');
+            var idArray = id.split('-');
+            var param = { comment: $(this).val(), id : idArray[1]};
+            $.ajax({
+                showLoader: true,
+                url: '<?php echo $block->getUrl('comment/index/index')?>',
+                data: param,
+                type: "POST",
+                dataType: 'json'
+            }).done(function (data) {
+            });
+        });
+    });
+
+    function SelectHasValue(select, value) {
+        obj = document.getElementById(select);
+
+        if (obj !== null) {
+            return (obj.innerHTML.indexOf('value="' + value + '"') > -1);
+        } else {
+            return false;
+        }
+    }
+
+</script>

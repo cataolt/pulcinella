@@ -710,12 +710,28 @@
                     <frontend_model>TemplateMonster\NewsletterPopup\Block\Adminhtml\System\Config\Field\Editor</frontend_model>
                 </field>
                 <field id="open_hour_start" translate="label comment" type="text" sortOrder="43" showInDefault="1" showInWebsite="1" showInStore="1">
-                    <label>Start Time</label>
-                    <comment>Start time in format h:m.</comment>
+                    <label>Weekday Start Time</label>
+                    <comment>Weekday Start time in format h:m.</comment>
                 </field>
                 <field id="open_hour_end" translate="label comment" type="text" sortOrder="44" showInDefault="1" showInWebsite="1" showInStore="1">
-                    <label>End Time</label>
-                    <comment>End time in format h:m.</comment>
+                    <label>Weekday End Time</label>
+                    <comment>Weekday End time in format h:m.</comment>
+                </field>
+                <field id="saturday_hour_start" translate="label comment" type="text" sortOrder="43" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Saturday Start Time</label>
+                    <comment>Saturday Start time in format h:m.</comment>
+                </field>
+                <field id="saturday_hour_end" translate="label comment" type="text" sortOrder="44" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Saturday End Time</label>
+                    <comment>Saturday End time in format h:m.</comment>
+                </field>
+                <field id="sunday_hour_start" translate="label comment" type="text" sortOrder="43" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Sunday Start Time</label>
+                    <comment>Sunday Start time in format h:m.</comment>
+                </field>
+                <field id="sunday_hour_end" translate="label comment" type="text" sortOrder="44" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Sunday End Time</label>
+                    <comment>Sunday End time in format h:m.</comment>
                 </field>
             </group>
         </section>

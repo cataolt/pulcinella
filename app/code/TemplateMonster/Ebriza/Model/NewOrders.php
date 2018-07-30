@@ -50,7 +50,10 @@ class NewOrders  extends Customers {
             "clientID"        => $customerEbrizaId,
             "items"           => $items,
             "payments"        => array(
-                                    "type" => ($order->getPayment()->getMethod() === 'cashondelivery') ? 1 : 2,
+                                    array(
+                                        "type" => ($order->getPayment()->getMethod() === 'cashondelivery') ? 1 : 2,
+                                        "value" => $order->getGrandTotal()
+                                    )
                                 ),
             'isforPickup'     => ($order->getShippingMethod() === 'freeshipping_freeshipping') ? "false" : "true",
             'externalorderNo' => $order->getIncrementId()
@@ -83,8 +86,7 @@ class NewOrders  extends Customers {
             $comment = $comments->getFirstItem();
             $globalComment = $comment->getData('comment');
         }
-        $paymentInfo = ($order->getPayment()->getMethod() === 'cashondelivery') ? '' : ' plata: POS';
-        $globalComment = $globalComment . $paymentInfo;
+        $globalComment = $globalComment ;
 
         $items = array();
         foreach($orderItems as $orderItem){
@@ -98,12 +100,12 @@ class NewOrders  extends Customers {
                         $productsArray = unserialize($additionalData);
                         $extra = ' Extra: ';
                         $extraItems = array();
-                        $items[] = array(
+                        $mainProduct = array(
                             "id" => $product->getData('ebriza_id'),
                             "quantity" => 1,
                             'Lock' => 'Lock' . $orderItem->getId(),
                             'IsMod' => "false",
-                            'note' => $extra . $orderItem->getData('comment') . ' ' . $globalComment
+                            'note' => $orderItem->getData('comment') . ' ' . $globalComment
                         );
                         foreach ($productsArray as $key=>$value){
                             $productId = $value;
@@ -116,6 +118,8 @@ class NewOrders  extends Customers {
                                 'IsMod' => "true"
                             );
                         }
+                        $mainProduct['note'] = $extra . $mainProduct['note'];
+                        $items[] = $mainProduct;
                         foreach ($extraItems as $extraItem){
                             $items[] = $extraItem;
                         }
@@ -241,14 +245,14 @@ class NewOrders  extends Customers {
             'Cache-control' => 'no-cache'
         );
         try {
-            $this->log($data);
+//            $this->log($data);
             $this->_curl->setHeaders($headers);
             //if the method is post
             $this->_curl->post($url,$data);
             //response will contain the output in form of JSON string
             $response = $this->_curl->getBody();
             $arrayResponse = $this->jsonHelper->jsonDecode($response);
-            $this->log($arrayResponse);
+//            $this->log($arrayResponse);
 
         } catch (Exception $e){
             $this->log($e->getMessage());

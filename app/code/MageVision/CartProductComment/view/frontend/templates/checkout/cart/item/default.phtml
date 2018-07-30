@@ -89,7 +89,8 @@ $cartProductCommentHelper = $this->helper('MageVision\CartProductComment\Helper\
                           name="cart[<?php echo $block->escapeHtml($_item->getId()) ?>][comment]"
                           rows="5"
                           cols="15"
-                          maxlength="250"><?php echo $block->escapeHtml($_item->getComment());?></textarea>
+                          maxlength="250"
+                          placeholder="Adauga comentariu"><?php echo $block->escapeHtml($_item->getComment());?></textarea>
                 <?php if ($cartProductCommentHelper->displayUpdateButton()): ?>
                     <button type="submit" title="<?php echo $block->escapeHtml(__('Update')); ?>" class="button btn-update">
                         <span><?php echo $block->escapeHtml(__('Update')); ?></span>

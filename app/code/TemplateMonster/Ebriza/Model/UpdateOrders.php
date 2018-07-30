@@ -72,14 +72,14 @@ class UpdateOrders  extends Sync {
             'Cache-control' => 'no-cache'
         );
         try {
-            $this->log($this->data);
+//            $this->log($this->data);
             $this->_curl->setHeaders($headers);
             //if the method is post
             $this->_curl->get($url);
             //response will contain the output in form of JSON string
             $response = $this->_curl->getBody();
             $arrayResponse = $this->jsonHelper->jsonDecode($response);
-            $this->log($arrayResponse);
+//            $this->log($arrayResponse);
 
         } catch (Exception $e){
             $this->log($e->getMessage());

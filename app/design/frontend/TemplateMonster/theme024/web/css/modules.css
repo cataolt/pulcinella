@@ -6635,8 +6635,10 @@ div[class^="swatch-opt-"] {
   margin-top: 30px;
 }
 
-section.rd-parallax.index-header-parallax{
-  height: 502px !important;
+@media (min-width: 1200px) {
+  section.rd-parallax.index-header-parallax {
+    height: 502px !important;
+  }
 }
 
 .rd-parallax-inner {

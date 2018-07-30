@@ -4597,6 +4597,26 @@ body {
 
 .comment textarea {
   height: 100px;
+  text-align: center;
+}
+
+.comment::-webkit-input-placeholder {
+  color: red;
+}
+.open-div{
+  position: absolute;
+  margin-top: 40px;
+}
+
+@media all and (max-width: 740px) {
+  .open-div{
+    display: none;
+  }
+}
+
+actions-toolbar-success {
+  display: block;
+  text-align: center;
 }
 /* END Main Theme Settings  */
 /* Desktop */
